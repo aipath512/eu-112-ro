@@ -1,435 +1,374 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="utf-8" />
-<title>EU-112 — Primul răspuns gratuit despre AI la muncă</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="EU-112 — pentru salariați și patroni de IMM cu întrebări despre AI la muncă. Întrebi gratuit, primești pregătirea de guvernanță, verifici la distanță înainte de un control ANCOM." />
-<link rel="canonical" href="https://eu-112.ro/" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/main.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EU-112 — 1000 Întrebări Răspunsuri despre EU AI Act</title>
+<meta name="description" content="Linia de urgență pentru EU AI Act. Întrebi, primești răspuns din text oficial + 70 de documente. Gratuit pentru salariați și patroni de IMM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0a0a; --panel:#141410; --panel2:#1a1a15;
+    --gold:#f0c14b; --gold-dim:#a8863a;
+    --red:#c90016; --red2:#ef001c;
+    --text:#f5f5f0; --muted:#c4c4ba; --line:#2a2a22;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',Arial,sans-serif;line-height:1.5;}
+  em{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);}
+  .mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;}
+  h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
+
+  #utility{background:#050503;border-bottom:1px solid var(--line);font-size:11px;color:var(--muted);
+    padding:6px 20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;}
+  #utility #clock{color:var(--gold);}
+
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;
+    border-bottom:1px solid var(--line);}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;}
+  .brand .dial{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red2));
+    display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;
+    font-weight:700;font-size:12px;color:#fff;}
+  nav .links{display:flex;gap:22px;font-size:14px;color:var(--muted);}
+  nav .cta{background:var(--gold);color:#0a0a0a;font-weight:700;padding:9px 18px;border-radius:8px;
+    font-size:13px;text-decoration:none;}
+
+  #alert{background:linear-gradient(90deg,var(--red),var(--red2),var(--red));color:#fff;text-align:center;
+    padding:11px 16px;font-weight:800;font-size:13px;letter-spacing:.02em;text-transform:uppercase;
+    font-family:'IBM Plex Mono',monospace;}
+  #alert a{text-decoration:underline;color:#fff;}
+
+  .hero{padding:76px 20px 56px;text-align:center;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:12px;letter-spacing:.12em;
+    text-transform:uppercase;margin-bottom:18px;}
+  .hero h1{font-size:44px;max-width:760px;margin:0 auto 18px;}
+  .hero p{color:#e8e8e0;font-size:17px;max-width:600px;margin:0 auto 32px;}
+  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .btn-primary{background:var(--gold);color:#0a0a0a;font-weight:700;padding:15px 30px;border-radius:10px;
+    text-decoration:none;font-size:15px;}
+  .btn-secondary{border:1px solid var(--gold-dim);color:var(--gold);padding:15px 30px;border-radius:10px;
+    text-decoration:none;font-size:15px;}
+  .btn-tertiary{border:1px solid var(--gold-dim);color:var(--gold);padding:15px 30px;border-radius:10px;
+    text-decoration:none;font-size:15px;}
+  .btn-ask-bubble{display:inline-flex;align-items:center;gap:8px;background:var(--panel);
+    border:1.5px solid var(--gold);color:var(--gold);padding:14px 26px;border-radius:999px;
+    text-decoration:none;font-size:15px;font-weight:600;}
+  .btn-ask-bubble svg{width:16px;height:16px;flex-shrink:0;}
+  .btn-ask-main{background:var(--gold);color:#0a0a0a;padding:17px 36px;font-size:17px;
+    box-shadow:0 4px 20px rgba(240,193,75,.35);}
+  .btn-ask-main svg{width:19px;height:19px;}
+  html{scroll-behavior:smooth;}
+  .hero-cta-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);margin-top:6px;text-align:center;}
+  .hero-cta-item{position:relative;display:flex;flex-direction:column;align-items:center;}
+  .sticker-nou{position:absolute;top:-12px;right:-8px;background:linear-gradient(135deg,var(--red),var(--red2));
+    color:#fff;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:10px;letter-spacing:.05em;
+    padding:3px 9px;border-radius:6px;transform:rotate(8deg);box-shadow:0 2px 8px rgba(201,0,22,.5);z-index:2;}
+
+  .stats{display:flex;justify-content:center;gap:0;flex-wrap:wrap;padding:32px 20px;border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);}
+  .stat{padding:0 30px;text-align:center;border-right:1px solid var(--line);}
+  .stat:last-child{border-right:none;}
+  .stat .num{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:var(--gold);}
+  .stat .lab{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);text-transform:uppercase;}
+
+  .section{padding:64px 20px;}
+  .section h2{font-size:30px;text-align:center;margin-bottom:44px;}
+  .pipeline{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;max-width:960px;margin:0 auto;}
+  .pstep{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 16px;
+    width:150px;text-align:center;}
+  .pstep .n{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;margin-bottom:6px;}
+  .pstep .t{font-weight:700;font-size:14px;margin-bottom:4px;}
+  .pstep .d{color:var(--muted);font-size:12px;}
+  .arrow{color:var(--gold-dim);font-size:20px;}
+
+  .personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:960px;margin:0 auto;}
+  .persona{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;}
+  .persona .role{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:8px;}
+  .persona h3{font-size:17px;margin-bottom:6px;}
+  .persona p{color:var(--muted);font-size:13.5px;}
+
+  #ask-panel{background:#f7f4ec;color:#141414;border-radius:20px;max-width:900px;margin:0 auto;padding:44px 32px;}
+  #ask-panel h2{color:#141414;text-align:center;margin-bottom:8px;}
+  #ask-panel .sub{text-align:center;color:#5a5648;margin-bottom:28px;font-size:14.5px;}
+  #ask-input-row{display:flex;gap:10px;max-width:640px;margin:0 auto 20px;}
+  #ask-q{flex:1;padding:14px 16px;border:1.5px solid #d8d2bf;border-radius:10px;font-size:15px;
+    font-family:'Inter',sans-serif;color:#141414;}
+  #ask-send{background:var(--red);color:#fff;border:none;border-radius:10px;padding:0 22px;font-weight:700;cursor:pointer;}
+  .ask-examples{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;margin:0 auto;}
+  .ask-ex{background:#fff;border:1px solid #e5e0d0;border-radius:10px;padding:14px 16px;font-size:13px;}
+  .ask-ex .q{font-weight:700;margin-bottom:5px;}
+  .ask-ex .a{color:#5a5648;}
+  #ask-answer{max-width:640px;margin:20px auto 0;background:#fff;border:1px solid #e5e0d0;border-radius:10px;
+    padding:16px 18px;font-size:14.5px;line-height:1.7;white-space:pre-wrap;display:none;}
+
+  .modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;max-width:960px;margin:0 auto;}
+  .module{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;font-size:13px;}
+  .module .num{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;}
+
+  .pricing{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;max-width:960px;margin:0 auto;}
+  .price-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px;width:280px;}
+  .price-card.gold{border-color:var(--gold);}
+  .price-card .tier{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:8px;}
+  .price-card h3{font-size:18px;margin-bottom:6px;}
+  .price-card .price{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);margin-bottom:14px;}
+  .price-card ul{list-style:none;color:var(--muted);font-size:13.5px;}
+  .price-card li{padding:4px 0;}
+
+  footer{border-top:1px solid var(--line);padding:36px 20px;text-align:center;color:var(--muted);font-size:12px;}
+
+  @media(max-width:640px){.hero h1{font-size:30px;} nav .links{display:none;} .stat{padding:0 16px;}}
+  .site-footer{border-top:1px solid var(--line);padding:32px 20px 20px;margin-top:20px;}
+  .footer-wrap{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px;margin-bottom:22px;}
+  .footer-col-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;
+    font-family:'IBM Plex Mono',monospace;margin-bottom:10px;}
+  .footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:7px;}
+  .footer-col a:hover{color:var(--gold);}
+  .footer-brand{font-weight:800;font-size:16px;color:var(--text);margin-bottom:6px;}
+  .footer-dial{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
+    border-radius:50%;background:#c90016;color:#fff;font-size:9px;font-weight:800;margin-right:5px;}
+  .footer-tagline{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .footer-legal{max-width:960px;margin:0 auto;padding-top:16px;border-top:1px solid var(--line);
+    font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6;}
+  @media (max-width:600px){.footer-wrap{grid-template-columns:1fr;gap:20px;}}
+</style>
 </head>
 <body>
 
-<!-- UTILITY BAR -->
-<div style="display:flex; justify-content:space-between; align-items:center; padding:12px 56px; border-bottom:1px solid var(--dimmer); font-family:var(--mono); font-size:11px;">
-  <a href="#acces-email" class="btn" style="padding:8px 14px; font-size:11px;">Acces cu email</a>
-  <span style="color:var(--dim);"><span class="blink-urgent" style="color:var(--urgent);">●</span> live · EU-112 · Ask răspunde acum</span>
-  <span style="color:var(--dim);">Ask răspunde instant · restul &lt; 4h în ziua lucrătoare</span>
+<div id="utility">
+  <span>ROMÂNIA · <span class="mono">EU AI ACT — REGULAMENTUL (UE)</span></span>
+  <span style="display:flex;align-items:center;gap:12px;">
+    <span id="visitor-count-inline" class="mono" style="opacity:.85;">👁 <span id="visitor-count-num-idx">—</span></span>
+    <span id="clock" class="mono">—</span>
+  </span>
 </div>
 
-<!-- NAV -->
-<nav style="display:flex; justify-content:space-between; align-items:center; padding:18px 56px; border-bottom:1px solid var(--dimmer); position:sticky; top:0; background:rgba(10,10,10,0.92); backdrop-filter:blur(8px); z-index:50;">
-  <a href="#top" style="display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit;">
-    <span class="badge-112">112</span>
-    <div>
-      <div style="font-family:var(--serif); font-size:22px; letter-spacing:0.01em;">EU-112 <em style="color:var(--gold); font-style:italic;">RĂSPUNDE</em></div>
-      <div style="font-family:var(--mono); font-size:10px; color:var(--dim); text-transform:uppercase; letter-spacing:0.12em;">ÎNTREBARE · PREGĂTIRE · VERIFICARE</div>
-    </div>
-  </a>
-  <a href="#ask" class="btn btn-primary">Firma Ta →</a>
+<script>
+  (function(){
+    fetch('https://api.countapi.xyz/hit/eu-112-ro/sitewide')
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var el = document.getElementById('visitor-count-num-idx');
+        if(el && data && typeof data.value === 'number'){
+          el.textContent = data.value.toLocaleString('ro-RO');
+        }
+      })
+      .catch(function(){
+        var el = document.getElementById('visitor-count-num-idx');
+        if(el) el.textContent = '—';
+      });
+  })();
+</script>
+
+<nav>
+  <div class="brand"><div class="dial">112</div> EU-112<span style="color:var(--muted);font-weight:400;font-size:13px;margin-left:6px;">.ro</span></div>
+  <div class="links">
+    <a href="#ask">Întreabă</a>
+    <a href="/faq-hub.html">FAQ</a>
+    <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    <a href="#module-uri">Module</a>
+    <a href="#preturi">Prețuri</a>
+    <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=nav">Generează Documente</a>
+  </div>
+  <a class="cta" href="#ask">Întreabă Acum</a>
 </nav>
 
-<!-- LIVE CLOCK BAR -->
-<div style="padding:8px 56px; border-bottom:1px solid var(--dimmer); font-family:var(--mono); font-size:11px; color:var(--dim);">
-  <span class="blink" style="color:var(--gold);">●</span> ACUM luni, 10 august 2026 · București
+<div id="alert">
+  ⚠ EU AI ACT — <a href="#ask">1000 ÎNTREBĂRI RĂSPUNSURI</a> →
 </div>
 
-<div class="l-page">
-
-  <!-- HERO -->
-  <section id="top" style="padding:64px 56px 56px;">
-    <div class="eyebrow">// EU-112 · URGENT · SALARIAT &amp; PATRON IMM</div>
-    <div style="font-family:var(--mono); font-size:12px; color:var(--dim); margin-top:14px;">Home &gt; EU-112</div>
-
-    <h1 style="font-family:var(--serif); font-weight:400; font-size:60px; line-height:1.08; letter-spacing:-0.01em; margin:24px 0 0; max-width:820px;">
-      Primul răspuns <em style="color:var(--gold); font-style:italic;">gratuit</em><br/>
-      despre AI la muncă.
-    </h1>
-
-    <p style="font-size:18px; line-height:1.5; color:var(--dim); max-width:640px; margin:24px 0 0;">
-      Pentru salariați și patroni de IMM · Cabinete de avocatură · Consultanți · Freelanceri.
-    </p>
-    <p style="font-size:18px; line-height:1.5; margin:12px 0 0; max-width:680px;">
-      <span style="color:var(--gold);">Întrebi</span> → <span style="color:var(--gold);">Primești pregătirea</span> → <span style="color:var(--gold);">Verifici</span>.
-      O singură cale către dovada că firma ta a început.
-    </p>
-
-    <div style="margin:28px 0; font-family:var(--mono); font-size:12px; color:var(--dim);">
-      ✓ ÎNCEPE GRATUIT · fără card — Ask fără cont, restul cu cont gratuit în 1 minut
-    </div>
-
-    <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:8px;">
-      <a href="#oferta" class="btn btn-primary btn-block" style="position:relative;">
-        <span class="badge-nou">NOU</span>
-        Generează pentru firma ta
-        <span class="sub">gratuit — creează cont în 1 min</span>
+<div class="hero">
+  <div class="eyebrow">LINIA DE URGENȚĂ PENTRU AI LA MUNCĂ</div>
+  <h1>Firma ta folosește deja <em>AI</em>.<br>Află în 2 minute dacă te privește.</h1>
+  <p>EU-112 e ca 112 dar pentru EU AI Act — întrebi, generezi toată documentația gata completată, răspunsuri și textul oficial, gratuit.</p>
+  <div class="hero-cta">
+    <div class="hero-cta-item">
+      <a class="btn-ask-bubble btn-ask-main" href="#ask" id="ask-scroll-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 0 1 1 1v1.06A8.004 8.004 0 0 1 20 12v1a2 2 0 0 1-2 2h-.17A4 4 0 0 1 14 18h-4a4 4 0 0 1-3.83-3H6a2 2 0 0 1-2-2v-1a8.004 8.004 0 0 1 7-7.94V3a1 1 0 0 1 1-1zm-3 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
+        Ask anything…
       </a>
-      <a href="#demo" class="btn btn-block">
-        Vezi Demo
-        <span class="sub">70 documente, fără cont</span>
-      </a>
-      <a href="#ask" class="btn btn-block">
-        Întreabă AI
-        <span class="sub">gratuit — fără cont</span>
-      </a>
+      <div class="hero-cta-sub">întrebi acum, gratuit, fără cont</div>
     </div>
-  </section>
-
-  <!-- PIPELINE -->
-  <section class="section" style="padding-top:24px;">
-    <div class="eyebrow" style="text-align:center; display:block;">// PARCURSUL TĂU</div>
-    <h2 style="font-family:var(--serif); font-weight:400; font-size:32px; text-align:center; margin:14px 0 40px;">
-      De la <em style="color:var(--gold); font-style:italic;">întrebare</em> la conformitate completă.
-    </h2>
-
-    <div class="pipeline">
-      <div class="step" style="background:var(--gold);">
-        <span class="here-badge">EȘTI AICI</span>
-        <span class="icn">💬</span>
-        <span class="lbl">ÎNTREBARE</span>
-        <span class="sub">Ask, gratuit</span>
-      </div>
-      <div class="step" style="background:var(--blue); color:#fff;">
-        <span class="icn">🗂️</span>
-        <span class="lbl">GUVERNANȚĂ</span>
-        <span class="sub">70 documente generate</span>
-      </div>
-      <div class="step" style="background:var(--green); color:#fff;">
-        <span class="icn">◈</span>
-        <span class="lbl">TRANSPARENȚĂ</span>
-        <span class="sub">Articolul 50 · din 2 aug 2026</span>
-      </div>
-      <div class="step" style="background:var(--purple); color:#fff;">
-        <span class="icn">🔍</span>
-        <span class="lbl">VERIFICARE</span>
-        <span class="sub">RRVI — la distanță</span>
-      </div>
-      <div class="step" style="background:var(--urgent); color:#fff;">
-        <span class="icn">■</span>
-        <span class="lbl">CONFORMITATE</span>
-        <span class="sub">dosar complet</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4 STEPS -->
-  <section class="section">
-    <div class="card-grid" style="grid-template-columns:repeat(4,1fr);">
-      <div>
-        <div class="eyebrow">1</div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; margin:10px 0 8px;">Întrebi</h3>
-        <p style="font-size:13px; color:var(--dim); line-height:1.55; margin:0;">Întrebi EU AI Act în limbaj natural, primești răspuns imediat.</p>
-      </div>
-      <div>
-        <div class="eyebrow">2</div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; margin:10px 0 8px;">Primești pregătirea</h3>
-        <p style="font-size:13px; color:var(--dim); line-height:1.55; margin:0;">Generezi guvernanța operațională a firmei — 70 documente, 10 module.</p>
-      </div>
-      <div>
-        <div class="eyebrow">3</div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; margin:10px 0 8px;">Ești de încredere</h3>
-        <p style="font-size:13px; color:var(--dim); line-height:1.55; margin:0;">Firma ta devine descoperibilă și de încredere pentru sisteme AI, nu doar pentru oameni.</p>
-      </div>
-      <div>
-        <div class="eyebrow">4</div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; margin:10px 0 8px;">Verifici</h3>
-        <p style="font-size:13px; color:var(--dim); line-height:1.55; margin:0;">Menții dovezi verificabile continuu, gata pentru inspectori și audit.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PENTRU CINE -->
-  <section class="section">
-    <div class="section-head">
-      <div class="eyebrow">// PENTRU CINE ESTE</div>
-      <h2>Șase profiluri, <em>un singur punct de plecare.</em></h2>
-    </div>
-    <div class="persona-grid">
-      <div class="persona-card">
-        <div class="icn">👤</div>
-        <div class="role">Salariat</div>
-        <div class="q">„Folosesc AI la muncă. Am voie?"</div>
-      </div>
-      <div class="persona-card">
-        <div class="icn">🏢</div>
-        <div class="role">Patron IMM</div>
-        <div class="q">„Vreau să știu dacă firma mea e pregătită."</div>
-      </div>
-      <div class="persona-card">
-        <div class="icn">⚖️</div>
-        <div class="role">Avocat</div>
-        <div class="q">„Vreau să ajut clienții cu EU AI Act."</div>
-      </div>
-      <div class="persona-card">
-        <div class="icn">📊</div>
-        <div class="role">Consultant</div>
-        <div class="q">„Vreau să creez un serviciu nou."</div>
-      </div>
-      <div class="persona-card">
-        <div class="icn">💼</div>
-        <div class="role">Freelancer</div>
-        <div class="q">„Vreau să folosesc AI responsabil."</div>
-      </div>
-      <div class="persona-card">
-        <div class="icn">🔎</div>
-        <div class="role">Auditor</div>
-        <div class="q">„Vreau dovezi verificabile."</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STAT PANEL -->
-  <section class="section">
-    <div class="stat-panel">
-      <div class="head"><span>~ /eu-112/stare.md</span><span>4 indicatori</span></div>
-      <div class="stat-grid">
-        <div><div class="n">1000</div><div class="l">perechi FAQ</div><div class="s">actualizate zilnic</div></div>
-        <div><div class="n">0€</div><div class="l">Ask</div><div class="s">gratuit, fără cont</div></div>
-        <div><div class="n">24/7</div><div class="l">disponibil</div><div class="s">întrebi oricând</div></div>
-        <div><div class="n">RO</div><div class="l">limbă</div><div class="s">cu avocat.ro</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FREE PACK -->
-  <section id="oferta" class="section">
-    <span class="btn" style="border-color:var(--gold); color:var(--gold); font-size:11px; padding:8px 16px; display:inline-flex;">FREE EU-112 READINESS PACK™</span>
-    <h2 style="font-family:var(--serif); font-weight:400; font-size:34px; margin:20px 0 12px;">Primul rezultat <em style="color:var(--gold); font-style:italic;">real</em> pentru firma ta.</h2>
-    <p style="font-size:16px; color:var(--dim); max-width:640px; margin:0 0 40px;">Nu oferim un model gol. Oferim prima imagine operațională a firmei tale.</p>
-
-    <div class="card-grid" style="grid-template-columns:repeat(2,1fr);">
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:19px; color:var(--gold); margin:0 0 8px;">1000 perechi FAQ indexate</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Regulamentul devine accesibil prin conversație, în parteneriat cu avocat.ro.</p>
-      </div>
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:19px; color:var(--gold); margin:0 0 8px;">Ask EU-112™ Assistant</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Acces permanent pentru întrebări despre obligații, roluri, responsabilități.</p>
-      </div>
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:19px; color:var(--gold); margin:0 0 8px;">Mostră Governance Pack</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">10 module operaționale, 70 documente — generate via eu-ai-act.ro.</p>
-      </div>
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:19px; color:var(--gold); margin:0 0 8px;">Demo personalizat gratuit — până la 70%</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Date reale AiVenture vizibile, restul se completează cu ale firmei tale.</p>
-      </div>
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:19px; color:var(--gold); margin:0 0 8px;">Mostră pregătire control ANCOM</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Cum poate fi organizată informația pentru audit și verificare.</p>
-      </div>
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:19px; color:var(--gold); margin:0 0 8px;">Ecran dedicat auditorului ANCOM</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Cont separat, verificare la distanță, fără contact direct cu firma.</p>
-      </div>
-    </div>
-
-    <div id="acces-email" style="max-width:520px; border:1px solid var(--dimmer); background:var(--panel); padding:28px; margin-top:40px; scroll-margin-top:100px;">
-      <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; margin:0 0 8px;">Autentifică-te ca să generezi pachetul</h3>
-      <p style="font-size:13px; color:var(--dim); margin:0 0 20px;">Nu ai cont? Nu e nevoie — scrii emailul, primești un link, primul login îți creează automat contul. Ask și Demo rămân libere, fără cont.</p>
-      <div class="field">
-        <label>Email profesional</label>
-        <input placeholder="nume@firma.ro" />
-      </div>
-      <button class="btn btn-primary" style="width:100%; justify-content:center; margin-top:16px;">trimite link de acces →</button>
-    </div>
-  </section>
-
-  <!-- ASK -->
-  <section id="ask" class="section" style="background:var(--panel2);">
-    <div class="eyebrow">// ASK · CONVERSAȚIONAL</div>
-    <h2 style="font-family:var(--serif); font-weight:400; font-size:32px; margin:14px 0 12px;">Ai o întrebare despre <em style="color:var(--gold); font-style:italic;">AI la muncă</em>?</h2>
-    <p style="font-size:15px; color:var(--dim); max-width:680px; margin:0 0 32px;">Nu mai e doar „folosim AI?" — e „știm unde e AI în firma noastră și putem demonstra că îl gestionăm responsabil?"</p>
-
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--dimmer); border:1px solid var(--dimmer); max-width:900px;">
-      <div style="background:#fff; color:#111; padding:24px;">
-        <div style="font-family:var(--serif); font-size:18px; margin-bottom:14px;">Întreabă EU-112™</div>
-        <input placeholder="Întreabă orice despre AI la muncă..." style="width:100%; border:none; border-bottom:1px solid #ccc; padding:8px 0; font-family:var(--serif); font-size:16px; outline:none; margin-bottom:14px;" />
-        <button class="btn btn-primary">Întreabă →</button>
-        <div style="font-family:var(--mono); font-size:10px; color:#888; margin-top:16px; text-transform:uppercase; letter-spacing:0.08em;">Căutări populare</div>
-        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;">
-          <span class="btn" style="font-size:11px; padding:8px 12px; border-color:#ddd; color:#333;">Folosim ChatGPT la firmă</span>
-          <span class="btn" style="font-size:11px; padding:8px 12px; border-color:#ddd; color:#333;">Ce documente trebuie?</span>
-          <span class="btn" style="font-size:11px; padding:8px 12px; border-color:#ddd; color:#333;">Ce e Articolul 50?</span>
-        </div>
-      </div>
-      <div style="background:var(--panel); padding:24px; display:flex; align-items:center; justify-content:center; border:1px dashed var(--dimmer); font-family:var(--mono); font-size:13px; color:var(--dim); text-align:center;">
-        Răspunsul apare aici după ce apeși Întreabă.
-      </div>
-    </div>
-  </section>
-
-  <!-- 10 MODULE -->
-  <section class="section">
-    <div class="section-head">
-      <div class="eyebrow">// STRAT DE GUVERNANȚĂ</div>
-      <h2>De la informație la <em>implementare.</em></h2>
-      <div class="meta">70 de documente operaționale, generate pentru firma ta prin infrastructura eu-ai-act.ro. Nu șabloane goale.</div>
-    </div>
-    <div class="card-grid" style="grid-template-columns:repeat(2,1fr);">
-      <div><div class="eyebrow">01</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Inventarul Sistemelor AI</h3><p style="font-size:13px; color:var(--dim); margin:0;">Identificarea sistemelor AI utilizate.</p></div>
-      <div><div class="eyebrow">02</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Clasificarea Riscului</h3><p style="font-size:13px; color:var(--dim); margin:0;">Evaluarea nivelului de risc.</p></div>
-      <div><div class="eyebrow">03</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Competențe AI</h3><p style="font-size:13px; color:var(--dim); margin:0;">Demonstrarea competențelor AI.</p></div>
-      <div><div class="eyebrow">04</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Practici Interzise</h3><p style="font-size:13px; color:var(--dim); margin:0;">Evaluarea practicilor interzise.</p></div>
-      <div><div class="eyebrow">05</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Evaluarea Riscului Înalt</h3><p style="font-size:13px; color:var(--dim); margin:0;">high-risk Anexa III · 2 dec 2027</p></div>
-      <div><div class="eyebrow">06</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Documentație Tehnică</h3><p style="font-size:13px; color:var(--dim); margin:0;">high-risk Anexa III · 2 dec 2027</p></div>
-      <div><div class="eyebrow">07</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Supraveghere Umană</h3><p style="font-size:13px; color:var(--dim); margin:0;">Responsabilitate și control uman.</p></div>
-      <div><div class="eyebrow">08</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Guvernanța Datelor</h3><p style="font-size:13px; color:var(--dim); margin:0;">Gestionarea datelor.</p></div>
-      <div><div class="eyebrow">09</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Înregistrare și Monitorizare</h3><p style="font-size:13px; color:var(--dim); margin:0;">Urmărirea utilizării.</p></div>
-      <div><div class="eyebrow">10</div><h3 style="font-family:var(--serif); font-weight:400; font-size:19px; margin:8px 0 4px;">Raportarea Incidentelor</h3><p style="font-size:13px; color:var(--dim); margin:0;">Gestionarea incidentelor.</p></div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section class="section">
-    <div class="section-head">
-      <div class="eyebrow">// OFERTĂ · PREȚURI</div>
-      <h2>Începi gratuit. <em>Plătești doar când vezi rezultatul.</em></h2>
-      <div class="meta">Trei niveluri, un singur produs. Testezi tot ce contează fără card.</div>
-    </div>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <div class="tier">Nivelul 1 · Start</div>
-        <h3>Ask</h3>
-        <div class="price">0 <span class="unit">EUR</span></div>
-        <p>1000 perechi FAQ, corpus RO complet, actualizat zilnic. Fără cont, fără card.</p>
-        <a href="#ask" class="btn">Întreabă acum →</a>
-      </div>
-      <div class="price-card featured">
-        <div class="tier">Nivelul 2 · Pachetul Complet</div>
-        <h3>Governance + Trasabilitate</h3>
-        <div class="price">690 <span class="unit">EUR</span></div>
-        <p>70 documente completate cu datele firmei, 10 module, dovezi digitale și RRVI inclus — generate via eu-ai-act.ro. Plată unică.</p>
-        <a href="#oferta" class="btn btn-primary">Vezi ce conține →</a>
-      </div>
-      <div class="price-card">
-        <div class="tier">Nivelul 3 · Opțional</div>
-        <h3>Verificare ANCOM</h3>
-        <div class="price">390 <span class="unit">EUR / an</span></div>
-        <p>Ecran dedicat auditorului, RRVI activ permanent, documentele actualizate la fiecare termen legal.</p>
-        <a href="#verificare" class="btn">Detalii →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- VERIFICARE -->
-  <section id="verificare" class="section">
-    <div class="section-head">
-      <div class="eyebrow">// VERIFICARE · LA DISTANȚĂ</div>
-      <h2>Dovadă verificabilă, <em>fără să contactăm firma.</em></h2>
-      <div class="meta">Fiecare document generat primește un identificator determinist și o amprentă SHA-256. Auditorul ANCOM verifică o piesă la distanță, pe ecranul lui dedicat.</div>
-    </div>
-    <div style="border:1px solid var(--gold); background:rgba(240,193,75,0.06); padding:20px 24px; font-family:var(--mono); font-size:12px; color:var(--text);">
-      RRVI™ — Remote Regulatory Verification Infrastructure™ <span style="float:right; color:var(--dim);">inspector-ready</span>
-    </div>
-  </section>
-
-  <!-- PARTENERI -->
-  <section id="parteneri" class="section">
-    <div class="section-head">
-      <div class="eyebrow">// PARTENER DE ÎNCREDERE</div>
-      <h2>Distribuit prin <em>parteneri verificați.</em></h2>
-    </div>
-    <div class="card-grid" style="grid-template-columns:repeat(2,1fr);">
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; color:var(--gold); margin:0 0 10px;">avocat.ro</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Parteneriat vizat pentru asistentul text — director juridic, credibilitate profesională.</p>
-      </div>
-      <div>
-        <h3 style="font-family:var(--serif); font-weight:400; font-size:20px; color:var(--gold); margin:0 0 10px;">ECBTax Accounting &amp; HR</h3>
-        <p style="font-size:13px; color:var(--dim); margin:0;">Partener confirmat. Fondator: Roxana Deak — FCCA, CPA, CCF.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="section-head">
-      <div class="eyebrow">// RESURSE · ÎNTREBĂRI FRECVENTE</div>
-      <h2>Răspunsuri <em>scrise — nu vagi.</em></h2>
-    </div>
-    <details class="faq" open>
-      <summary><span>De ce „112"?</span><span class="q-toggle">+</span></summary>
-      <div class="q-body">Pentru că întrebarea „am o problemă cu AI la muncă, cui întreb?" nu are, de obicei, un răspuns rapid. 112 e primul apel, nu decizia finală.</div>
-    </details>
-    <details class="faq">
-      <summary><span>E gratuit?</span><span class="q-toggle">+</span></summary>
-      <div class="q-body">Ask e gratuit, fără cont. Generarea documentelor complete pentru firma ta cere email de business.</div>
-    </details>
-    <details class="faq">
-      <summary><span>Cu ce e diferit față de eu-ai-act.ro?</span><span class="q-toggle">+</span></summary>
-      <div class="q-body">eu-ai-act.ro e produsul complet — generare, RRVI, verificare. EU-112 e stratul de intrare: prima întrebare, primul răspuns, apoi trimite mai departe.</div>
-    </details>
-    <details class="faq">
-      <summary><span>Cum verifică un auditor ANCOM un document?</span><span class="q-toggle">+</span></summary>
-      <div class="q-body">Pe un ecran dedicat, cu cont separat — caută documentul după ID sau amprentă SHA-256, fără să contacteze firma direct.</div>
-    </details>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="section-head">
-      <div class="eyebrow">// CONTACT</div>
-      <h2>Scrie-ne. <em>Citim atent.</em></h2>
-    </div>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:640px; margin-bottom:24px;">
-      <div>
-        <div style="font-family:var(--mono); font-size:10px; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;">WhatsApp</div>
-        <div style="font-family:var(--serif); font-size:19px;"><a href="https://wa.me/40737123540" style="color:inherit; text-decoration:none;">40737123540</a></div>
-      </div>
-      <div>
-        <div style="font-family:var(--mono); font-size:10px; color:var(--gold); text-transform:uppercase; letter-spacing:0.1em;">Email</div>
-        <div style="font-family:var(--serif); font-size:19px;"><a href="mailto:contact@5thelement.ai" style="color:inherit; text-decoration:none;">contact@5thelement.ai</a></div>
-      </div>
-    </div>
-    <form action="mailto:contact@5thelement.ai" method="post" enctype="text/plain" style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:640px;">
-      <div class="field"><label>Nume</label><input name="Nume" /></div>
-      <div class="field"><label>Email</label><input name="Email" type="email" /></div>
-      <div class="field" style="grid-column:1/-1;"><label>Mesaj</label><textarea name="Mesaj"></textarea></div>
-      <button type="submit" class="btn btn-primary" style="grid-column:1/-1; justify-content:center;">trimite →</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
-  <footer style="border-top:1px solid var(--dimmer); padding:56px; background:var(--panel);">
-    <div style="display:grid; grid-template-columns:2fr 1fr 1fr; gap:40px; padding-bottom:40px; border-bottom:1px solid var(--dimmer);">
-      <div>
-        <div style="font-family:var(--serif); font-size:22px; margin-bottom:10px;">EU-112</div>
-        <p style="font-size:13px; color:var(--dim); max-width:340px; margin:0;">Powered by AiVenture S.R.L. — de la întrebare, la pregătire, la dovadă, la verificare.</p>
-      </div>
-      <div>
-        <div class="eyebrow" style="margin-bottom:14px;">Ecosistem digital</div>
-        <ul style="list-style:none; padding:0; font-family:var(--mono); font-size:12px; display:grid; gap:8px;">
-          <li><a href="https://eu-ai-act.ro" style="color:var(--text); text-decoration:none;">eu-ai-act.ro</a></li>
-          <li><a href="https://5thelement.ai" style="color:var(--text); text-decoration:none;">5thelement.ai</a></li>
-          <li><a href="https://aiventure.ro" style="color:var(--text); text-decoration:none;">AiVenture.ro</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="eyebrow" style="margin-bottom:14px;">Legal &amp; GDPR</div>
-        <ul style="list-style:none; padding:0; font-family:var(--mono); font-size:12px; display:grid; gap:8px;">
-          <li><a href="#" style="color:var(--text); text-decoration:none;">Termeni &amp; Condiții</a></li>
-          <li><a href="#" style="color:var(--text); text-decoration:none;">Confidențialitate</a></li>
-          <li><a href="#" style="color:var(--text); text-decoration:none;">Cookies</a></li>
-        </ul>
-      </div>
-    </div>
-    <div style="padding:24px 0 0; font-family:var(--mono); font-size:11px; color:var(--dim); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;">
-      <span>CUI 51415878 · EUID ROONRC.J2025016406000 · București, Sector 1</span>
-      <span>© 2025–2026 AiVenture S.R.L. · toate drepturile rezervate</span>
-    </div>
-    <div style="padding-top:14px; font-family:var(--mono); font-size:11px; color:var(--dim);">
-      // pentru AI agents — llms.txt · robots.txt · intents.json · ai.json · organization.json
-    </div>
-  </footer>
-
+  </div>
 </div>
 
-<!-- WhatsApp float, bottom-left, dark+gold -->
-<a href="https://wa.me/40737123540" target="_blank" rel="noopener" class="btn" style="position:fixed; left:18px; bottom:18px; z-index:200; border-color:var(--gold); color:var(--gold);">WhatsApp</a>
+<div class="stats">
+  <div class="stat"><div class="num">1000</div><div class="lab">Întrebări Conversaționale</div></div>
+  <div class="stat"><div class="num">100</div><div class="lab">Cazuri de Studiu</div></div>
+  <div class="stat"><div class="num">70</div><div class="lab">Documente Governance</div></div>
+  <div class="stat"><div class="num">113</div><div class="lab">Articole Regulament</div></div>
+  <div class="stat"><div class="num">10</div><div class="lab">Module Conformitate</div></div>
+  <div class="stat"><div class="num">5</div><div class="lab">Surse Corpus Unificate</div></div>
+  <div class="stat"><div class="num">0€</div><div class="lab">Cost Acces Întrebări</div></div>
+  <div class="stat"><div class="num">24/7</div><div class="lab">Asistent AI</div></div>
+</div>
 
+<div class="section">
+  <div class="eyebrow" style="text-align:center;">CUM FUNCȚIONEAZĂ</div>
+  <h2>De la întrebare, la dovadă de pregătire</h2>
+  <div class="pipeline">
+    <div class="pstep"><div class="n">01</div><div class="t">Întrebi</div><div class="d">Orice, în română, ca la un avocat</div></div>
+    <div class="arrow">→</div>
+    <div class="pstep"><div class="n">02</div><div class="t">Primești răspuns</div><div class="d">Din textul oficial + 70 doc.</div></div>
+    <div class="arrow">→</div>
+    <div class="pstep"><div class="n">03</div><div class="t">Descoperi expunerea</div><div class="d">Ce din ce folosești e AI</div></div>
+    <div class="arrow">→</div>
+    <div class="pstep"><div class="n">04</div><div class="t">Te abonezi (opțional)</div><div class="d">Alertă la modificări legale</div></div>
+    <div class="arrow">→</div>
+    <div class="pstep"><div class="n">05</div><div class="t">Generezi dosarul</div><div class="d">Pe eu-ai-act.ro, Governance</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="eyebrow" style="text-align:center;">PENTRU CINE E</div>
+  <h2>Oricine atinge un sistem AI la muncă</h2>
+  <div class="personas">
+    <div class="persona"><div class="role">Salariat</div><h3>Folosești ChatGPT la raport</h3><p>Vrei să știi dacă asta te expune sau expune firma.</p></div>
+    <div class="persona"><div class="role">Patron IMM</div><h3>Nu faci reclame pe AI</h3><p>Dar CRM-ul, facturarea, HR-ul — poate au deja AI.</p></div>
+    <div class="persona"><div class="role">Responsabil AI</div><h3>Numit intern, fără pregătire</h3><p>Vrei răspunsuri rapide, nu un curs de 3 zile.</p></div>
+    <div class="persona"><div class="role">Consultant</div><h3>Clienți care întreabă</h3><p>Ai nevoie de răspunsuri corecte, citate din lege.</p></div>
+  </div>
+</div>
+
+<div class="section" id="ask">
+  <div id="ask-panel">
+    <h2>Întreabă orice despre EU AI Act</h2>
+    <div class="sub">Răspuns din Regulamentul (UE) 2024/1689 + cele 70 de documente + FAQ. Gratuit, fără cont.</div>
+    <div id="ask-input-row">
+      <input id="ask-q" type="text" placeholder="Ex: Folosim ChatGPT în firmă — se aplică AI Act?">
+      <button id="ask-send">Întreabă</button>
+    </div>
+    <div id="ask-answer"></div>
+    <div class="ask-examples">
+      <div class="ask-ex"><div class="q">CRM cu scoring automat al clienților?</div><div class="a">Sistem AI — trebuie inventariat, chiar dacă nu l-ai cumpărat ca "AI".</div></div>
+      <div class="ask-ex"><div class="q">Chatbot pe site-ul firmei?</div><div class="a">Obligație directă de transparență (Art. 50) — trebuie declarat.</div></div>
+      <div class="ask-ex"><div class="q">ChatGPT ocazional, de pe telefon?</div><div class="a">Zonă gri, tehnic da — exact ce numim "shadow AI".</div></div>
+      <div class="ask-ex"><div class="q">Nu fac reclame pe AI, deci nu mă privește?</div><div class="a">Marketingul e un caz particular, nu definiția. Verifică restul.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="module-uri">
+  <div class="eyebrow" style="text-align:center;">GOVERNANCE LAYER</div>
+  <h2>10 module, 70 de documente — pas următor, gratuit</h2>
+  <div class="modules">
+    <div class="module"><span class="num">01</span> Inventar sisteme AI</div>
+    <div class="module"><span class="num">02</span> Clasificare risc</div>
+    <div class="module"><span class="num">03</span> Alfabetizare AI</div>
+    <div class="module"><span class="num">04</span> Practici interzise</div>
+    <div class="module"><span class="num">05</span> Evaluare risc ridicat</div>
+    <div class="module"><span class="num">06</span> Documentație tehnică</div>
+    <div class="module"><span class="num">07</span> Supraveghere umană</div>
+    <div class="module"><span class="num">08</span> Guvernanță date</div>
+    <div class="module"><span class="num">09</span> Logging & monitorizare</div>
+    <div class="module"><span class="num">10</span> Raportare incidente</div>
+  </div>
+</div>
+
+<div class="section" id="preturi">
+  <div class="eyebrow" style="text-align:center;">CE COSTĂ</div>
+  <h2>Întrebarea e mereu gratuită</h2>
+  <div class="pricing">
+    <div class="price-card gold">
+      <div class="tier">Pull — gratuit</div>
+      <h3>Întrebi când vrei</h3>
+      <div class="price">0 €</div>
+      <ul><li>✓ Acces nelimitat la Ask</li><li>✓ Corpus complet EU AI Act</li><li>✓ Fără cont necesar</li></ul>
+    </div>
+    <div class="price-card">
+      <div class="tier">Push — abonament</div>
+      <h3>Te anunță când se schimbă legea</h3>
+      <div class="price">preț TBD</div>
+      <ul><li>✓ Alertă la modificări (ex. Omnibus)</li><li>✓ Termene relevante pentru profilul tău</li><li>✓ Ca un avocat pe retainer</li></ul>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="footer-dial">112</span> EU-112</div>
+      <p class="footer-tagline">Linia de întrebări gratuite despre EU AI Act.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Linkuri rapide</div>
+      <a href="/">Acasă</a>
+      <a href="/faq-hub.html">FAQ Hub</a>
+      <a href="/faq.html">Toate întrebările</a>
+      <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=footer">eu-ai-act.ro</a>
+      <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
+      <a href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    EU-112 este un serviciu <strong style="color:var(--gold);">AiVenture S.R.L.</strong> · CUI 51415878 · București, România · Nu constituie consultanță juridică
+  </div>
+</footer>
+
+<script>
+  function tick(){
+    const now = new Date();
+    document.getElementById('clock').textContent =
+      now.toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  }
+  tick(); setInterval(tick, 1000);
+
+  const API = "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=";
+  const qEl = document.getElementById('ask-q');
+  const ansEl = document.getElementById('ask-answer');
+  async function askQuestion(){
+    const text = qEl.value.trim();
+    if(!text) return;
+    ansEl.style.display = 'block';
+    ansEl.textContent = '...';
+    try{
+      const resp = await fetch(API + encodeURIComponent(text) + "&lang=ro");
+      const data = await resp.json();
+      ansEl.textContent = data.generated_answer || data.answer || "Nu am găsit un răspuns clar — reformulează întrebarea.";
+    }catch(e){
+      ansEl.textContent = "Eroare de conexiune. Încearcă din nou.";
+    }
+  }
+  document.getElementById('ask-send').addEventListener('click', askQuestion);
+  qEl.addEventListener('keydown', e => { if(e.key === 'Enter'){ askQuestion(); } });
+
+  document.getElementById('ask-scroll-btn').addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('ask').scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(() => document.getElementById('ask-q').focus(), 500);
+  });
+</script>
+
+<script>
+  window.AI_WIDGET_CONFIG = {
+    accent: "#f0c14b",
+    accent2: "#a8863a",
+    bg: "#141410",
+    fontBody: "Inter, Arial, sans-serif",
+    apiBase: "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=",
+    lang: "ro",
+    assistantPage: "/assistant.html",
+    siteName: "EU-112 Assistant",
+    greeting: "Cu ce te pot ajuta legat de EU AI Act?"
+  };
+</script>
+<script src="/assets/js/ai-widget.js" defer></script>
+<script>
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var source = params.get('utm_source');
+    if(source === 'eu-ai-act-ro'){
+      var medium = params.get('utm_medium') || 'unknown';
+      fetch('https://api.countapi.xyz/hit/eu-112-ro/from-eu-ai-act-ro-' + medium).catch(function(){});
+      fetch('https://api.countapi.xyz/hit/eu-112-ro/from-eu-ai-act-ro-total').catch(function(){});
+    }
+  })();
+</script>
 </body>
 </html>

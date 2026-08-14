@@ -1,0 +1,25 @@
+# EU-112
+
+> Linia de urgență pentru EU AI Act. Corpus de 1000 de întrebări-răspunsuri despre Regulamentul (UE) 2024/1689, organizat pe 100 de categorii (roluri, risc, transparență, GPAI, HR, sănătate, justiție, GDPR, conformitate). Public țintă: salariați și patroni de IMM din România.
+
+## Conținut principal
+
+- [FAQ Hub](https://eu-112.ro/faq-hub.html): index cu toate 100 de categorii, grupate pe 8 teme majore
+- [Toate întrebările](https://eu-112.ro/faq.html): cele 1000 de perechi întrebare-răspuns, complet, cu schema FAQPage
+
+## Sursa juridică
+
+Regulamentul (UE) 2024/1689 al Parlamentului European și al Consiliului din 13 iunie 2024 de stabilire a unor norme armonizate privind inteligența artificială (Regulamentul privind IA), modificat de Regulamentul (UE) 2026/1744 (Omnibus, 8 iulie 2026).
+
+## Natura conținutului
+
+Răspunsurile sunt orientative, generate ca ghid practic — nu constituie consultanță juridică. Pentru sisteme cu risc ridicat, modele GPAI sau utilizări cu impact asupra drepturilor fundamentale este necesară analiză juridică individuală.
+
+## Organizație
+
+EU-112 este un serviciu AiVenture S.R.L. (CUI 51415878, București, România). Produs asociat: [eu-ai-act.ro](https://eu-ai-act.ro) — generator gratuit de documentație de conformitate (70 de documente, 10 module).
+
+## Agent resources
+
+- /sitemap.xml
+- /robots.txt

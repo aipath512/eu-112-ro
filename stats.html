@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistici — EU-112</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{--bg:#0a0a0a;--panel:#141410;--panel2:#1a1a15;--gold:#f0c14b;--gold-dim:#a8863a;--text:#f5f5f0;--muted:#a8a89c;--line:#26261e;--green:#4caf6b;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;line-height:1.5;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  header{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;}
+  header a{color:var(--muted);font-size:13px;text-decoration:none;}
+  .refresh-btn{background:var(--panel);border:1px solid var(--line);color:var(--gold);
+    font-size:12px;padding:6px 14px;border-radius:20px;cursor:pointer;}
+  .refresh-btn:hover{border-color:var(--gold-dim);}
+  .wrap{max-width:760px;margin:0 auto;padding:36px 20px 60px;}
+  h1{font-size:24px;margin-bottom:6px;color:var(--gold);}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:32px;}
+
+  .big-stat{background:var(--panel);border:1px solid var(--gold-dim);border-radius:16px;
+    padding:28px;text-align:center;margin-bottom:28px;}
+  .big-stat .n{font-size:44px;font-weight:700;color:var(--gold);font-family:'IBM Plex Mono',monospace;}
+  .big-stat .l{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:6px;}
+
+  .section-title{font-size:15px;color:var(--gold);margin-bottom:12px;margin-top:24px;}
+  .flow-box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;
+    display:flex;align-items:center;gap:14px;margin-bottom:12px;}
+  .flow-box .from,.flow-box .to{flex:1;text-align:center;font-size:12.5px;color:var(--text);font-weight:600;}
+  .flow-box .arrow{color:var(--gold-dim);font-size:18px;}
+  .flow-box .count{font-family:'IBM Plex Mono',monospace;font-size:26px;color:var(--gold);text-align:center;
+    min-width:70px;}
+
+  .channel-table{width:100%;border-collapse:collapse;margin-top:8px;}
+  .channel-table th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);
+    text-transform:uppercase;padding:8px 10px;border-bottom:1px solid var(--line);}
+  .channel-table td{padding:9px 10px;border-bottom:1px solid var(--line);font-size:13px;}
+  .channel-table td.num{font-family:'IBM Plex Mono',monospace;color:var(--gold);text-align:right;font-weight:600;}
+
+  .loading{color:var(--muted);font-size:12px;text-align:center;padding:20px;}
+  .note{font-size:11px;color:#6b6b60;margin-top:28px;line-height:1.6;text-align:center;}
+  .site-footer{border-top:1px solid var(--line);padding:32px 20px 20px;margin-top:20px;}
+  .footer-wrap{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px;margin-bottom:22px;}
+  .footer-col-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;
+    font-family:'IBM Plex Mono',monospace;margin-bottom:10px;}
+  .footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:7px;}
+  .footer-col a:hover{color:var(--gold);}
+  .footer-brand{font-weight:800;font-size:16px;color:var(--text);margin-bottom:6px;}
+  .footer-dial{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
+    border-radius:50%;background:#c90016;color:#fff;font-size:9px;font-weight:800;margin-right:5px;}
+  .footer-tagline{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .footer-legal{max-width:960px;margin:0 auto;padding-top:16px;border-top:1px solid var(--line);
+    font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6;}
+  @media (max-width:600px){.footer-wrap{grid-template-columns:1fr;gap:20px;}}
+</style>
+</head>
+<body>
+<header>
+  <a href="/faq-hub.html">← EU-112.ro</a>
+  <button class="refresh-btn" onclick="loadStats()">↻ Reîmprospătează</button>
+</header>
+
+<div class="wrap">
+  <h1>Statistici EU-112</h1>
+  <div class="sub">Trafic pe site și flux încrucișat cu eu-ai-act.ro — date live, citite direct (fără a incrementa contoarele).</div>
+
+  <div class="big-stat">
+    <div class="n" id="stat-sitewide">—</div>
+    <div class="l">Vizite totale eu-112.ro</div>
+  </div>
+
+  <div class="section-title">Poarta de email (faq.html)</div>
+  <div class="flow-box">
+    <div class="from">Poartă afișată</div>
+    <div class="arrow">·</div>
+    <div class="count" id="stat-gate-shown">—</div>
+    <div class="arrow">·</div>
+    <div class="to">Email lăsat</div>
+  </div>
+  <table class="channel-table">
+    <thead><tr><th>Metrică</th><th>Valoare</th></tr></thead>
+    <tbody>
+      <tr><td>Poarta a fost afișată (vizitatori nedeblocați)</td><td class="num" id="ch-gate-shown">—</td></tr>
+      <tr><td>Email-uri lăsate cu succes</td><td class="num" id="ch-gate-submitted">—</td></tr>
+      <tr><td>Au refuzat / au plecat fără email</td><td class="num" id="ch-gate-declined">—</td></tr>
+      <tr><td>Rată de refuz (%)</td><td class="num" id="ch-gate-decline-rate">—</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">Flux încrucișat</div>
+
+  <div class="flow-box">
+    <div class="from">eu-112.ro</div>
+    <div class="arrow">→</div>
+    <div class="count" id="stat-to-eu-ai-act">—</div>
+    <div class="arrow">→</div>
+    <div class="to">eu-ai-act.ro</div>
+  </div>
+  <div class="flow-box">
+    <div class="from">eu-ai-act.ro</div>
+    <div class="arrow">→</div>
+    <div class="count" id="stat-from-eu-ai-act">—</div>
+    <div class="arrow">→</div>
+    <div class="to">eu-112.ro</div>
+  </div>
+
+  <div class="section-title">Detaliu pe canal — spre eu-ai-act.ro</div>
+  <table class="channel-table">
+    <thead><tr><th>Canal</th><th>Sursă</th><th>Vizite</th></tr></thead>
+    <tbody>
+      <tr><td>Hub FAQ (secțiune "De ce EU-112")</td><td class="mono">relation-box</td><td class="num" id="ch-hub">—</td></tr>
+      <tr><td>Pagina Mulțumim (ofertă documente)</td><td class="mono">thank-you</td><td class="num" id="ch-thankyou">—</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">Detaliu pe canal — spre eu-112.ro</div>
+  <table class="channel-table">
+    <thead><tr><th>Canal</th><th>Sursă</th><th>Vizite</th></tr></thead>
+    <tbody>
+      <tr><td>Navigație principală</td><td class="mono">nav</td><td class="num" id="ch-nav">—</td></tr>
+      <tr><td>Secțiune Contact</td><td class="mono">contact-channel</td><td class="num" id="ch-contact">—</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    Contoare via CountAPI.xyz (serviciu extern, fără cont). Traficul UTM se înregistrează doar dacă vizitatorul ajunge prin linkurile marcate — navigarea directă (tastarea URL-ului) nu apare aici, doar în totalul general de vizite.
+  </div>
+</div>
+
+<script>
+async function getCount(namespace, key){
+  try{
+    var resp = await fetch('https://api.countapi.xyz/get/' + namespace + '/' + key);
+    if(!resp.ok) return null;
+    var data = await resp.json();
+    return typeof data.value === 'number' ? data.value : null;
+  } catch(e){
+    return null;
+  }
+}
+
+function setStat(id, value){
+  var el = document.getElementById(id);
+  if(el) el.textContent = value === null ? '0' : value.toLocaleString('ro-RO');
+}
+
+async function loadStats(){
+  ['stat-sitewide','stat-to-eu-ai-act','stat-from-eu-ai-act','ch-hub','ch-thankyou','ch-nav','ch-contact',
+   'stat-gate-shown','ch-gate-shown','ch-gate-submitted','ch-gate-declined','ch-gate-decline-rate'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.textContent = '…';
+  });
+
+  var sitewide = await getCount('eu-112-ro', 'sitewide');
+  setStat('stat-sitewide', sitewide);
+
+  var gateShown = await getCount('eu-112-ro', 'gate-shown');
+  var gateSubmitted = await getCount('eu-112-ro', 'gate-email-submitted');
+  var shownN = gateShown || 0;
+  var submittedN = gateSubmitted || 0;
+  var declinedN = Math.max(0, shownN - submittedN);
+  var rate = shownN > 0 ? ((declinedN / shownN) * 100).toFixed(1) : '—';
+  setStat('ch-gate-shown', shownN);
+  setStat('ch-gate-submitted', submittedN);
+  setStat('ch-gate-declined', declinedN);
+  document.getElementById('ch-gate-decline-rate').textContent = rate === '—' ? '—' : rate + '%';
+  document.getElementById('stat-gate-shown').textContent = shownN.toLocaleString('ro-RO') + ' / ' + submittedN.toLocaleString('ro-RO');
+
+  var chHub = await getCount('eu-ai-act-ro', 'from-eu-112-ro-hub');
+  var chThankYou = await getCount('eu-ai-act-ro', 'from-eu-112-ro-thank-you');
+  setStat('ch-hub', chHub);
+  setStat('ch-thankyou', chThankYou);
+  setStat('stat-to-eu-ai-act', (chHub || 0) + (chThankYou || 0));
+
+  var chNav = await getCount('eu-112-ro', 'from-eu-ai-act-ro-nav');
+  var chContact = await getCount('eu-112-ro', 'from-eu-ai-act-ro-contact-channel');
+  setStat('ch-nav', chNav);
+  setStat('ch-contact', chContact);
+  setStat('stat-from-eu-ai-act', (chNav || 0) + (chContact || 0));
+}
+
+loadStats();
+</script>
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="footer-dial">112</span> EU-112</div>
+      <p class="footer-tagline">Linia de întrebări gratuite despre EU AI Act.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Linkuri rapide</div>
+      <a href="/">Acasă</a>
+      <a href="/faq-hub.html">FAQ Hub</a>
+      <a href="/faq.html">Toate întrebările</a>
+      <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=footer">eu-ai-act.ro</a>
+      <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
+      <a href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    EU-112 este un serviciu <strong style="color:var(--gold);">AiVenture S.R.L.</strong> · CUI 51415878 · București, România · Nu constituie consultanță juridică
+  </div>
+</footer>
+</body>
+</html>

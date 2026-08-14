@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Hub — Toate categoriile EU AI Act | EU-112</title>
+<meta name="description" content="Hub central cu toate cele 100 de categorii de întrebări despre EU AI Act, grupate pe 8 teme majore — roluri, risc ridicat, transparență, GPAI, guvernanță, conformitate.">
+<link rel="canonical" href="https://eu-112.ro/faq-hub.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EU-112">
+<meta property="og:url" content="https://eu-112.ro/faq-hub.html">
+<meta property="og:title" content="FAQ Hub — Toate categoriile EU AI Act">
+<meta property="og:description" content="100 de categorii, grupate pe 8 teme majore. 1000 de întrebări răspunsuri despre EU AI Act.">
+<meta property="og:image" content="https://eu-112.ro/assets/images/og-image.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:locale" content="ro_RO">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FAQ Hub — Toate categoriile EU AI Act">
+<meta name="twitter:description" content="100 de categorii, grupate pe 8 teme majore. 1000 de întrebări răspunsuri despre EU AI Act.">
+<meta name="twitter:image" content="https://eu-112.ro/assets/images/og-image.webp">
+
+<meta name="theme-color" content="#0a0a0a">
+<meta name="generator" content="AiVenture">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0a0a0a;--panel:#131310;--panel2:#181812;--gold:#f0c14b;--gold-dim:#a8863a;--text:#f5f5f0;--muted:#a8a89c;--line:#26261e;--green:#4caf6b;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',Arial,sans-serif;line-height:1.5;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  h1,h2{font-family:'Playfair Display',serif;font-weight:700;}
+  a{color:var(--gold);text-decoration:none;}
+
+  header{padding:14px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,10,10,.92);
+    backdrop-filter:blur(10px);z-index:10;display:flex;justify-content:space-between;align-items:center;}
+  header a.back{font-size:13px;color:var(--muted);text-decoration:none;}
+  .count{font-size:11px;color:var(--gold);font-family:'IBM Plex Mono',monospace;}
+  .header-right{display:flex;align-items:center;gap:12px;}
+  .visitor-count{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);
+    font-family:'IBM Plex Mono',monospace;padding:3px 9px;background:var(--panel);
+    border:1px solid var(--line);border-radius:20px;}
+  .visitor-count svg{opacity:.75;}
+  .visitor-count #visitor-count-num{color:var(--gold);font-weight:600;}
+
+  .hero{padding:44px 20px 20px;text-align:center;}
+  .hero h1{font-size:28px;margin-bottom:10px;}
+  .hero p{color:var(--muted);font-size:14px;max-width:620px;margin:0 auto;}
+  .hero .stats{display:flex;justify-content:center;gap:28px;margin-top:20px;flex-wrap:wrap;}
+  .hero .stat{text-align:center;}
+  .hero .stat .n{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold);}
+  .hero .stat .l{font-size:10px;color:var(--muted);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;}
+
+  .search-wrap{max-width:600px;margin:24px auto 0;padding:0 20px;}
+  .quick-searches{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:10px;justify-content:center;}
+  .qs-label{font-size:11px;color:var(--muted);font-family:'IBM Plex Mono',monospace;margin-right:2px;}
+  .qs-chip{background:var(--panel);border:1px solid var(--line);color:var(--gold);
+    font-size:12px;padding:5px 13px;border-radius:20px;cursor:pointer;transition:all .15s;
+    font-family:'Inter',sans-serif;}
+  .qs-chip:hover{border-color:var(--gold-dim);background:var(--panel2);}
+  .search-box{width:100%;background:var(--panel);border:1.5px solid var(--line);border-radius:14px;padding:13px 18px;
+    color:var(--text);font-size:14.5px;font-family:'Inter',sans-serif;outline:none;}
+  .search-box:focus{border-color:var(--gold);}
+  .search-box::placeholder{color:#6b6b60;}
+
+  .wrap{max-width:960px;margin:0 auto;padding:32px 20px 60px;}
+  .macro-group{margin-bottom:36px;}
+  .macro-group h2{font-size:18px;color:var(--gold);margin-bottom:14px;border-bottom:1px solid var(--line);padding-bottom:8px;}
+  .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;}
+  .cat-card-wrap{margin:0;font-weight:normal;}
+  .cat-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+    display:flex;flex-direction:column;gap:5px;transition:border-color .15s, transform .15s;}
+  .cat-card:hover{border-color:var(--gold-dim);transform:translateY(-1px);}
+  .cat-num{font-size:10px;color:var(--gold);}
+  .cat-name{font-size:13.5px;color:var(--text);font-weight:600;}
+  .ans-badge{font-size:10px;color:var(--green);}
+  .pending-badge{font-size:10px;color:#6b6b60;}
+  .cat-card-wrap.hidden{display:none;}
+  .macro-group.hidden{display:none;}
+  .no-results{text-align:center;color:var(--muted);padding:40px 20px;display:none;}
+
+  footer{border-top:1px solid var(--line);padding:28px 20px;text-align:center;color:var(--muted);font-size:12px;}
+
+  .breadcrumb{max-width:960px;margin:14px auto 0;padding:0 20px;display:flex;align-items:center;gap:6px;
+    font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;}
+  .breadcrumb a{color:var(--muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--gold);}
+  .breadcrumb .sep{color:#4a4a42;}
+  .breadcrumb .current{color:var(--gold);}
+
+  .byline{max-width:760px;margin:18px auto 0;padding:14px 18px;background:var(--panel);
+    border:1px solid var(--line);border-radius:10px;font-size:12px;color:var(--muted);text-align:center;}
+  .byline-name{color:var(--gold);font-weight:700;}
+  .byline-links{margin-top:6px;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 10px;font-size:11px;}
+  .byline-links a{color:var(--muted);text-decoration:none;}
+  .byline-links a:hover{color:var(--gold);text-decoration:underline;}
+
+  .facts-wrap{max-width:960px;margin:0 auto 32px;padding:0 20px;}
+  .facts-title{font-size:16px;color:var(--gold);margin-bottom:12px;text-align:center;}
+  .facts-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:12.5px;}
+  .facts-table th{background:var(--panel2);color:var(--gold);text-align:left;padding:9px 12px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;}
+  .facts-table td{padding:9px 12px;border-top:1px solid var(--line);color:var(--text);}
+  .facts-table td:nth-child(2){color:var(--gold);font-weight:600;white-space:nowrap;}
+  .facts-table td:nth-child(3){color:var(--muted);font-size:11px;white-space:nowrap;}
+  .facts-note{font-size:11px;color:#6b6b60;margin-top:10px;text-align:center;}
+
+  .differentiator-wrap{max-width:960px;margin:0 auto 32px;padding:0 20px;}
+  .diff-title{font-size:18px;color:var(--gold);margin-bottom:6px;text-align:center;}
+  .diff-sub{font-size:13px;color:var(--muted);text-align:center;margin-bottom:20px;max-width:640px;margin-left:auto;margin-right:auto;}
+  .persona-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:22px;}
+  .persona-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;}
+  .persona-card .role{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:8px;}
+  .persona-card h3{font-size:15px;margin-bottom:6px;}
+  .persona-card p{font-size:13px;color:var(--muted);line-height:1.5;}
+  .relation-box{background:#141410;border:1px solid var(--gold-dim);border-radius:12px;padding:20px 22px;
+    display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;}
+  .relation-box .col{flex:1;min-width:220px;}
+  .relation-box .col-title{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;}
+  .relation-box .col p{font-size:13px;color:var(--text);line-height:1.5;}
+  .relation-arrow{align-self:center;color:var(--gold-dim);font-size:22px;padding:0 4px;}
+  .site-footer{border-top:1px solid var(--line);padding:32px 20px 20px;margin-top:20px;}
+  .footer-wrap{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px;margin-bottom:22px;}
+  .footer-col-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;
+    font-family:'IBM Plex Mono',monospace;margin-bottom:10px;}
+  .footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:7px;}
+  .footer-col a:hover{color:var(--gold);}
+  .footer-brand{font-weight:800;font-size:16px;color:var(--text);margin-bottom:6px;}
+  .footer-dial{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
+    border-radius:50%;background:#c90016;color:#fff;font-size:9px;font-weight:800;margin-right:5px;}
+  .footer-tagline{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .footer-legal{max-width:960px;margin:0 auto;padding-top:16px;border-top:1px solid var(--line);
+    font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6;}
+  @media (max-width:600px){.footer-wrap{grid-template-columns:1fr;gap:20px;}}
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eu-112.ro/#organization", "name": "EU-112", "alternateName": "AiVenture S.R.L.", "url": "https://eu-112.ro/", "logo": {"@type": "ImageObject", "url": "https://eu-112.ro/assets/images/logo.webp"}, "sameAs": ["https://eu-ai-act.ro/"]}, {"@type": "WebSite", "@id": "https://eu-112.ro/#website", "url": "https://eu-112.ro/", "name": "EU-112", "publisher": {"@id": "https://eu-112.ro/#organization"}, "inLanguage": "ro"}, {"@type": "WebPage", "@id": "https://eu-112.ro/faq-hub.html#webpage", "url": "https://eu-112.ro/faq-hub.html", "name": "FAQ Hub — Toate categoriile EU AI Act", "description": "Hub central cu toate cele 100 de categorii de întrebări despre EU AI Act, grupate pe 8 teme majore.", "isPartOf": {"@id": "https://eu-112.ro/#website"}, "about": {"@id": "https://eu-112.ro/#organization"}, "inLanguage": "ro", "datePublished": "2026-08-10", "dateModified": "2026-08-11", "author": {"@id": "https://eu-112.ro/#person-dan-ionescu"}}, {"@type": "BreadcrumbList", "@id": "https://eu-112.ro/faq-hub.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "EU-112", "item": "https://eu-112.ro/"}, {"@type": "ListItem", "position": 2, "name": "FAQ Hub", "item": "https://eu-112.ro/faq-hub.html"}]}, {"@type": "Person", "@id": "https://eu-112.ro/#person-dan-ionescu", "name": "Dan Ionescu", "jobTitle": "CEO & Founder", "worksFor": {"@id": "https://eu-112.ro/#organization"}, "url": "https://ro.linkedin.com/in/dan-ionesco-a856082a0", "sameAs": ["https://ro.linkedin.com/in/dan-ionesco-a856082a0", "https://www.linkedin.com/company/107338970", "https://www.linkedin.com/showcase/5thelement-ai/", "https://www.crunchbase.com/organization/aiventure-s-r-l", "https://www.facebook.com/people/Aiventure/61573220584246", "https://x.com/aipath512", "https://www.youtube.com/@AIVenture-q8u", "https://medium.com/@aipath512"]}]}
+</script>
+</head>
+<body>
+<header>
+  <a class="back" href="/">← EU-112.ro</a>
+  <span class="header-right">
+    <span class="visitor-count" id="visitor-count" title="Vizitatori pe această pagină">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      <span id="visitor-count-num">—</span>
+    </span>
+    <span class="count">100 categorii · 1000/1000 răspunsuri</span>
+  </span>
+</header>
+
+<script>
+  (function(){
+    fetch('https://api.countapi.xyz/hit/eu-112-ro/sitewide')
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var el = document.getElementById('visitor-count-num');
+        if(el && data && typeof data.value === 'number'){
+          el.textContent = data.value.toLocaleString('ro-RO');
+        }
+      })
+      .catch(function(){
+        var el = document.getElementById('visitor-count-num');
+        if(el) el.textContent = '—';
+      });
+  })();
+</script>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="/">EU-112</a><span class="sep">/</span><span class="current">FAQ Hub</span>
+</nav>
+
+<div class="hero">
+  <h1>Hub-ul FAQ — toate categoriile <span style="color:var(--gold);">EU AI Act</span></h1>
+  <p>100 de categorii, grupate pe 8 teme majore. Apasă pe oricare pentru a sări direct la secțiunea ei din pagina completă de 1000 de întrebări.</p>
+  <p style="font-size:12px;color:#6b6b60;margin-top:10px;">Bazat pe Regulamentul (UE) 2024/1689, actualizat cu modificările din Regulamentul (UE) 2026/1744 (Omnibus, 8 iulie 2026) · ultima actualizare 11 august 2026 · <span id="live-clock">—</span> · răspunsuri orientative, nu consultanță juridică</p>
+  <script>
+    function tickHub(){
+      var now = new Date();
+      var el = document.getElementById('live-clock');
+      if(el){ el.textContent = 'ora curentă ' + now.toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit',second:'2-digit'}); }
+    }
+    tickHub(); setInterval(tickHub, 1000);
+  </script>
+  
+  <div class="byline">
+    <span class="byline-name">Scris de Dan Ionescu</span> — CEO &amp; Fondator, AiVenture S.R.L.
+    <div class="byline-links"><a href="https://ro.linkedin.com/in/dan-ionesco-a856082a0" rel="noopener" target="_blank">LinkedIn (personal)</a> · <a href="https://www.linkedin.com/company/107338970" rel="noopener" target="_blank">LinkedIn (companie)</a> · <a href="https://www.linkedin.com/showcase/5thelement-ai/" rel="noopener" target="_blank">LinkedIn (5thelement.ai)</a> · <a href="https://www.crunchbase.com/organization/aiventure-s-r-l" rel="noopener" target="_blank">Crunchbase</a> · <a href="https://www.facebook.com/people/Aiventure/61573220584246" rel="noopener" target="_blank">Facebook</a> · <a href="https://x.com/aipath512" rel="noopener" target="_blank">X</a> · <a href="https://www.youtube.com/@AIVenture-q8u" rel="noopener" target="_blank">YouTube</a> · <a href="https://api.whatsapp.com/send/?phone=40737123540" rel="noopener" target="_blank">WhatsApp</a> · <a href="https://medium.com/@aipath512" rel="noopener" target="_blank">Medium</a></div>
+  </div>
+<div class="stats">
+    <div class="stat"><div class="n">100</div><div class="l">Categorii</div></div>
+    <div class="stat"><div class="n">1000</div><div class="l">Răspunsuri gata</div></div>
+    <div class="stat"><div class="n">8</div><div class="l">Teme majore</div></div>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <input class="search-box" id="search" type="text" placeholder="Caută o categorie..." oninput="filterCats(this.value)">
+  <div class="quick-searches">
+    <span class="qs-label">Căutări frecvente:</span>
+    <button class="qs-chip" onclick="quickSearch('chatbot')">Chatbot</button>
+    <button class="qs-chip" onclick="quickSearch('risc')">Risc</button>
+    <button class="qs-chip" onclick="quickSearch('gdpr')">GDPR</button>
+    <button class="qs-chip" onclick="quickSearch('incidente')">Incidente</button>
+  </div>
+</div>
+
+<div class="facts-wrap">
+  <h2 class="facts-title">Termene cheie — actualizate cu Omnibus-ul (Regulamentul (UE) 2026/1744, 8 iulie 2026)</h2>
+  <table class="facts-table">
+    <thead>
+      <tr><th>Obligație</th><th>Termen</th><th>Sursă</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Transparență (chatboturi, deepfake, conținut generat) — Art. 50</td><td>2 august 2026</td><td>Regulamentul (UE) 2024/1689</td></tr>
+      <tr><td>Sisteme high-risk — Anexa III (recrutare, educație, credit etc.)</td><td>2 decembrie 2027</td><td>Amânat prin Omnibus, Art. 6 alin. 2</td></tr>
+      <tr><td>Sisteme high-risk — Anexa I (componente de siguranță în produse)</td><td>2 august 2028</td><td>Amânat prin Omnibus, Art. 6 alin. 1</td></tr>
+      <tr><td>Notificare incident grav — termen standard</td><td>15 zile</td><td>Art. 73</td></tr>
+      <tr><td>Notificare incident grav — deces sau încălcare gravă a drepturilor</td><td>2 zile</td><td>Art. 73</td></tr>
+      <tr><td>Notificare incident grav — deces, cu investigație suplimentară</td><td>10 zile</td><td>Art. 73</td></tr>
+      <tr><td>Retenție documentație tehnică (provider)</td><td>minim 10 ani</td><td>Art. 18</td></tr>
+      <tr><td>Retenție loguri (deployer)</td><td>minim 6 luni</td><td>Art. 26 alin. 5</td></tr>
+    </tbody>
+  </table>
+  <p class="facts-note">Toate termenele reflectă modificările aduse de Regulamentul (UE) 2026/1744 (Omnibus) — multe surse online mai vechi arată încă termenul inițial de 2 august 2026 pentru toate sistemele high-risk.</p>
+</div>
+
+<div class="differentiator-wrap">
+  <h2 class="diff-title">De ce EU-112, nu direct eu-ai-act.ro?</h2>
+  <p class="diff-sub">EU-112 răspunde ca la 112 — adaptat la cine ești, nu un formular generic. Fiecare persoană primește un unghi diferit la aceeași întrebare.</p>
+
+  <div class="persona-grid">
+    <div class="persona-card">
+      <div class="role">Salariat</div>
+      <h3>„Sunt eu răspunzător?"</h3>
+      <p>Întrebi despre ce folosești tu direct — ChatGPT la un raport, un chatbot cu care vorbești. Răspunsul se concentrează pe expunerea ta personală, nu pe obligațiile firmei.</p>
+    </div>
+    <div class="persona-card">
+      <div class="role">Freelancer / PFA</div>
+      <h3>„Ce declar clientului?"</h3>
+      <p>Întrebi despre livrarea serviciului — ce trebuie să dezvălui, ce clauze să adaugi în ofertă, cum te protejezi când folosești AI pentru un client.</p>
+    </div>
+    <div class="persona-card">
+      <div class="role">Patron / SRL</div>
+      <h3>„Ce risc are firma?"</h3>
+      <p>Întrebi despre organizație — inventar, guvernanță, conformitate la nivel de companie. De aici pornești, dacă vrei, spre pachetul complet de documente.</p>
+    </div>
+  </div>
+
+  <div class="relation-box">
+    <div class="col">
+      <div class="col-title">EU-112.ro — aici</div>
+      <p>Linia de întrebări, gratuită. Răspunde imediat, adaptat la rolul tău, din corpusul complet al legii. Nu generează documente.</p>
+    </div>
+    <div class="relation-arrow">→</div>
+    <div class="col">
+      <div class="col-title"><a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=hub&utm_campaign=relation-box" style="color:var(--gold);">eu-ai-act.ro — pasul următor</a></div>
+      <p>Dacă ai nevoie de dovadă scrisă — cele 70 de documente de conformitate, generate cu datele firmei tale, verificabile la distanță (RRVI). <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=hub&utm_campaign=relation-box" style="color:var(--gold);text-decoration:underline;">Mergi la eu-ai-act.ro →</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" id="wrap">
+
+    <div class="macro-group">
+      <h2>Bazele Regulamentului</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-1">
+        <span class="cat-num mono">001</span>
+        <span class="cat-name">Generalități</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-2">
+        <span class="cat-num mono">002</span>
+        <span class="cat-name">Aplicabilitate</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-3">
+        <span class="cat-num mono">003</span>
+        <span class="cat-name">România</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-11">
+        <span class="cat-num mono">011</span>
+        <span class="cat-name">Definiții</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-12">
+        <span class="cat-num mono">012</span>
+        <span class="cat-name">Risc</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-13">
+        <span class="cat-num mono">013</span>
+        <span class="cat-name">Practici interzise</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Roluri și Actori</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-4">
+        <span class="cat-num mono">004</span>
+        <span class="cat-name">Provider</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-5">
+        <span class="cat-num mono">005</span>
+        <span class="cat-name">Deployer</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-6">
+        <span class="cat-num mono">006</span>
+        <span class="cat-name">Importator</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-7">
+        <span class="cat-num mono">007</span>
+        <span class="cat-name">Distribuitor</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-8">
+        <span class="cat-num mono">008</span>
+        <span class="cat-name">Freelancer</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-9">
+        <span class="cat-num mono">009</span>
+        <span class="cat-name">SRL</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-10">
+        <span class="cat-num mono">010</span>
+        <span class="cat-name">Startup</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Practici Sensibile și Interzise</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-14">
+        <span class="cat-num mono">014</span>
+        <span class="cat-name">Manipulare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-15">
+        <span class="cat-num mono">015</span>
+        <span class="cat-name">Exploatarea vulnerabilităților</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-16">
+        <span class="cat-num mono">016</span>
+        <span class="cat-name">Social scoring</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-17">
+        <span class="cat-num mono">017</span>
+        <span class="cat-name">Biometrie</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-18">
+        <span class="cat-num mono">018</span>
+        <span class="cat-name">Recunoașterea emoțiilor</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-19">
+        <span class="cat-num mono">019</span>
+        <span class="cat-name">Recunoaștere facială</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Sisteme cu Risc Ridicat pe Domenii</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-20">
+        <span class="cat-num mono">020</span>
+        <span class="cat-name">Sisteme risc ridicat</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-21">
+        <span class="cat-num mono">021</span>
+        <span class="cat-name">Anexa I</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-22">
+        <span class="cat-num mono">022</span>
+        <span class="cat-name">Anexa III</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-23">
+        <span class="cat-num mono">023</span>
+        <span class="cat-name">Infrastructură critică</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-24">
+        <span class="cat-num mono">024</span>
+        <span class="cat-name">Transport</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-25">
+        <span class="cat-num mono">025</span>
+        <span class="cat-name">Siguranța produselor</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-26">
+        <span class="cat-num mono">026</span>
+        <span class="cat-name">Dispozitive medicale</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-27">
+        <span class="cat-num mono">027</span>
+        <span class="cat-name">Vehicule autonome</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-28">
+        <span class="cat-num mono">028</span>
+        <span class="cat-name">Recrutare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-29">
+        <span class="cat-num mono">029</span>
+        <span class="cat-name">Resurse umane</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-30">
+        <span class="cat-num mono">030</span>
+        <span class="cat-name">Monitorizarea angajaților</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-31">
+        <span class="cat-num mono">031</span>
+        <span class="cat-name">Educație</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-32">
+        <span class="cat-num mono">032</span>
+        <span class="cat-name">Formare profesională</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-33">
+        <span class="cat-num mono">033</span>
+        <span class="cat-name">Credit</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-34">
+        <span class="cat-num mono">034</span>
+        <span class="cat-name">Asigurări</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-35">
+        <span class="cat-num mono">035</span>
+        <span class="cat-name">Servicii esențiale</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-36">
+        <span class="cat-num mono">036</span>
+        <span class="cat-name">Sănătate</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-37">
+        <span class="cat-num mono">037</span>
+        <span class="cat-name">Justiție</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-38">
+        <span class="cat-num mono">038</span>
+        <span class="cat-name">Poliție</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-39">
+        <span class="cat-num mono">039</span>
+        <span class="cat-name">Frontieră/migrație</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-40">
+        <span class="cat-num mono">040</span>
+        <span class="cat-name">Administrație publică</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-41">
+        <span class="cat-num mono">041</span>
+        <span class="cat-name">Alegeri</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Conținut, Marketing și Transparență</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-42">
+        <span class="cat-num mono">042</span>
+        <span class="cat-name">Marketing</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-43">
+        <span class="cat-num mono">043</span>
+        <span class="cat-name">Publicitate</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-44">
+        <span class="cat-num mono">044</span>
+        <span class="cat-name">Social media</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-45">
+        <span class="cat-num mono">045</span>
+        <span class="cat-name">Chatbot</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-46">
+        <span class="cat-num mono">046</span>
+        <span class="cat-name">Conținut generativ</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-47">
+        <span class="cat-num mono">047</span>
+        <span class="cat-name">Deepfake</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-48">
+        <span class="cat-num mono">048</span>
+        <span class="cat-name">Text sintetic</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-49">
+        <span class="cat-num mono">049</span>
+        <span class="cat-name">Imagine generată AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-50">
+        <span class="cat-num mono">050</span>
+        <span class="cat-name">Audio generat AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-51">
+        <span class="cat-num mono">051</span>
+        <span class="cat-name">Video generat AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-66">
+        <span class="cat-num mono">066</span>
+        <span class="cat-name">Transparență</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-67">
+        <span class="cat-num mono">067</span>
+        <span class="cat-name">Articolul 50</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-68">
+        <span class="cat-num mono">068</span>
+        <span class="cat-name">Informarea utilizatorilor</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-69">
+        <span class="cat-num mono">069</span>
+        <span class="cat-name">Etichetare conținut</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-70">
+        <span class="cat-num mono">070</span>
+        <span class="cat-name">Interacțiune AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Modele GPAI și Date</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-52">
+        <span class="cat-num mono">052</span>
+        <span class="cat-name">Modele GPAI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-53">
+        <span class="cat-num mono">053</span>
+        <span class="cat-name">GPAI risc sistemic</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-54">
+        <span class="cat-num mono">054</span>
+        <span class="cat-name">Open source</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-55">
+        <span class="cat-num mono">055</span>
+        <span class="cat-name">API AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-56">
+        <span class="cat-num mono">056</span>
+        <span class="cat-name">Date de antrenare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-57">
+        <span class="cat-num mono">057</span>
+        <span class="cat-name">Calitatea datelor</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-58">
+        <span class="cat-num mono">058</span>
+        <span class="cat-name">Bias algoritmic</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-59">
+        <span class="cat-num mono">059</span>
+        <span class="cat-name">Date personale</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-60">
+        <span class="cat-num mono">060</span>
+        <span class="cat-name">Date sensibile</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-61">
+        <span class="cat-num mono">061</span>
+        <span class="cat-name">AI Act și GDPR</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-62">
+        <span class="cat-num mono">062</span>
+        <span class="cat-name">DPIA</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-63">
+        <span class="cat-num mono">063</span>
+        <span class="cat-name">DPO</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-64">
+        <span class="cat-num mono">064</span>
+        <span class="cat-name">Drepturi de autor</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-65">
+        <span class="cat-num mono">065</span>
+        <span class="cat-name">Licențe AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Guvernanță Internă și Oameni</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-71">
+        <span class="cat-num mono">071</span>
+        <span class="cat-name">Supraveghere umană</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-72">
+        <span class="cat-num mono">072</span>
+        <span class="cat-name">Contestare decizii</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-73">
+        <span class="cat-num mono">073</span>
+        <span class="cat-name">Explicabilitate</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-74">
+        <span class="cat-num mono">074</span>
+        <span class="cat-name">Accesibilitate</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-75">
+        <span class="cat-num mono">075</span>
+        <span class="cat-name">Limbă/localizare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-76">
+        <span class="cat-num mono">076</span>
+        <span class="cat-name">Alfabetizare AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-77">
+        <span class="cat-num mono">077</span>
+        <span class="cat-name">Instruirea angajaților</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-78">
+        <span class="cat-num mono">078</span>
+        <span class="cat-name">Politici interne</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-79">
+        <span class="cat-num mono">079</span>
+        <span class="cat-name">Shadow AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-80">
+        <span class="cat-num mono">080</span>
+        <span class="cat-name">Inventar sisteme AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-81">
+        <span class="cat-num mono">081</span>
+        <span class="cat-name">Guvernanță internă</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-82">
+        <span class="cat-num mono">082</span>
+        <span class="cat-name">Responsabilități</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+
+    <div class="macro-group">
+      <h2>Conformitate, Risc și Operațiuni</h2>
+      <div class="cat-grid">
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-83">
+        <span class="cat-num mono">083</span>
+        <span class="cat-name">Audit</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-84">
+        <span class="cat-num mono">084</span>
+        <span class="cat-name">Conformitate</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-85">
+        <span class="cat-num mono">085</span>
+        <span class="cat-name">Checklist practic</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-86">
+        <span class="cat-num mono">086</span>
+        <span class="cat-name">Documentație tehnică</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-87">
+        <span class="cat-num mono">087</span>
+        <span class="cat-name">Loguri și jurnalizare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-88">
+        <span class="cat-num mono">088</span>
+        <span class="cat-name">Managementul riscului</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-89">
+        <span class="cat-num mono">089</span>
+        <span class="cat-name">Calitate sistem AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-90">
+        <span class="cat-num mono">090</span>
+        <span class="cat-name">Robustețe</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-91">
+        <span class="cat-num mono">091</span>
+        <span class="cat-name">Securitate cibernetică</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-92">
+        <span class="cat-num mono">092</span>
+        <span class="cat-name">Testare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-93">
+        <span class="cat-num mono">093</span>
+        <span class="cat-name">Monitorizare post-piață</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-94">
+        <span class="cat-num mono">094</span>
+        <span class="cat-name">Incidente grave</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-95">
+        <span class="cat-num mono">095</span>
+        <span class="cat-name">Retragere sistem</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-96">
+        <span class="cat-num mono">096</span>
+        <span class="cat-name">Contracte comerciale</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-97">
+        <span class="cat-num mono">097</span>
+        <span class="cat-name">Evaluare furnizori</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-98">
+        <span class="cat-num mono">098</span>
+        <span class="cat-name">Achiziții AI</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-99">
+        <span class="cat-num mono">099</span>
+        <span class="cat-name">Externalizare</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3>
+      <h3 class="cat-card-wrap"><a class="cat-card" href="/faq.html#cat-100">
+        <span class="cat-num mono">100</span>
+        <span class="cat-name">Comunicare cu clienții</span>
+        <span class="ans-badge">10/10 răspunsuri</span>
+      </a></h3></div>
+    </div>
+<div class="no-results" id="no-results">Nicio categorie găsită.</div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="footer-dial">112</span> EU-112</div>
+      <p class="footer-tagline">Linia de întrebări gratuite despre EU AI Act.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Linkuri rapide</div>
+      <a href="/">Acasă</a>
+      <a href="/faq-hub.html">FAQ Hub</a>
+      <a href="/faq.html">Toate întrebările</a>
+      <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=footer">eu-ai-act.ro</a>
+      <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
+      <a href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    EU-112 este un serviciu <strong style="color:var(--gold);">AiVenture S.R.L.</strong> · CUI 51415878 · București, România · Nu constituie consultanță juridică
+  </div>
+</footer>
+
+<script>
+function quickSearch(term){
+  var box = document.getElementById('search');
+  if(box){
+    box.value = term;
+    filterCats(term);
+    box.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+}
+function filterCats(term){
+  term = term.trim().toLowerCase();
+  const groups = document.querySelectorAll('.macro-group');
+  let anyVisible = false;
+  groups.forEach(group => {
+    let groupHasMatch = false;
+    const cards = group.querySelectorAll('.cat-card-wrap');
+    cards.forEach(card => {
+      const name = card.querySelector('.cat-name').textContent.toLowerCase();
+      if(term === '' || name.includes(term)){
+        card.classList.remove('hidden');
+        groupHasMatch = true;
+        anyVisible = true;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    group.classList.toggle('hidden', !groupHasMatch);
+  });
+  document.getElementById('no-results').style.display = anyVisible ? 'none' : 'block';
+}
+</script>
+<script>
+  window.AI_WIDGET_CONFIG = {
+    accent: "#f0c14b",
+    accent2: "#a8863a",
+    bg: "#141410",
+    fontBody: "Inter, Arial, sans-serif",
+    apiBase: "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=",
+    lang: "ro",
+    assistantPage: "/assistant.html",
+    siteName: "EU-112 Assistant",
+    greeting: "Cu ce te pot ajuta legat de EU AI Act?"
+  };
+</script>
+<script src="/assets/js/ai-widget.js" defer></script>
+<script>
+  (function(){
+    var params = new URLSearchParams(window.location.search);
+    var source = params.get('utm_source');
+    if(source === 'eu-ai-act-ro'){
+      var medium = params.get('utm_medium') || 'unknown';
+      fetch('https://api.countapi.xyz/hit/eu-112-ro/from-eu-ai-act-ro-' + medium).catch(function(){});
+      fetch('https://api.countapi.xyz/hit/eu-112-ro/from-eu-ai-act-ro-total').catch(function(){});
+    }
+  })();
+</script>
+</body>
+</html>

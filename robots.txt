@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /intentii.html
+
+Sitemap: https://eu-112.ro/sitemap.xml

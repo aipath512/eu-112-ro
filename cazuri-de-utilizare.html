@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 de cazuri de utilizare AI — EU AI Act | EU-112</title>
+<meta name="description" content="100 de cazuri reale de utilizare a AI, pe roluri (salariat, freelancer, patron SRL) și industrii — recrutare, sănătate, credit, transport, marketing și multe altele — cu obligațiile EU AI Act relevante.">
+<link rel="canonical" href="https://eu-112.ro/cazuri-de-utilizare.html">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Dan Ionescu, AiVenture S.R.L.">
+<meta http-equiv="content-language" content="ro">
+
+<link rel="alternate" hreflang="ro" href="https://eu-112.ro/cazuri-de-utilizare.html">
+<link rel="alternate" hreflang="x-default" href="https://eu-112.ro/cazuri-de-utilizare.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EU-112">
+<meta property="og:url" content="https://eu-112.ro/cazuri-de-utilizare.html">
+<meta property="og:title" content="100 de cazuri de utilizare AI — EU AI Act">
+<meta property="og:description" content="100 de cazuri reale, pe roluri și industrii, cu obligațiile EU AI Act relevante.">
+<meta property="og:image" content="https://eu-112.ro/assets/images/og-image.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="EU-112 — 100 de cazuri de utilizare AI, EU AI Act">
+<meta property="og:locale" content="ro_RO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="100 de cazuri de utilizare AI — EU AI Act">
+<meta name="twitter:description" content="100 de cazuri reale, pe roluri și industrii, cu obligațiile EU AI Act relevante.">
+<meta name="twitter:image" content="https://eu-112.ro/assets/images/og-image.webp">
+<meta name="twitter:image:alt" content="EU-112 — 100 de cazuri de utilizare AI, EU AI Act">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="generator" content="AiVenture">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0a0a0a;--panel:#131310;--panel2:#181812;--gold:#f0c14b;--gold-dim:#a8863a;--text:#f5f5f0;--muted:#a8a89c;--line:#26261e;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',Arial,sans-serif;line-height:1.5;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  h1,h2{font-family:'Playfair Display',serif;font-weight:700;}
+  a{color:var(--gold);text-decoration:none;}
+
+  header{padding:14px 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,10,10,.92);
+    backdrop-filter:blur(10px);z-index:10;display:flex;justify-content:space-between;align-items:center;}
+  header a.back{font-size:13px;color:var(--muted);text-decoration:none;}
+  .count{font-size:11px;color:var(--gold);font-family:'IBM Plex Mono',monospace;}
+
+  .breadcrumb{max-width:960px;margin:14px auto 0;padding:0 20px;display:flex;align-items:center;gap:6px;
+    font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;}
+  .breadcrumb a{color:var(--muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--gold);}
+  .breadcrumb .sep{color:#4a4a42;}
+  .breadcrumb .current{color:var(--gold);}
+
+  .hero{padding:36px 20px 20px;text-align:center;}
+  .hero h1{font-size:27px;margin-bottom:10px;}
+  .hero p{color:var(--muted);font-size:13.5px;max-width:640px;margin:0 auto;}
+
+  .filter-bar{max-width:960px;margin:22px auto 0;padding:0 20px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;}
+  .filter-chip{background:var(--panel);border:1px solid var(--line);color:var(--muted);font-size:11.5px;
+    padding:5px 13px;border-radius:20px;cursor:pointer;font-family:'IBM Plex Mono',monospace;transition:all .15s;}
+  .filter-chip:hover{border-color:var(--gold-dim);color:var(--text);}
+  .filter-chip.active{background:var(--gold);color:#0a0a0a;border-color:var(--gold);font-weight:700;}
+
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 60px;}
+  .case-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;}
+  .persona-section{margin-bottom:36px;}
+  .persona-section.hidden{display:none;}
+  .persona-h2{font-size:19px;color:var(--gold);margin-bottom:14px;padding-bottom:8px;
+    border-bottom:1px solid var(--line);}
+  .persona-h2-count{font-size:12px;color:var(--muted);font-weight:400;}
+  .case-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;
+    display:flex;flex-direction:column;gap:10px;}
+  .case-card.hidden{display:none;}
+  .case-badges{display:flex;gap:6px;flex-wrap:wrap;}
+  .badge-persona{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.03em;
+    padding:3px 9px;border-radius:20px;font-family:'IBM Plex Mono',monospace;}
+  .badge-persona.salariat{background:#1e3a2f;color:#7fd99a;}
+  .badge-persona.freelancer{background:#3a2e1e;color:#e0b46a;}
+  .badge-persona.patron{background:#2e1e3a;color:#c19af0;}
+  .badge-industry{font-size:9.5px;color:var(--muted);background:var(--panel2);padding:3px 9px;border-radius:20px;
+    font-family:'IBM Plex Mono',monospace;}
+  .case-card h3{font-size:15px;color:var(--text);}
+  .case-card .scenario{font-size:12.5px;color:var(--muted);line-height:1.55;}
+  .case-card .question{font-size:12px;color:var(--gold);font-style:italic;border-left:2px solid var(--gold-dim);
+    padding-left:10px;margin-top:2px;}
+  .case-card .pointer{font-size:12px;color:var(--text);line-height:1.5;}
+  .case-card .case-link{font-size:11.5px;color:var(--gold);margin-top:4px;}
+  .case-card .case-link:hover{text-decoration:underline;}
+
+  footer{border-top:1px solid var(--line);padding:28px 20px;text-align:center;color:var(--muted);font-size:12px;}
+  .site-footer{border-top:1px solid var(--line);padding:32px 20px 20px;margin-top:20px;}
+  .footer-wrap{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px;margin-bottom:22px;}
+  .footer-col-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;
+    font-family:'IBM Plex Mono',monospace;margin-bottom:10px;}
+  .footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:7px;}
+  .footer-col a:hover{color:var(--gold);}
+  .footer-brand{font-weight:800;font-size:16px;color:var(--text);margin-bottom:6px;}
+  .footer-dial{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
+    border-radius:50%;background:#c90016;color:#fff;font-size:9px;font-weight:800;margin-right:5px;}
+  .footer-tagline{font-size:12.5px;color:var(--muted);line-height:1.5;}
+  .footer-legal{max-width:960px;margin:0 auto;padding-top:16px;border-top:1px solid var(--line);
+    font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6;}
+  @media (max-width:600px){.footer-wrap{grid-template-columns:1fr;gap:20px;}}
+</style>
+</head>
+<body>
+<header>
+  <a class="back" href="/faq-hub.html">← EU-112.ro</a>
+  <span class="count">100 cazuri · 3 profiluri · 6 funcții AI</span>
+</header>
+
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <a href="/">EU-112</a><span class="sep">/</span><a href="/faq-hub.html">FAQ Hub</a><span class="sep">/</span><span class="current">Cazuri de utilizare</span>
+</nav>
+
+<div class="hero">
+  <h1>100 de cazuri de utilizare <span style="color:var(--gold);">AI</span>, pe roluri și industrii</h1>
+  <p>Cele mai frecvente situații în care AI Act devine relevant — pentru salariat, freelancer/PFA sau patron SRL, în funcție de industrie. Fiecare caz are întrebarea reală pe care ți-ai pune-o și un răspuns orientativ.</p>
+</div>
+
+<div class="filter-bar" id="filter-bar">
+  <button class="filter-chip active" onclick="filterPersona('all', this)">Toate (100)</button>
+  <button class="filter-chip" onclick="filterPersona('salariat', this)">Salariat (13)</button>
+  <button class="filter-chip" onclick="filterPersona('freelancer', this)">Freelancer / PFA (20)</button>
+  <button class="filter-chip" onclick="filterPersona('patron', this)">Patron / SRL (67)</button>
+</div>
+<div class="filter-bar" id="filter-bar-fn">
+  <button class="filter-chip fn-chip active" onclick="filterFn('all', this)">Orice funcție AI</button>
+  <button class="filter-chip fn-chip" onclick="filterFn('informeaza', this)">Informează</button>
+  <button class="filter-chip fn-chip" onclick="filterFn('genereaza', this)">Generează</button>
+  <button class="filter-chip fn-chip" onclick="filterFn('recomanda', this)">Recomandă</button>
+  <button class="filter-chip fn-chip" onclick="filterFn('decide', this)">Decide / Clasifică</button>
+  <button class="filter-chip fn-chip" onclick="filterFn('actioneaza', this)">Acționează</button>
+  <button class="filter-chip fn-chip" onclick="filterFn('supravegheaza', this)">Supraveghează AI</button>
+</div>
+
+<div class="wrap">
+  <section class="persona-section" data-persona-group="salariat">
+    <h2 class="persona-h2">Salariat <span class="persona-h2-count mono">(13 cazuri)</span></h2>
+    <div class="case-grid">
+    <div class="case-card" data-persona="salariat" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">HR / Recrutare</span></div>
+      <h3>Software-ul de recrutare îmi scorează CV-urile candidaților</h3>
+      <p class="scenario">Lucrezi în HR și firma folosește un ATS (applicant tracking system) care clasifică automat candidații pe baza CV-ului.</p>
+      <p class="question">„Trebuie să anunț candidații că sunt evaluați de AI?"</p>
+      <p class="pointer">Recrutarea e listată explicit în Anexa III ca domeniu cu risc ridicat — obligații de transparență și supraveghere umană se aplică, chiar dacă termenul complet e amânat la 2 dec. 2027.</p>
+      <a class="case-link" href="/faq-hub.html#cat-28">Vezi întrebările despre Recrutare →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Servicii financiare</span></div>
+      <h3>Sistemul de scoring decide cine primește credit</h3>
+      <p class="scenario">Ești consilier bancar și un algoritm calculează automat scorul de risc al fiecărui client care cere un credit.</p>
+      <p class="question">„Pot să resping o cerere doar pe baza scorului AI?"</p>
+      <p class="pointer">Sistemele de creditworthiness sunt high-risk sub Anexa III — clientul are dreptul la o explicație și la intervenție umană, nu doar la un verdict automat.</p>
+      <a class="case-link" href="/faq-hub.html#cat-33">Vezi întrebările despre Credit →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Sănătate</span></div>
+      <h3>Un AI sugerează diagnosticul înainte de consultație</h3>
+      <p class="scenario">Ești asistent medical și clinica folosește un sistem de triaj AI care prioritizează pacienții pe baza simptomelor introduse.</p>
+      <p class="question">„Cine răspunde dacă AI-ul greșește prioritizarea?"</p>
+      <p class="pointer">Responsabilitatea clinică rămâne la personalul medical — supravegherea umană e obligatorie, AI-ul poate doar asista decizia, nu o poate înlocui.</p>
+      <a class="case-link" href="/faq-hub.html#cat-36">Vezi întrebările despre Sănătate →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Educație</span></div>
+      <h3>Tezele elevilor sunt corectate automat de AI</h3>
+      <p class="scenario">Ești profesor și școala a introdus un instrument AI care notează automat testele grilă și eseurile scurte.</p>
+      <p class="question">„Un elev poate contesta o notă dată de AI?"</p>
+      <p class="pointer">Evaluarea educațională e high-risk sub Anexa III — elevul/părintele are dreptul la explicație și la recorectare umană la cerere.</p>
+      <a class="case-link" href="/faq-hub.html#cat-31">Vezi întrebările despre Educație →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Call-center</span></div>
+      <h3>Un chatbot preia primele minute din apelul clientului</h3>
+      <p class="scenario">Lucrezi în suport clienți și un chatbot AI răspunde automat la apelurile telefonice sau mesajele inițiale, înainte de a te prelua pe tine.</p>
+      <p class="question">„Clientul știe că vorbește cu un AI, nu cu mine?"</p>
+      <p class="pointer">Art. 50 cere informarea clară a persoanei că interacționează cu un sistem AI, cu excepția cazurilor evidente din context.</p>
+      <a class="case-link" href="/faq-hub.html#cat-45">Vezi întrebările despre Chatbot →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Administrație publică</span></div>
+      <h3>Cetățenii primesc răspunsuri de la un chatbot al primăriei</h3>
+      <p class="scenario">Lucrezi la ghișeul unic al unei instituții publice care a introdus un asistent AI pentru întrebări frecvente ale cetățenilor.</p>
+      <p class="question">„Ce fac dacă AI-ul dă un răspuns greșit unui cetățean?"</p>
+      <p class="pointer">Instituția rămâne responsabilă pentru informația oferită — trebuie păstrat un canal clar de escaladare către un funcționar uman.</p>
+      <a class="case-link" href="/faq-hub.html#cat-40">Vezi întrebările despre Administrație →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Pază / Securitate</span></div>
+      <h3>Accesul în clădire se face prin recunoaștere facială</h3>
+      <p class="scenario">Ești agent de pază și firma a instalat un sistem de recunoaștere facială la intrarea în sediu, pentru angajați și vizitatori.</p>
+      <p class="question">„E legal să scanăm fața fiecărei persoane care intră?"</p>
+      <p class="pointer">Biometria de identificare are reguli stricte — depinde de scop, consimțământ și dacă e în spațiu public sau privat; identificarea în timp real în spații publice e aproape mereu interzisă.</p>
+      <a class="case-link" href="/faq-hub.html#cat-19">Vezi întrebările despre Recunoaștere facială →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Call-center / Voce</span></div>
+      <h3>Un AI vocal sună clienții în locul tău</h3>
+      <p class="scenario">Lucrezi în vânzări/suport și firma folosește un agent vocal AI care sună sau răspunde la telefon clienților, nu doar prin chat text.</p>
+      <p class="question">„Trebuie spus explicit la telefon că e AI, nu om?"</p>
+      <p class="pointer">Da — obligația de informare de la Art. 50 se aplică și interacțiunii vocale, nu doar celei scrise; clientul trebuie să afle clar de la început.</p>
+      <a class="case-link" href="/faq-hub.html#cat-70">Vezi întrebările despre Interacțiune AI →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">IT / Suport tehnic</span></div>
+      <h3>Un AI reconstituie ce s-a întâmplat într-un incident IT</h3>
+      <p class="scenario">Lucrezi în IT și, după o problemă tehnică sau un incident de securitate, un instrument AI analizează logurile pentru a reconstitui cauza.</p>
+      <p class="question">„Raportul generat de AI e suficient pentru autorități?"</p>
+      <p class="pointer">Poate fi punct de plecare, dar dacă incidentul se încadrează ca „grav" (Art. 73), raportul final trebuie validat și asumat de o persoană, cu termenele legale respectate.</p>
+      <a class="case-link" href="/faq-hub.html#cat-94">Vezi întrebările despre Incidente grave →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Bancar</span></div>
+      <h3>Pregătești dosarul de credit cu ajutorul AI, dar tu semnezi recomandarea</h3>
+      <p class="scenario">Lucrezi la o bancă și un AI îți pregătește analiza inițială a unui dosar de credit, pe care tu o revizuiești și o trimiți mai departe spre aprobare.</p>
+      <p class="question">„Dacă AI a scăpat un risc, răspund eu sau sistemul?"</p>
+      <p class="pointer">Cât timp tu semnezi recomandarea finală, răspunderea rămâne a ta — documentează ce ai verificat manual peste analiza AI, nu doar că ai „bifat" rezultatul.</p>
+      <a class="case-link" href="/faq-hub.html#cat-33">Vezi întrebările despre Credit →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Medical</span></div>
+      <h3>Un AI sintetizează istoricul pacientului înainte de consultație</h3>
+      <p class="scenario">Ești asistent medical și un AI rezumă automat foaia de observație și istoricul pacientului, pentru ca medicul să citească mai repede la intrarea în cabinet.</p>
+      <p class="question">„Poate AI să pregătească practic diagnosticul, nu doar rezumatul?"</p>
+      <p class="pointer">Sinteza informației e diferită de sugerarea unui diagnostic — dacă AI-ul trece de la „rezumă" la „recomandă tratament", intră într-o categorie de risc mai strictă.</p>
+      <a class="case-link" href="/faq-hub.html#cat-36">Vezi întrebările despre Sănătate →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Servicii clienți</span></div>
+      <h3>Trebuie să explici clientului o decizie luată cu ajutorul AI</h3>
+      <p class="scenario">Lucrezi în suport clienți și un client cere o explicație clară pentru o decizie (respingere, tarif) influențată de un sistem AI.</p>
+      <p class="question">„Ce sunt obligat să-i pot explica exact?"</p>
+      <p class="pointer">Ai nevoie cel puțin de o explicație inteligibilă a factorilor principali care au dus la decizie — nu de codul intern al algoritmului, dar de logica generală.</p>
+      <a class="case-link" href="/faq-hub.html#cat-73">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="salariat" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona salariat">Salariat</span><span class="badge-industry">Contestarea unei decizii AI</span></div>
+      <h3>Un coleg contestă o decizie luată cu ajutorul unui sistem AI intern</h3>
+      <p class="scenario">Lucrezi în HR/operațiuni și un coleg cere formal reanalizarea unei decizii (bonus, evaluare) influențate de un scor AI intern.</p>
+      <p class="question">„Ce proces trebuie să existe pentru o contestație?"</p>
+      <p class="pointer">Ai nevoie de un canal clar de contestare, cu revizuire umană reală (nu doar re-rularea aceluiași algoritm) și un termen rezonabil de răspuns.</p>
+      <a class="case-link" href="/faq-hub.html#cat-72">Vezi întrebările relevante →</a>
+    </div>
+    </div>
+  </section>
+  <section class="persona-section" data-persona-group="freelancer">
+    <h2 class="persona-h2">Freelancer / PFA <span class="persona-h2-count mono">(20 cazuri)</span></h2>
+    <div class="case-grid">
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Copywriting</span></div>
+      <h3>Folosești ChatGPT pentru textele unui client</h3>
+      <p class="scenario">Ești copywriter independent și generezi articole/texte de marketing cu AI, pe care le livrezi apoi ca produs finit clientului.</p>
+      <p class="question">„Trebuie să-i spun clientului că textul e generat de AI?"</p>
+      <p class="pointer">Nu întotdeauna obligatoriu față de client (poate fi clauză contractuală), dar dacă textul e publicat ca informare a publicului, poate cădea sub obligațiile de etichetare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-46">Vezi întrebările despre Conținut generativ →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Design grafic</span></div>
+      <h3>Generezi imagini AI pentru un brand al unui client</h3>
+      <p class="scenario">Ești designer și folosești unelte AI generative (Midjourney, DALL-E etc.) pentru a produce vizualuri pe care le vinzi ca livrabile.</p>
+      <p class="question">„Ce se întâmplă dacă imaginea seamănă cu o persoană reală?"</p>
+      <p class="pointer">Dacă imaginea generată creează un deepfake realist al unei persoane identificabile, se aplică obligații de dezvăluire — verifică drepturile de imagine separat de AI Act.</p>
+      <a class="case-link" href="/faq-hub.html#cat-49">Vezi întrebările despre Imagine generată AI →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Consultanță juridică</span></div>
+      <h3>Folosești AI pentru research juridic rapid</h3>
+      <p class="scenario">Ești consultant/paralegal independent și folosești un asistent AI pentru a rezuma jurisprudență sau a căuta articole relevante pentru un client.</p>
+      <p class="question">„Pot să livrez direct ce-mi dă AI-ul, fără verificare?"</p>
+      <p class="pointer">Nu — AI-ul poate halucina referințe legale inexistente; verificarea umană a surselor citate rămâne obligația ta profesională, indiferent de AI Act.</p>
+      <a class="case-link" href="/faq-hub.html#cat-37">Vezi întrebările despre Justiție →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Social media / Content</span></div>
+      <h3>Postezi conținut generat de AI pe conturile unui client</h3>
+      <p class="scenario">Administrezi rețelele sociale ale unui brand și publici text, imagini sau video generate integral sau parțial de AI.</p>
+      <p class="question">„Trebuie marcat vizibil ca fiind generat de AI?"</p>
+      <p class="pointer">Art. 50 cere marcarea conținutului sintetic (mai ales deepfake) într-un format detectabil — obligatoriu din 2 august 2026, cu o perioadă de tranziție de 4 luni pentru sistemele deja pe piață.</p>
+      <a class="case-link" href="/faq-hub.html#cat-67">Vezi întrebările despre Articolul 50 →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Recrutare externă</span></div>
+      <h3>Faci screening de candidați pentru mai mulți clienți cu AI</h3>
+      <p class="scenario">Ești recruiter independent și folosești un tool AI pentru a filtra CV-uri, pe care apoi le prezinți diverselor firme client.</p>
+      <p class="question">„Sunt eu responsabil sau clientul care angajează?"</p>
+      <p class="pointer">Responsabilitatea poate fi partajată în lanțul valoric AI (Art. 25) — clarifică prin contract cine e deployer și ce obligații revin fiecărei părți.</p>
+      <a class="case-link" href="/faq-hub.html#cat-28">Vezi întrebările despre Recrutare →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Consultanță contracte</span></div>
+      <h3>Folosești AI ca să verifici clauze într-un contract al clientului</h3>
+      <p class="scenario">Ești consultant independent și rulezi contractele clienților printr-un AI care detectează clauze riscante, termene sau obligații ascunse.</p>
+      <p class="question">„Pot să-mi asum răspunderea profesională pe baza unei analize AI?"</p>
+      <p class="pointer">AI-ul poate accelera prima trecere, dar semnătura și răspunderea profesională rămân ale tale — documentează ce ai verificat manual, separat de output-ul AI.</p>
+      <a class="case-link" href="/faq-hub.html#cat-96">Vezi întrebările despre Contracte comerciale →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Contabilitate</span></div>
+      <h3>Un AI îți clasifică automat facturile și cheltuielile clienților</h3>
+      <p class="scenario">Ești contabil independent și folosești un instrument AI care citește facturi și propune automat categoria contabilă și înregistrarea.</p>
+      <p class="question">„Pot depune declarația doar pe baza clasificării AI?"</p>
+      <p class="pointer">Nu ca practică sigură — verificarea umană a clasificării rămâne obligatorie înainte de depunere; păstrează un jurnal al corecțiilor făcute manual peste sugestiile AI.</p>
+      <a class="case-link" href="/faq-hub.html#cat-86">Vezi întrebările despre Documentație tehnică →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Programare</span></div>
+      <h3>Livrezi clientului cod scris integral de AI</h3>
+      <p class="scenario">Ești dezvoltator independent și folosești un asistent AI care generează cea mai mare parte din codul unui proiect livrat clientului.</p>
+      <p class="question">„Pot livra codul fără să-l testez manual complet?"</p>
+      <p class="pointer">AI Act nu reglementează codul în sine, dar responsabilitatea profesională pentru funcționare și securitate rămâne a ta — testarea rămâne obligatorie, indiferent cine a scris codul.</p>
+      <a class="case-link" href="/faq-hub.html#cat-92">Vezi întrebările despre Testare →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Traduceri</span></div>
+      <h3>Introduci documentele comerciale ale clientului într-un AI de traducere</h3>
+      <p class="scenario">Ești traducător independent și folosești un instrument AI pentru a traduce contracte sau documente comerciale primite de la clienți.</p>
+      <p class="question">„Pot introduce documente confidențiale ale clientului în AI?"</p>
+      <p class="pointer">Depinde de politica de date a instrumentului AI folosit — verifică dacă datele introduse sunt reținute/folosite pentru antrenare, mai ales pentru documente cu date sensibile.</p>
+      <a class="case-link" href="/faq-hub.html#cat-60">Vezi întrebările despre Date sensibile →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Fotografie / Video</span></div>
+      <h3>Modifici imagini cu persoane reale folosind AI</h3>
+      <p class="scenario">Ești fotograf/editor video independent și folosești AI pentru retușare avansată sau modificarea aspectului persoanelor din fotografii/video pentru clienți.</p>
+      <p class="question">„Când devine o simplă retușare o problemă legală?"</p>
+      <p class="pointer">O corecție tehnică minoră (lumină, contrast) nu e manipulare interzisă; dar o modificare care schimbă natura scenei sau creează o reprezentare falsă realistă a unei persoane necesită dezvăluire.</p>
+      <a class="case-link" href="/faq-hub.html#cat-47">Vezi întrebările despre Deepfake →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Training / Formare</span></div>
+      <h3>Generezi materiale de curs cu AI pentru un client corporate</h3>
+      <p class="scenario">Ești formator independent și folosești AI pentru a produce sau completa rapid materiale de curs, sildeuri sau teste pentru clienții tăi.</p>
+      <p class="question">„Cine verifică dacă informația generată de AI e corectă?"</p>
+      <p class="pointer">Verificarea rămâne responsabilitatea ta profesională — AI-ul poate genera informații plauzibile dar greșite; livrarea unui material cu erori factuale rămâne pe numele tău.</p>
+      <a class="case-link" href="/faq-hub.html#cat-77">Vezi întrebările despre Instruirea angajaților →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Consultanță GDPR</span></div>
+      <h3>Oferi consultanță DPO unor firme mici care folosesc AI</h3>
+      <p class="scenario">Ești consultant independent de protecția datelor și ajuți firme mici să evalueze dacă sistemele AI pe care le folosesc respectă GDPR.</p>
+      <p class="question">„Trebuie o DPIA separată pentru fiecare sistem AI folosit?"</p>
+      <p class="pointer">Nu automat pentru toate — DPIA e necesară când prelucrarea prezintă risc ridicat pentru drepturile persoanelor; pentru sistemele AI high-risk, poate fi combinată cu evaluarea impactului asupra drepturilor fundamentale.</p>
+      <a class="case-link" href="/faq-hub.html#cat-62">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Marketing digital</span></div>
+      <h3>Folosești segmentare AI pentru audiențe sensibile</h3>
+      <p class="scenario">Ești specialist marketing independent și folosești AI pentru a segmenta audiențe pe baza comportamentului online al utilizatorilor.</p>
+      <p class="question">„Pot targeta reclame pe baza unor caracteristici sensibile?"</p>
+      <p class="pointer">Nu — targetarea pe caracteristici sensibile (sănătate, orientare, opinii) e restricționată sever de GDPR, indiferent de AI Act; verifică ce date folosește exact algoritmul de segmentare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-59">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Social Media / Influencer</span></div>
+      <h3>Ești creator de conținut și folosești AI pentru postări zilnice</h3>
+      <p class="scenario">Ești influencer/creator independent și folosești AI pentru a genera idei, texte și uneori imagini pentru conturile tale de social media.</p>
+      <p class="question">„Fiecare postare AI trebuie etichetată vizibil?"</p>
+      <p class="pointer">Nu toate — obligația de etichetare vizează mai ales conținutul care ar putea induce în eroare publicul (deepfake, texte informative publicate ca fiind fapt, nu opinie).</p>
+      <a class="case-link" href="/faq-hub.html#cat-69">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Voce / Audio</span></div>
+      <h3>Folosești AI pentru a clona propria voce în reclame</h3>
+      <p class="scenario">Ești creator de conținut audio și folosești AI pentru a genera sau clona voci (inclusiv a ta) pentru reclame sau conținut audio.</p>
+      <p class="question">„Clonarea vocii altcuiva e permisă cu acordul lui?"</p>
+      <p class="pointer">Da, cu consimțământ explicit — fără el, generarea vocii unei persoane reale poate constitui deepfake audio, cu obligație de dezvăluire.</p>
+      <a class="case-link" href="/faq-hub.html#cat-50">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Video / Producție</span></div>
+      <h3>Editezi video corporate cu segmente generate de AI</h3>
+      <p class="scenario">Ești editor video independent și inserezi în materiale corporate segmente generate integral de AI (avataruri, voce-over sintetică).</p>
+      <p class="question">„Clientul trebuie informat că unele segmente sunt generate de AI?"</p>
+      <p class="pointer">Da, mai ales dacă materialul e prezentat ca informativ/oficial — transparența protejează atât clientul cât și publicul final care vede materialul.</p>
+      <a class="case-link" href="/faq-hub.html#cat-51">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Shadow AI</span></div>
+      <h3>Descoperi că folosești instrumente AI neautorizate de clienți</h3>
+      <p class="scenario">Ești freelancer și realizezi că unele instrumente AI pe care le folosești zilnic nu au fost aprobate explicit de clienții pentru care lucrezi.</p>
+      <p class="question">„Trebuie să declar toate instrumentele AI folosite?"</p>
+      <p class="pointer">Recomandat da, mai ales dacă procesezi date ale clientului prin ele — transparența privind stack-ul tehnologic evită neînțelegeri contractuale ulterioare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-79">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Consultanță AI Act</span></div>
+      <h3>Ajuți alte firme mici să înțeleagă dacă AI Act li se aplică</h3>
+      <p class="scenario">Ești consultant independent și prima întrebare pe care ți-o pun clienții e dacă regulamentul chiar li se aplică lor.</p>
+      <p class="question">„Cum stabilesc rapid dacă un client intră sub AI Act?"</p>
+      <p class="pointer">Verifică dacă folosesc/dezvoltă un sistem AI (nu doar automatizare simplă) în activitate profesională, cu efecte asupra unor persoane din UE — de acolo pornește analiza.</p>
+      <a class="case-link" href="/faq-hub.html#cat-2">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Consultanță politică/campanii</span></div>
+      <h3>Ajuți un candidat local cu conținut electoral generat de AI</h3>
+      <p class="scenario">Ești consultant de comunicare independent și ajuți candidați locali la consiliul județean cu materiale de campanie generate parțial cu AI.</p>
+      <p class="question">„Materialele electorale AI au reguli speciale?"</p>
+      <p class="pointer">Da — conținutul electoral generat de AI trebuie să evite manipularea interzisă și, pentru deepfake-uri politice, dezvăluirea originii artificiale devine importantă.</p>
+      <a class="case-link" href="/faq-hub.html#cat-41">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="freelancer" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona freelancer">Freelancer / PFA</span><span class="badge-industry">Modele generale AI (GPAI)</span></div>
+      <h3>Construiești produse mici peste modele GPAI generale</h3>
+      <p class="scenario">Ești dezvoltator independent și construiești mini-aplicații care folosesc modele GPAI generale (nu antrenate de tine) pentru diverse funcții.</p>
+      <p class="question">„Trebuie documentație tehnică completă ca la un model propriu?"</p>
+      <p class="pointer">Nu la fel de extinsă — dar documentează clar ce model folosești, versiunea și limitările cunoscute, pentru transparență față de clienții tăi finali.</p>
+      <a class="case-link" href="/faq-hub.html#cat-52">Vezi întrebările relevante →</a>
+    </div>
+    </div>
+  </section>
+  <section class="persona-section" data-persona-group="patron">
+    <h2 class="persona-h2">Patron / SRL <span class="persona-h2-count mono">(67 cazuri)</span></h2>
+    <div class="case-grid">
+    <div class="case-card" data-persona="patron" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Clinică medicală</span></div>
+      <h3>Clinica ta folosește AI pentru triajul pacienților</h3>
+      <p class="scenario">Deții o clinică privată și ai implementat un sistem AI care prioritizează pacienții în funcție de urgența simptomelor raportate.</p>
+      <p class="question">„Ce documentație trebuie să am pregătită pentru un control?"</p>
+      <p class="pointer">Ca deployer al unui sistem high-risk, ai nevoie de inventar, evaluare de risc, dovada supravegherii umane și instrucțiunile primite de la furnizor.</p>
+      <a class="case-link" href="/faq-hub.html#cat-36">Vezi întrebările despre Sănătate →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Asigurări</span></div>
+      <h3>Un algoritm stabilește prima de asigurare a fiecărui client</h3>
+      <p class="scenario">Conduci o firmă de brokeraj și folosești un model AI care calculează automat prima de asigurare pe baza profilului de risc al clientului.</p>
+      <p class="question">„Riscă firma amendă dacă algoritmul e discriminatoriu?"</p>
+      <p class="pointer">Da — evaluarea riscului și stabilirea prețurilor pentru asigurări de viață/sănătate sunt explicit high-risk sub Anexa III; bias-ul netestat e un risc de conformitate real.</p>
+      <a class="case-link" href="/faq-hub.html#cat-34">Vezi întrebările despre Asigurări →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Transport / Logistică</span></div>
+      <h3>AI optimizează rutele și mentenanța flotei</h3>
+      <p class="scenario">Ai o firmă de transport marfă și folosești AI pentru planificarea rutelor și predicția defecțiunilor la vehicule.</p>
+      <p class="question">„Această utilizare e considerată risc ridicat?"</p>
+      <p class="pointer">De regulă nu, dacă AI-ul doar optimizează logistica fără impact direct asupra siguranței pasagerilor — verifică totuși dacă vehiculele intră sub Anexa I (componente de siguranță).</p>
+      <a class="case-link" href="/faq-hub.html#cat-24">Vezi întrebările despre Transport →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Marketing / Agenție</span></div>
+      <h3>Agenția ta generează reclame integral cu AI pentru clienți</h3>
+      <p class="scenario">Conduci o agenție de marketing și produci campanii publicitare (text, imagine, video) generate de instrumente AI, livrate ca produs finit.</p>
+      <p class="question">„Ce risc legal am dacă un client nu vrea să dezvăluie că reclama e AI?"</p>
+      <p class="pointer">Obligația de etichetare aparține de regulă celui care publică materialul (deployer) — clarifică prin contract cine poartă această responsabilitate față de public.</p>
+      <a class="case-link" href="/faq-hub.html#cat-42">Vezi întrebările despre Marketing →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Retail / E-commerce</span></div>
+      <h3>Magazinul online recomandă produse personalizat cu AI</h3>
+      <p class="scenario">Ai un magazin online și folosești un sistem AI de recomandare care personalizează produsele afișate fiecărui client, pe baza istoricului de navigare.</p>
+      <p class="question">„Clienții trebuie informați despre personalizarea AI?"</p>
+      <p class="pointer">De regulă e transparență de bază (GDPR + bune practici comerciale), nu neapărat obligație explicită AI Act — dar comunicarea clară crește încrederea clienților.</p>
+      <a class="case-link" href="/faq-hub.html#cat-100">Vezi întrebările despre Comunicare cu clienții →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">IT / Integrator</span></div>
+      <h3>Firma ta dezvoltă soluții AI pentru alte companii</h3>
+      <p class="scenario">Conduci o firmă de software și construiești sisteme AI personalizate (recrutare, scoring, chatbot) pe care le vinzi altor firme sub brandul tău.</p>
+      <p class="question">„Sunt provider sau doar deployer pentru clienții mei?"</p>
+      <p class="pointer">Dacă dezvolți și pui sistemul pe piață sub numele tău, ești provider — cu obligații complete de documentație tehnică, management de risc și evaluare de conformitate.</p>
+      <a class="case-link" href="/faq-hub.html#cat-4">Vezi întrebările despre Provider →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Imobiliare</span></div>
+      <h3>Un algoritm scorează bonitatea chiriașilor potențiali</h3>
+      <p class="scenario">Deții o agenție imobiliară și folosești un sistem AI care evaluează și clasifică potențialii chiriași pe baza istoricului financiar și comportamental.</p>
+      <p class="question">„Se încadrează asta la social scoring interzis?"</p>
+      <p class="pointer">Depinde de scop și proporționalitate — un scor limitat la solvabilitate, cu criterii clare și relevante, diferă de un scor general de comportament social; analiza cazului contează.</p>
+      <a class="case-link" href="/faq-hub.html#cat-16">Vezi întrebările despre Social scoring →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">HR / Agenție recrutare</span></div>
+      <h3>Agenția ta face screening masiv de candidați cu AI, pentru zeci de clienți</h3>
+      <p class="scenario">Conduci o agenție de recrutare și folosești un sistem AI propriu pentru a filtra mii de CV-uri pe an, pentru firmele client din portofoliu.</p>
+      <p class="question">„Ce se întâmplă dacă un candidat contestă respingerea automată?"</p>
+      <p class="pointer">Ca operator al sistemului la scară mare, ai nevoie de proces documentat de contestare, revizuire umană efectivă și dovezi păstrate pentru fiecare decizie automatizată semnificativă.</p>
+      <a class="case-link" href="/faq-hub.html#cat-29">Vezi întrebările despre Resurse umane →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Achiziții</span></div>
+      <h3>Compari furnizori și contracte cu ajutorul AI</h3>
+      <p class="scenario">Ai o firmă mică și folosești un AI care compară automat ofertele, prețurile și condițiile mai multor furnizori, înainte să decizi cu cine lucrezi.</p>
+      <p class="question">„Dacă AI-ul recomandă greșit un furnizor, cine răspunde?"</p>
+      <p class="pointer">AI-ul rămâne instrument de informare — decizia finală de achiziție e a ta; păstrează totuși o urmă a criteriilor folosite, pentru propria protecție contractuală.</p>
+      <a class="case-link" href="/faq-hub.html#cat-97">Vezi întrebările despre Evaluare furnizori →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Retail / Prevenirea fraudei</span></div>
+      <h3>Un AI detectează tranzacții suspecte în magazinul tău</h3>
+      <p class="scenario">Ai un magazin (fizic sau online) și folosești un sistem AI care semnalează automat tranzacții sau comenzi cu pattern de fraudă.</p>
+      <p class="question">„Pot bloca automat un cont pe baza alertei AI?"</p>
+      <p class="pointer">Dacă decizia afectează direct accesul unei persoane la un serviciu, ai nevoie de verificare umană înainte de blocare definitivă, nu doar de alerta automată.</p>
+      <a class="case-link" href="/faq-hub.html#cat-91">Vezi întrebările despre Securitate cibernetică →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="predicteaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Producție / Service</span></div>
+      <h3>AI anticipează când se defectează un utilaj</h3>
+      <p class="scenario">Ai un atelier sau o linie de producție mică și folosești un sistem AI care prezice defecțiunile echipamentelor pe baza senzorilor.</p>
+      <p class="question">„Devine asta un sistem de siguranță reglementat?"</p>
+      <p class="pointer">Dacă AI-ul doar programează mentenanța (nu controlează direct utilajul), riscul e de regulă redus — dar verifică dacă echipamentul intră sub Anexa I ca produs reglementat.</p>
+      <a class="case-link" href="/faq-hub.html#cat-90">Vezi întrebările despre Robustețe →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Securitate fizică</span></div>
+      <h3>Camerele magazinului folosesc AI pentru a detecta comportamente</h3>
+      <p class="scenario">Ai un spațiu comercial cu camere video conectate la un sistem AI care semnalează comportamente suspecte (nu doar înregistrare simplă).</p>
+      <p class="question">„E diferit legal față de o cameră de supraveghere obișnuită?"</p>
+      <p class="pointer">Da — analiza video cu AI poate intra sub reguli de biometrie/profilare, mai stricte decât înregistrarea video simplă; verifică scopul exact și dacă identifică persoane.</p>
+      <a class="case-link" href="/faq-hub.html#cat-17">Vezi întrebările despre Biometrie →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Retail / Prețuri</span></div>
+      <h3>Prețurile din magazinul tău online se ajustează automat cu AI</h3>
+      <p class="scenario">Ai un magazin online și un sistem AI ajustează automat prețurile pe baza cererii, stocului sau comportamentului vizitatorilor.</p>
+      <p class="question">„E legal ca doi clienți să vadă prețuri diferite la același produs?"</p>
+      <p class="pointer">Practica există legal în multe cazuri, dar riscă discriminare dacă prețul variază pe criterii sensibile (locație, profil personal) — documentează criteriile folosite de algoritm.</p>
+      <a class="case-link" href="/faq-hub.html#cat-100">Vezi întrebările despre Comunicare cu clienții →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Guvernanță AI</span></div>
+      <h3>Vrei un inventar clar al tuturor sistemelor AI din firmă</h3>
+      <p class="scenario">Conduci o firmă cu mai multe instrumente AI în uz (chatbot, scoring, generare conținut) și vrei un singur loc unde să vezi ce AI folosești, cu ce date și cine răspunde.</p>
+      <p class="question">„De unde încep, dacă n-am documentat nimic până acum?"</p>
+      <p class="pointer">Primul pas practic e exact inventarul — listezi fiecare sistem AI, furnizorul, scopul și responsabilul; de aici pornește toată conformitatea, nu invers.</p>
+      <a class="case-link" href="/faq-hub.html#cat-80">Vezi întrebările despre Inventar sisteme AI →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Transport</span></div>
+      <h3>Un AI monitorizează comportamentul șoferilor firmei</h3>
+      <p class="scenario">Ai o firmă de transport și folosești un sistem AI care evaluează stilul de condus al șoferilor (viteză, frânări, atenție) pe baza datelor din vehicul.</p>
+      <p class="question">„Pot folosi scorul AI pentru evaluarea performanței angajatului?"</p>
+      <p class="pointer">Monitorizarea angajaților prin AI cere transparență clară față de aceștia și limite privind ce decizii (avertisment, concediere) se pot lua direct pe baza scorului automat.</p>
+      <a class="case-link" href="/faq-hub.html#cat-30">Vezi întrebările despre Monitorizarea angajaților →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="predicteaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Construcții</span></div>
+      <h3>AI estimează riscurile de siguranță ale unui șantier</h3>
+      <p class="scenario">Ai o firmă de construcții și folosești AI pentru a estima riscurile de siguranță ale unui proiect, pe baza planurilor și condițiilor de lucru.</p>
+      <p class="question">„Dacă AI subestimează un risc și se produce un accident, ce se întâmplă?"</p>
+      <p class="pointer">AI-ul rămâne instrument de sprijin — responsabilitatea legală pentru siguranța șantierului rămâne a firmei; documentează evaluarea umană finală, nu doar output-ul AI.</p>
+      <a class="case-link" href="/faq-hub.html#cat-88">Vezi întrebările despre Managementul riscului →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="predicteaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Energie</span></div>
+      <h3>AI îți prezice consumul de energie al firmei</h3>
+      <p class="scenario">Ai o firmă cu consum energetic semnificativ și folosești AI pentru a prezice consumul viitor și a optimiza automat achizițiile de energie.</p>
+      <p class="question">„Pot lăsa AI să facă automat achiziții pe baza predicției?"</p>
+      <p class="pointer">Automatizarea deciziilor financiare pe baza unei predicții implică risc operațional propriu firmei — păstrează un prag de aprobare umană pentru decizii peste o anumită valoare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-88">Vezi întrebările despre Managementul riscului →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Agricultură</span></div>
+      <h3>AI detectează boli ale culturilor din fotografii</h3>
+      <p class="scenario">Ai o fermă și folosești o aplicație AI care analizează fotografii ale culturilor pentru a detecta boli sau dăunători timpuriu.</p>
+      <p class="question">„Poate AI să declanșeze automat tratamentul chimic?"</p>
+      <p class="pointer">Detectarea automată nu ridică probleme majore, dar declanșarea automată a unui tratament (mai ales chimic) fără verificare umană crește riscul operațional și posibil de siguranță a produselor.</p>
+      <a class="case-link" href="/faq-hub.html#cat-25">Vezi întrebările despre Siguranța produselor →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Turism</span></div>
+      <h3>AI personalizează ofertele turistice pentru fiecare client</h3>
+      <p class="scenario">Ai o agenție de turism și folosești AI pentru a recomanda pachete de vacanță personalizate, pe baza istoricului și profilului clientului.</p>
+      <p class="question">„Cât de detaliat pot profila un client fără să depășesc limita legală?"</p>
+      <p class="pointer">Profilarea comercială obișnuită e permisă, dar trebuie să respecte GDPR (consimțământ, scop clar) — evită criterii sensibile (etnie, sănătate) în segmentare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-59">Vezi întrebările despre Date personale →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">HoReCa</span></div>
+      <h3>AI ajustează automat prețurile camerelor sau meselor disponibile</h3>
+      <p class="scenario">Ai un hotel sau restaurant și un sistem AI ajustează automat prețurile în funcție de cerere, sezon și ocupare.</p>
+      <p class="question">„Trebuie să anunț clienții că prețul e calculat automat?"</p>
+      <p class="pointer">Nu e o obligație explicită AI Act, dar transparența prețului (mai ales dacă variază des) reduce riscul de reclamații și ține de bune practici comerciale.</p>
+      <a class="case-link" href="/faq-hub.html#cat-100">Vezi întrebările despre Comunicare cu clienții →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Telecom</span></div>
+      <h3>AI prioritizează automat reclamațiile clienților</h3>
+      <p class="scenario">Ai un furnizor de servicii telecom și un AI clasifică și prioritizează automat reclamațiile primite, pe baza urgenței estimate.</p>
+      <p class="question">„Pot lăsa un client „nescorat prioritar" să aștepte nelimitat?"</p>
+      <p class="pointer">Prioritizarea automată e permisă comercial, dar trebuie să existe un mecanism de escaladare umană pentru cazurile care nu se rezolvă în timp rezonabil.</p>
+      <a class="case-link" href="/faq-hub.html#cat-100">Vezi întrebările despre Comunicare cu clienții →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="decide">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Asistență socială</span></div>
+      <h3>AI identifică persoanele vulnerabile pentru prioritate în servicii</h3>
+      <p class="scenario">Conduci o organizație care oferă servicii sociale/esențiale și folosești AI pentru a identifica persoanele cu nevoie urgentă de sprijin.</p>
+      <p class="question">„Poate AI să stabilească singur cine primește prioritate?"</p>
+      <p class="pointer">Accesul la servicii esențiale e listat explicit ca domeniu high-risk în Anexa III — decizia finală de prioritizare trebuie să rămână la o persoană, nu doar la algoritm.</p>
+      <a class="case-link" href="/faq-hub.html#cat-35">Vezi întrebările despre Servicii esențiale →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="recomanda">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Management</span></div>
+      <h3>AI recomandă restructurări sau reduceri de personal</h3>
+      <p class="scenario">Conduci o firmă și folosești un instrument AI care analizează productivitatea departamentelor și recomandă restructurări sau concedieri.</p>
+      <p class="question">„Pot lua decizii privind angajații pe baza unei recomandări AI?"</p>
+      <p class="pointer">Deciziile cu impact major asupra angajaților (concediere) trebuie să rămână decizii umane documentate — o recomandare AI nu te scutește de obligațiile legale privind dreptul muncii.</p>
+      <a class="case-link" href="/faq-hub.html#cat-82">Vezi întrebările despre Responsabilități →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Compliance</span></div>
+      <h3>Vrei să verifici dacă utilizările AI din firmă sunt conforme</h3>
+      <p class="scenario">Ai deja un inventar de sisteme AI și acum vrei un proces continuu care verifică periodic dacă fiecare utilizare rămâne conformă cu regulile stabilite.</p>
+      <p class="question">„Cum demonstrez, nu doar afirm, că AI-ul din firmă e controlat?"</p>
+      <p class="pointer">Ai nevoie de dovezi verificabile, nu doar de o politică scrisă — audit periodic, jurnal de modificări și evidența deciziilor de supraveghere umană documentate.</p>
+      <a class="case-link" href="/faq-hub.html#cat-83">Vezi întrebările despre Audit →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Infrastructură critică</span></div>
+      <h3>AI monitorizează rețeaua electrică a unei firme mari</h3>
+      <p class="scenario">Firma ta furnizează energie sau apă la nivel local și un AI monitorizează automat parametrii rețelei pentru anomalii.</p>
+      <p class="question">„Ce se întâmplă dacă AI-ul nu detectează la timp o problemă?"</p>
+      <p class="pointer">Infrastructura critică e domeniu high-risk explicit (Anexa III) — supravegherea umană continuă și planul de intervenție rapidă rămân obligatorii, AI-ul nu poate fi singurul nivel de control.</p>
+      <a class="case-link" href="/faq-hub.html#cat-23">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Producție / Roboți industriali</span></div>
+      <h3>Roboți cu AI lucrează alături de angajați pe linia de producție</h3>
+      <p class="scenario">Ai o fabrică mică-medie și ai introdus roboți industriali cu decizie AI care interacționează direct cu personalul uman.</p>
+      <p class="question">„Roboții industriali intră automat sub AI Act?"</p>
+      <p class="pointer">Depinde — dacă robotul e componentă de siguranță a unui produs reglementat (Regulamentul mașinilor), se aplică regulile specifice, cu termen de aplicare 2 august 2028.</p>
+      <a class="case-link" href="/faq-hub.html#cat-27">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Tehnologie / Startup</span></div>
+      <h3>Construiești un produs SaaS cu AI de la zero</h3>
+      <p class="scenario">Ai un startup și dezvolți un produs software care integrează un model AI extern printr-un API, pentru a oferi funcționalități clienților.</p>
+      <p class="question">„Sunt provider al modelului AI sau doar al produsului meu?"</p>
+      <p class="pointer">De regulă ești provider al sistemului AI final (produsul tău), nu al modelului de bază — dar responsabilitatea pentru integrare și scop rămâne a ta.</p>
+      <a class="case-link" href="/faq-hub.html#cat-10">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">IT / Integrare API</span></div>
+      <h3>Integrezi un model AI extern prin API în produsul firmei</h3>
+      <p class="scenario">Firma ta nu antrenează propriul model, dar apelează un model AI extern (OpenAI, Anthropic etc.) prin API pentru funcționalități interne.</p>
+      <p class="question">„Am aceleași obligații ca un provider de AI?"</p>
+      <p class="pointer">Nu identice — dar dacă adaptezi/integrezi modelul într-un sistem cu scop propriu, poți deveni provider al acelui sistem, chiar dacă nu ai antrenat modelul de bază.</p>
+      <a class="case-link" href="/faq-hub.html#cat-55">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">IT / Modele open-source</span></div>
+      <h3>Folosești un model AI open-source în locul unuia comercial</h3>
+      <p class="scenario">Ai ales să folosești un model AI open-source (ex. Llama, Mistral) în loc de un serviciu comercial, pentru control mai mare asupra datelor.</p>
+      <p class="question">„Modelele open-source sunt exceptate de la AI Act?"</p>
+      <p class="pointer">Unele obligații pentru modele GPAI se reduc pentru cele open-source cu licență liberă, dar sistemul final construit peste ele rămâne supus regulilor obișnuite dacă are scop propriu.</p>
+      <a class="case-link" href="/faq-hub.html#cat-54">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Tehnologie / Model propriu</span></div>
+      <h3>Firma ta antrenează un model AI propriu pe datele clienților</h3>
+      <p class="scenario">Ai o firmă de tehnologie și antrenezi un model AI intern folosind datele istorice ale clienților, pentru predicții specifice afacerii.</p>
+      <p class="question">„Ce obligații am pentru datele de antrenare folosite?"</p>
+      <p class="pointer">Ca provider, trebuie să documentezi proveniența datelor, calitatea lor și măsurile de guvernanță — mai ales dacă includ date cu caracter personal.</p>
+      <a class="case-link" href="/faq-hub.html#cat-56">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Tehnologie / Calitatea datelor</span></div>
+      <h3>Descoperi că datele folosite de AI-ul firmei au erori sistematice</h3>
+      <p class="scenario">Ai observat că sistemul AI al firmei produce rezultate ciudate și bănuiești o problemă cu calitatea datelor de intrare.</p>
+      <p class="question">„Cum verific dacă e problemă de date sau de model?"</p>
+      <p class="pointer">Documentează calitatea datelor separat de performanța modelului — o evaluare a calității datelor de antrenare/operare face parte din obligațiile de guvernanță a datelor.</p>
+      <a class="case-link" href="/faq-hub.html#cat-57">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Tehnologie / Testare bias</span></div>
+      <h3>Vrei să testezi dacă AI-ul firmei discriminează anumite grupuri</h3>
+      <p class="scenario">Ai un sistem AI folosit în decizii care afectează persoane și vrei să verifici proactiv dacă produce rezultate diferite pe grupuri demografice.</p>
+      <p class="question">„Sunt obligat legal să fac acest test?"</p>
+      <p class="pointer">Pentru sisteme high-risk, testarea și corectarea prejudecăților e parte din cerințele de management al riscului — poți folosi chiar date sensibile excepțional, strict pentru acest scop (Art. 4a).</p>
+      <a class="case-link" href="/faq-hub.html#cat-58">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Publicitate</span></div>
+      <h3>Agenția ta rulează reclame generate integral de AI pe scară largă</h3>
+      <p class="scenario">Conduci o agenție de publicitate și rulezi campanii unde textul, imaginea și targetarea sunt toate generate/decise de AI.</p>
+      <p class="question">„Fiecare reclamă AI trebuie verificată manual înainte de publicare?"</p>
+      <p class="pointer">Recomandat da, cel puțin prin sondaj — mai ales pentru afirmații verificabile (preț, beneficii), pentru a evita publicitate înșelătoare generată accidental de AI.</p>
+      <a class="case-link" href="/faq-hub.html#cat-43">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Drepturi de autor</span></div>
+      <h3>Publici conținut generat de AI și cineva contestă originalitatea</h3>
+      <p class="scenario">Firma ta publică conținut (text/imagine) generat cu AI și un terț reclamă că seamănă cu opera lui protejată prin drepturi de autor.</p>
+      <p class="question">„Cine răspunde legal — eu sau furnizorul modelului AI?"</p>
+      <p class="pointer">De regulă utilizatorul care publică materialul poartă riscul comercial imediat — verifică termenii de licență ai instrumentului AI folosit înainte de utilizare comercială extinsă.</p>
+      <a class="case-link" href="/faq-hub.html#cat-64">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Licențe software</span></div>
+      <h3>Cumperi licențe pentru mai multe instrumente AI simultan</h3>
+      <p class="scenario">Ai o firmă și achiziționezi licențe pentru 3-4 instrumente AI diferite (scriere, imagine, analiză date) pentru echipă.</p>
+      <p class="question">„Cum știu care licențe permit uz comercial complet?"</p>
+      <p class="pointer">Verifică explicit clauzele fiecărei licențe — multe instrumente AI gratuite/ieftine restricționează uzul comercial sau revânzarea rezultatelor generate.</p>
+      <a class="case-link" href="/faq-hub.html#cat-65">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Transparență generală</span></div>
+      <h3>Vrei o politică internă unică pentru toate utilizările AI din firmă</h3>
+      <p class="scenario">Firma ta a ajuns să folosească multe instrumente AI izolat, pe departamente, și vrei o politică unică de transparență.</p>
+      <p class="question">„De unde încep o politică de transparență AI?"</p>
+      <p class="pointer">Pornește de la Art. 50 — identifică toate punctele de contact cu clienții/publicul unde AI-ul interacționează direct, apoi standardizează mesajul de informare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-66">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Accesibilitate</span></div>
+      <h3>Vrei ca interfața AI a firmei să fie utilizabilă de persoane cu dizabilități</h3>
+      <p class="scenario">Ai un chatbot sau o aplicație cu AI și vrei să te asiguri că e utilizabilă și de clienți cu dizabilități vizuale sau auditive.</p>
+      <p class="question">„Accesibilitatea e o cerință separată de AI Act?"</p>
+      <p class="pointer">Da, se suprapune cu legislația de accesibilitate digitală (European Accessibility Act) — dar un AI care exclude implicit anumiți utilizatori poate crea și risc de discriminare.</p>
+      <a class="case-link" href="/faq-hub.html#cat-74">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Comunicare multilingvă</span></div>
+      <h3>Chatbot-ul firmei răspunde clienților în mai multe limbi prin AI</h3>
+      <p class="scenario">Ai clienți din mai multe țări UE și folosești AI pentru traducerea automată a interacțiunilor cu chatbot-ul firmei.</p>
+      <p class="question">„Traducerea AI poate introduce erori care afectează clientul?"</p>
+      <p class="pointer">Da — pentru informații critice (contracte, prețuri, condiții), verifică traducerea automată prin cineva care cunoaște ambele limbi, nu doar prin AI.</p>
+      <a class="case-link" href="/faq-hub.html#cat-75">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Resurse umane / Alfabetizare</span></div>
+      <h3>Vrei să instruiești rapid tot personalul despre utilizarea AI</h3>
+      <p class="scenario">Ai zeci de angajați care folosesc diverse instrumente AI și vrei un program minim de alfabetizare AI, fără buget mare.</p>
+      <p class="question">„Ce nivel minim de instruire e suficient legal?"</p>
+      <p class="pointer">Nu există un standard fix de ore — obligația e de mijloace (Art. 4): măsuri proporționale cu rolul fiecărui angajat, documentate, nu neapărat un curs formal lung.</p>
+      <a class="case-link" href="/faq-hub.html#cat-76">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Guvernanță internă</span></div>
+      <h3>Vrei o structură clară de roluri pentru guvernanța AI din firmă</h3>
+      <p class="scenario">Firma ta a crescut și folosirea AI e haotică — vrei să numești clar cine răspunde de fiecare aspect (risc, date, incidente).</p>
+      <p class="question">„Cine ar trebui să fie responsabilul de guvernanță AI?"</p>
+      <p class="pointer">Nu trebuie neapărat un rol nou, full-time, la firme mici — poate fi o responsabilitate adăugată unui rol existent (IT, compliance), cât timp e clar desemnată și documentată.</p>
+      <a class="case-link" href="/faq-hub.html#cat-81">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Conformitate generală</span></div>
+      <h3>Vrei un checklist simplu de conformitate AI pentru firma ta</h3>
+      <p class="scenario">Nu ai resurse pentru un audit complex și vrei un prim pas practic, rapid, pentru a evalua unde stă firma ta.</p>
+      <p class="question">„De unde încep dacă am zero documentație AI?"</p>
+      <p class="pointer">Un checklist minim: listă sisteme AI → rol (provider/deployer) → date folosite → risc estimat → cine răspunde. De aici se construiește tot restul.</p>
+      <a class="case-link" href="/faq-hub.html#cat-85">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Loguri și jurnalizare</span></div>
+      <h3>Vrei să știi ce loguri trebuie păstrate pentru sistemele AI ale firmei</h3>
+      <p class="scenario">Ai câteva sisteme AI în producție și nu ești sigur ce evidențe tehnice trebuie păstrate pentru fiecare.</p>
+      <p class="question">„Cât timp trebuie păstrate logurile sistemelor AI?"</p>
+      <p class="pointer">Diferă pe rol — provider păstrează logurile mai mult timp (Art. 19), deployer minim 6 luni (Art. 26); verifică și dacă abonamentul comercial folosit chiar oferă loguri accesibile.</p>
+      <a class="case-link" href="/faq-hub.html#cat-87">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Managementul calității</span></div>
+      <h3>Vrei un sistem simplu de control al calității pentru output-urile AI</h3>
+      <p class="scenario">Firma ta produce conținut/decizii cu ajutorul AI și vrei un proces minim de verificare a calității rezultatelor.</p>
+      <p class="question">„Ce înseamnă concret „management al calității” pentru o firmă mică?"</p>
+      <p class="pointer">Proporțional cu mărimea firmei — poate fi un checklist simplu de verificare + revizuire periodică, nu neapărat un sistem formal ISO complet.</p>
+      <a class="case-link" href="/faq-hub.html#cat-89">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Monitorizare post-lansare</span></div>
+      <h3>Vrei să urmărești performanța unui sistem AI după ce a fost implementat</h3>
+      <p class="scenario">Ai implementat un sistem AI de câteva luni și vrei să știi dacă mai performează la fel ca la lansare.</p>
+      <p class="question">„Monitorizarea post-lansare e obligatorie sau doar recomandată?"</p>
+      <p class="pointer">Pentru sisteme high-risk e obligatorie (monitorizare post-comercializare); pentru restul, e bună practică — performanța AI se poate degrada în timp fără un semnal clar.</p>
+      <a class="case-link" href="/faq-hub.html#cat-93">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Retragerea unui sistem AI</span></div>
+      <h3>Decizi să oprești folosirea unui sistem AI din firmă</h3>
+      <p class="scenario">Ai decis să renunți la un instrument AI folosit de firmă (înlocuit sau considerat prea riscant) și vrei să faci asta corect.</p>
+      <p class="question">„Ce trebuie documentat când retrag un sistem AI din uz?"</p>
+      <p class="pointer">Data retragerii, motivul, ce se întâmplă cu datele procesate anterior, și actualizarea inventarului AI — nu doar dezinstalarea tehnică a instrumentului.</p>
+      <a class="case-link" href="/faq-hub.html#cat-95">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Achiziții AI</span></div>
+      <h3>Cumperi un instrument AI nou și vrei să verifici furnizorul înainte</h3>
+      <p class="scenario">Vrei să implementezi un instrument AI nou în firmă și vrei un proces de verificare a furnizorului înainte de achiziție.</p>
+      <p class="question">„Ce ar trebui să cer furnizorului înainte să cumpăr?"</p>
+      <p class="pointer">Cere documentația tehnică minimă, clasificarea de risc a produsului lor, politica de date și dacă oferă loguri/dovezi de conformitate accesibile.</p>
+      <a class="case-link" href="/faq-hub.html#cat-98">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Externalizare (outsourcing)</span></div>
+      <h3>Externalizezi dezvoltarea unui sistem AI către o firmă terță</h3>
+      <p class="scenario">Ai nevoie de un sistem AI personalizat și externalizezi dezvoltarea lui unei firme de IT, sub brandul propriei firme.</p>
+      <p class="question">„Cine e provider — eu sau firma care dezvoltă efectiv?"</p>
+      <p class="pointer">Dacă sistemul e pus pe piață sub numele/brandul tău, tu rămâi provider legal, chiar dacă dezvoltarea tehnică a fost externalizată — clarifică asta explicit în contract.</p>
+      <a class="case-link" href="/faq-hub.html#cat-99">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Import produse AI</span></div>
+      <h3>Imporți un sistem AI dintr-o țară din afara UE</h3>
+      <p class="scenario">Firma ta aduce pe piața din România un produs cu AI integrat, fabricat de o firmă din afara UE.</p>
+      <p class="question">„Ce obligații am ca prim aducător pe piața UE?"</p>
+      <p class="pointer">Ca importator, verifici că furnizorul non-UE a făcut evaluarea de conformitate, deții documentele și cooperezi cu autoritățile dacă sunt solicitate.</p>
+      <a class="case-link" href="/faq-hub.html#cat-6">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Distribuție produse AI</span></div>
+      <h3>Revinzi produse cu AI integrat altor firme din România</h3>
+      <p class="scenario">Ai o firmă de distribuție și revinzi echipamente sau software cu AI integrat către alte firme, fără să le dezvolți tu.</p>
+      <p class="question">„Am aceleași obligații ca producătorul?"</p>
+      <p class="pointer">Nu identice — ca distribuitor, verifici marcajele și documentele de conformitate înainte de vânzare, dar nu răspunzi de proiectarea sistemului în sine.</p>
+      <a class="case-link" href="/faq-hub.html#cat-7">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Definiții tehnice</span></div>
+      <h3>Nu ești sigur dacă un instrument din firmă e „sistem AI” legal</h3>
+      <p class="scenario">Folosești un software cu funcții avansate, dar nu ești sigur dacă se califică drept „sistem AI” conform definiției legale.</p>
+      <p class="question">„Orice automatizare software e considerată AI?"</p>
+      <p class="pointer">Nu — definiția legală cere inferență din date, nu doar reguli fixe predefinite; un simplu script „dacă X atunci Y” nu e sistem AI în sensul regulamentului.</p>
+      <a class="case-link" href="/faq-hub.html#cat-11">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Interzicere generală</span></div>
+      <h3>Vrei să te asiguri că niciun instrument din firmă nu e interzis</h3>
+      <p class="scenario">Înainte de a implementa un nou instrument AI, vrei o verificare rapidă că nu se încadrează la practici complet interzise.</p>
+      <p class="question">„Există o listă scurtă de verificare rapidă?"</p>
+      <p class="pointer">Verifică cele 8 categorii din Art. 5: manipulare, exploatarea vulnerabilităților, social scoring, predicție penală individuală, scraping facial, emoții la muncă/educație, biometrie pe caracteristici sensibile, identificare biometrică live în spații publice.</p>
+      <a class="case-link" href="/faq-hub.html#cat-13">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Manipulare comercială</span></div>
+      <h3>Vrei să știi dacă tehnicile de vânzare AI sunt „manipulare interzisă”</h3>
+      <p class="scenario">Firma ta folosește AI pentru a personaliza agresiv oferte comerciale și te întrebi dacă tehnica trece linia legală.</p>
+      <p class="question">„Unde e granița între marketing agresiv și manipulare interzisă?"</p>
+      <p class="pointer">Granița e prejudiciul semnificativ — personalizarea comercială obișnuită e permisă; exploatarea explicită a unei vulnerabilități (vârstă, situație financiară disperată) nu e.</p>
+      <a class="case-link" href="/faq-hub.html#cat-14">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Persoane vulnerabile</span></div>
+      <h3>Produsele firmei ajung frecvent la persoane vârstnice sau vulnerabile</h3>
+      <p class="scenario">Ai o firmă ale cărei produse/servicii AI-asistate sunt folosite predominant de persoane vârstnice sau cu dizabilități.</p>
+      <p class="question">„Am obligații suplimentare față de acest public?"</p>
+      <p class="pointer">Da — sistemele AI care ar putea exploata vulnerabilități legate de vârstă sau dizabilitate intră sub atenție specială la Art. 5; verifică design-ul pentru a evita presiune nejustificată.</p>
+      <a class="case-link" href="/faq-hub.html#cat-15">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="intelege">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Recunoașterea emoțiilor</span></div>
+      <h3>Vrei să folosești AI pentru a detecta satisfacția clienților la fața locului</h3>
+      <p class="scenario">Ai un magazin/restaurant și vrei să testezi un sistem AI care detectează emoțiile clienților din expresii faciale, pentru feedback.</p>
+      <p class="question">„E permis să analizez emoțiile clienților cu camere AI?"</p>
+      <p class="pointer">Cu prudență mare — recunoașterea emoțiilor e strict reglementată la locul de muncă și educație (interzisă), iar pentru clienți rămâne o zonă sensibilă legal, necesitând consimțământ clar.</p>
+      <a class="case-link" href="/faq-hub.html#cat-18">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Clasificare risc general</span></div>
+      <h3>Ai mai multe sisteme AI și nu știi de unde să începi clasificarea</h3>
+      <p class="scenario">Firma ta a acumulat mai multe instrumente AI în timp, fără o evaluare sistematică a riscului pentru niciunul.</p>
+      <p class="question">„Cum prioritizez ce sistem să evaluez primul?"</p>
+      <p class="pointer">Începe cu cele care afectează direct decizii despre persoane fizice (angajare, credit, acces la servicii) — acelea au cea mai mare probabilitate de a fi high-risk.</p>
+      <a class="case-link" href="/faq-hub.html#cat-20">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Produse reglementate (Anexa I)</span></div>
+      <h3>Firma ta produce echipamente cu componente AI de siguranță</h3>
+      <p class="scenario">Fabrici echipamente (electrocasnice, utilaje, jucării) care includ componente AI ce ar putea afecta siguranța utilizatorului.</p>
+      <p class="question">„Ce se schimbă pentru mine odată cu Omnibus-ul?"</p>
+      <p class="pointer">Termenul pentru aceste sisteme (Anexa I) a fost amânat la 2 august 2028 — ai mai mult timp de pregătire, dar procesul de evaluare a conformității tot trebuie planificat din timp.</p>
+      <a class="case-link" href="/faq-hub.html#cat-21">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Domenii sensibile (Anexa III)</span></div>
+      <h3>Vrei o listă clară a domeniilor cu risc ridicat care te-ar putea afecta</h3>
+      <p class="scenario">Ai o firmă activă în mai multe domenii și vrei să știi exact ce activități intră automat sub reguli mai stricte.</p>
+      <p class="question">„Ce domenii sunt exact în Anexa III?"</p>
+      <p class="pointer">Recrutare, educație, credit/asigurări, servicii esențiale, aplicarea legii, migrație/frontieră, justiție, biometrie, infrastructură critică — printre altele.</p>
+      <a class="case-link" href="/faq-hub.html#cat-22">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Frontieră / Vamă</span></div>
+      <h3>Firma ta procesează documente vamale cu ajutorul AI</h3>
+      <p class="scenario">Ai o firmă de expediții/logistică internațională și folosești AI pentru procesarea automată a documentelor vamale și de frontieră.</p>
+      <p class="question">„Sistemele AI din zona vamală/migrație sunt speciale?"</p>
+      <p class="pointer">Da — sistemele AI folosite de/pentru autorități de frontieră și migrație sunt explicit high-risk în Anexa III, chiar dacă firma ta e doar prestator privat pentru acest proces.</p>
+      <a class="case-link" href="/faq-hub.html#cat-39">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Poliție locală / Pază privată</span></div>
+      <h3>Firma ta de pază folosește AI pentru patrulare și alertare</h3>
+      <p class="scenario">Conduci o firmă de securitate privată și folosești drone sau camere cu AI pentru patrulare automată a unor obiective.</p>
+      <p class="question">„Firmele private de pază au aceleași restricții ca poliția?"</p>
+      <p class="pointer">Restricțiile cele mai stricte (identificare biometrică live) vizează în special autoritățile publice de aplicare a legii — dar o firmă privată trebuie oricum să respecte regulile generale de biometrie/GDPR.</p>
+      <a class="case-link" href="/faq-hub.html#cat-38">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Interacțiune AI cu publicul</span></div>
+      <h3>Standul firmei la un târg folosește un avatar AI interactiv</h3>
+      <p class="scenario">Participi la evenimente/târguri și folosești un avatar AI care interacționează live cu vizitatorii standului tău.</p>
+      <p class="question">„Vizitatorii trebuie avertizați explicit la fața locului?"</p>
+      <p class="pointer">Da — chiar dacă pare evident tehnologic, Art. 50 cere o informare clară că interacțiunea e cu un sistem AI, mai ales dacă avatarul pare foarte uman.</p>
+      <a class="case-link" href="/faq-hub.html#cat-70">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="genereaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Text sintetic / Rapoarte</span></div>
+      <h3>Firma ta publică rapoarte anuale redactate parțial de AI</h3>
+      <p class="scenario">Ai o firmă care publică rapoarte publice (sustenabilitate, activitate) redactate parțial cu ajutorul AI generativ.</p>
+      <p class="question">„Rapoartele publice generate de AI trebuie marcate?"</p>
+      <p class="pointer">Dacă informează publicul pe teme de interes public, poate exista obligație de dezvăluire a originii AI a textului — verifică natura exactă a raportului.</p>
+      <a class="case-link" href="/faq-hub.html#cat-48">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">GPAI sisteme mari</span></div>
+      <h3>Firma ta folosește un model AI foarte mare, cu risc sistemic declarat</h3>
+      <p class="scenario">Firma ta a ajuns să integreze un model GPAI de talie mare, dintre cele cu risc sistemic recunoscut de Comisie.</p>
+      <p class="question">„Am obligații suplimentare doar pentru că folosesc un model mare?"</p>
+      <p class="pointer">Obligațiile de risc sistemic vizează în principal furnizorul modelului, nu utilizatorii obișnuiți — dar verifică termenii de utilizare pentru limitări specifice impuse de furnizor.</p>
+      <a class="case-link" href="/faq-hub.html#cat-53">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">DPO și guvernanță date</span></div>
+      <h3>Firma ta a numit un DPO și vrei să clarifici rolul lui față de AI</h3>
+      <p class="scenario">Ai numit un responsabil cu protecția datelor (DPO) și vrei să știi exact ce rol are el în supravegherea sistemelor AI ale firmei.</p>
+      <p class="question">„DPO-ul răspunde și de conformitatea AI Act, nu doar GDPR?"</p>
+      <p class="pointer">Rolurile se suprapun parțial — DPO-ul acoperă protecția datelor, dar guvernanța AI Act poate necesita și un responsabil AI dedicat, mai ales pentru sisteme high-risk.</p>
+      <a class="case-link" href="/faq-hub.html#cat-63">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Politici interne</span></div>
+      <h3>Vrei să scrii prima politică internă de utilizare AI a firmei</h3>
+      <p class="scenario">Firma ta nu are nicio politică scrisă privind AI și vrei să pornești cu un document simplu, aplicabil imediat.</p>
+      <p class="question">„Ce trebuie neapărat să conțină o politică internă AI?"</p>
+      <p class="pointer">Minim: ce instrumente sunt aprobate, ce date nu se introduc niciodată în AI extern, cine aprobă instrumente noi, și cum se raportează problemele.</p>
+      <a class="case-link" href="/faq-hub.html#cat-78">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="informeaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Rol deployer generic</span></div>
+      <h3>Nu ești sigur dacă ești „deployer” pentru un instrument AI cumpărat</h3>
+      <p class="scenario">Ai cumpărat un instrument AI gata făcut (nu l-ai dezvoltat) și îl folosești în activitatea firmei, fără să-l modifici.</p>
+      <p class="question">„Sunt automat deployer doar pentru că îl folosesc?"</p>
+      <p class="pointer">Da, de regulă — deployer e cine folosește sistemul AI sub propria autoritate, în scop profesional, indiferent dacă l-a dezvoltat sau nu.</p>
+      <a class="case-link" href="/faq-hub.html#cat-5">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="actioneaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Social media firmă</span></div>
+      <h3>Contul de social media al firmei e gestionat parțial de AI</h3>
+      <p class="scenario">Ai o firmă mică și un instrument AI postează automat conținut pe conturile de social media ale afacerii, pe baza unui calendar prestabilit.</p>
+      <p class="question">„Postările automate au nevoie de aprobare umană de fiecare dată?"</p>
+      <p class="pointer">Nu obligatoriu pentru fiecare postare, dar recomandat un control periodic — mai ales pentru a evita postări nepotrivite generate fără context.</p>
+      <a class="case-link" href="/faq-hub.html#cat-44">Vezi întrebările relevante →</a>
+    </div>
+    <div class="case-card" data-persona="patron" data-fn="supravegheaza">
+      <div class="case-badges"><span class="badge-persona patron">Patron / SRL</span><span class="badge-industry">Robustețe tehnică</span></div>
+      <h3>Vrei să testezi cât de stabil e sistemul AI al firmei la date neobișnuite</h3>
+      <p class="scenario">Ai un sistem AI în producție și vrei să verifici cum se comportă la date neașteptate sau introduse greșit de utilizatori.</p>
+      <p class="question">„Robustețea tehnică e o cerință legală sau doar bună practică?"</p>
+      <p class="pointer">Pentru sisteme high-risk e cerință explicită — sistemul trebuie să funcționeze predictibil și să reziste la erori de intrare fără rezultate periculoase.</p>
+      <a class="case-link" href="/faq-hub.html#cat-90">Vezi întrebările relevante →</a>
+    </div>
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="footer-dial">112</span> EU-112</div>
+      <p class="footer-tagline">Linia de întrebări gratuite despre EU AI Act.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Linkuri rapide</div>
+      <a href="/">Acasă</a>
+      <a href="/faq-hub.html">FAQ Hub</a>
+      <a href="/faq.html">Toate întrebările</a>
+      <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Contact</div>
+      <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=footer">eu-ai-act.ro</a>
+      <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
+      <a href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    EU-112 este un serviciu <strong style="color:var(--gold);">AiVenture S.R.L.</strong> · CUI 51415878 · București, România · Nu constituie consultanță juridică
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eu-112.ro/#organization", "name": "EU-112", "alternateName": "AiVenture S.R.L.", "url": "https://eu-112.ro/", "logo": {"@type": "ImageObject", "url": "https://eu-112.ro/assets/images/logo.webp"}, "sameAs": ["https://eu-ai-act.ro/"]}, {"@type": "WebSite", "@id": "https://eu-112.ro/#website", "url": "https://eu-112.ro/", "name": "EU-112", "publisher": {"@id": "https://eu-112.ro/#organization"}, "inLanguage": "ro"}, {"@type": "WebPage", "@id": "https://eu-112.ro/cazuri-de-utilizare.html#webpage", "url": "https://eu-112.ro/cazuri-de-utilizare.html", "name": "100 de cazuri de utilizare AI — EU AI Act", "description": "100 de cazuri reale de utilizare a AI, pe roluri și industrii, cu obligațiile EU AI Act relevante.", "isPartOf": {"@id": "https://eu-112.ro/#website"}, "about": {"@id": "https://eu-112.ro/cazuri-de-utilizare.html#faq"}, "mentions": [{"@type": "Legislation", "name": "Regulamentul (UE) 2024/1689 (EU AI Act)"}, {"@type": "Legislation", "name": "Regulamentul (UE) 2026/1744 (Omnibus)"}, {"@type": "GovernmentOrganization", "name": "ANCOM"}], "mainEntity": {"@id": "https://eu-112.ro/cazuri-de-utilizare.html#faq"}, "publisher": {"@id": "https://eu-112.ro/#organization"}, "datePublished": "2026-08-13", "dateModified": "2026-08-13", "inLanguage": "ro"}, {"@type": "BreadcrumbList", "@id": "https://eu-112.ro/cazuri-de-utilizare.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "EU-112", "item": "https://eu-112.ro/"}, {"@type": "ListItem", "position": 2, "name": "FAQ Hub", "item": "https://eu-112.ro/faq-hub.html"}, {"@type": "ListItem", "position": 3, "name": "Cazuri de utilizare", "item": "https://eu-112.ro/cazuri-de-utilizare.html"}]}, {"@type": "FAQPage", "@id": "https://eu-112.ro/cazuri-de-utilizare.html#faq", "isAccessibleForFree": true, "mainEntity": [{"@type": "Question", "name": "Trebuie să anunț candidații că sunt evaluați de AI?", "acceptedAnswer": {"@type": "Answer", "text": "Recrutarea e listată explicit în Anexa III ca domeniu cu risc ridicat — obligații de transparență și supraveghere umană se aplică, chiar dacă termenul complet e amânat la 2 dec. 2027."}}, {"@type": "Question", "name": "Pot să resping o cerere doar pe baza scorului AI?", "acceptedAnswer": {"@type": "Answer", "text": "Sistemele de creditworthiness sunt high-risk sub Anexa III — clientul are dreptul la o explicație și la intervenție umană, nu doar la un verdict automat."}}, {"@type": "Question", "name": "Cine răspunde dacă AI-ul greșește prioritizarea?", "acceptedAnswer": {"@type": "Answer", "text": "Responsabilitatea clinică rămâne la personalul medical — supravegherea umană e obligatorie, AI-ul poate doar asista decizia, nu o poate înlocui."}}, {"@type": "Question", "name": "Un elev poate contesta o notă dată de AI?", "acceptedAnswer": {"@type": "Answer", "text": "Evaluarea educațională e high-risk sub Anexa III — elevul/părintele are dreptul la explicație și la recorectare umană la cerere."}}, {"@type": "Question", "name": "Clientul știe că vorbește cu un AI, nu cu mine?", "acceptedAnswer": {"@type": "Answer", "text": "Art. 50 cere informarea clară a persoanei că interacționează cu un sistem AI, cu excepția cazurilor evidente din context."}}, {"@type": "Question", "name": "Ce fac dacă AI-ul dă un răspuns greșit unui cetățean?", "acceptedAnswer": {"@type": "Answer", "text": "Instituția rămâne responsabilă pentru informația oferită — trebuie păstrat un canal clar de escaladare către un funcționar uman."}}, {"@type": "Question", "name": "E legal să scanăm fața fiecărei persoane care intră?", "acceptedAnswer": {"@type": "Answer", "text": "Biometria de identificare are reguli stricte — depinde de scop, consimțământ și dacă e în spațiu public sau privat; identificarea în timp real în spații publice e aproape mereu interzisă."}}, {"@type": "Question", "name": "Trebuie spus explicit la telefon că e AI, nu om?", "acceptedAnswer": {"@type": "Answer", "text": "Da — obligația de informare de la Art. 50 se aplică și interacțiunii vocale, nu doar celei scrise; clientul trebuie să afle clar de la început."}}, {"@type": "Question", "name": "Raportul generat de AI e suficient pentru autorități?", "acceptedAnswer": {"@type": "Answer", "text": "Poate fi punct de plecare, dar dacă incidentul se încadrează ca „grav\" (Art. 73), raportul final trebuie validat și asumat de o persoană, cu termenele legale respectate."}}, {"@type": "Question", "name": "Dacă AI a scăpat un risc, răspund eu sau sistemul?", "acceptedAnswer": {"@type": "Answer", "text": "Cât timp tu semnezi recomandarea finală, răspunderea rămâne a ta — documentează ce ai verificat manual peste analiza AI, nu doar că ai „bifat\" rezultatul."}}, {"@type": "Question", "name": "Poate AI să pregătească practic diagnosticul, nu doar rezumatul?", "acceptedAnswer": {"@type": "Answer", "text": "Sinteza informației e diferită de sugerarea unui diagnostic — dacă AI-ul trece de la „rezumă\" la „recomandă tratament\", intră într-o categorie de risc mai strictă."}}, {"@type": "Question", "name": "Ce sunt obligat să-i pot explica exact?", "acceptedAnswer": {"@type": "Answer", "text": "Ai nevoie cel puțin de o explicație inteligibilă a factorilor principali care au dus la decizie — nu de codul intern al algoritmului, dar de logica generală."}}, {"@type": "Question", "name": "Ce proces trebuie să existe pentru o contestație?", "acceptedAnswer": {"@type": "Answer", "text": "Ai nevoie de un canal clar de contestare, cu revizuire umană reală (nu doar re-rularea aceluiași algoritm) și un termen rezonabil de răspuns."}}, {"@type": "Question", "name": "Trebuie să-i spun clientului că textul e generat de AI?", "acceptedAnswer": {"@type": "Answer", "text": "Nu întotdeauna obligatoriu față de client (poate fi clauză contractuală), dar dacă textul e publicat ca informare a publicului, poate cădea sub obligațiile de etichetare."}}, {"@type": "Question", "name": "Ce se întâmplă dacă imaginea seamănă cu o persoană reală?", "acceptedAnswer": {"@type": "Answer", "text": "Dacă imaginea generată creează un deepfake realist al unei persoane identificabile, se aplică obligații de dezvăluire — verifică drepturile de imagine separat de AI Act."}}, {"@type": "Question", "name": "Pot să livrez direct ce-mi dă AI-ul, fără verificare?", "acceptedAnswer": {"@type": "Answer", "text": "Nu — AI-ul poate halucina referințe legale inexistente; verificarea umană a surselor citate rămâne obligația ta profesională, indiferent de AI Act."}}, {"@type": "Question", "name": "Trebuie marcat vizibil ca fiind generat de AI?", "acceptedAnswer": {"@type": "Answer", "text": "Art. 50 cere marcarea conținutului sintetic (mai ales deepfake) într-un format detectabil — obligatoriu din 2 august 2026, cu o perioadă de tranziție de 4 luni pentru sistemele deja pe piață."}}, {"@type": "Question", "name": "Sunt eu responsabil sau clientul care angajează?", "acceptedAnswer": {"@type": "Answer", "text": "Responsabilitatea poate fi partajată în lanțul valoric AI (Art. 25) — clarifică prin contract cine e deployer și ce obligații revin fiecărei părți."}}, {"@type": "Question", "name": "Pot să-mi asum răspunderea profesională pe baza unei analize AI?", "acceptedAnswer": {"@type": "Answer", "text": "AI-ul poate accelera prima trecere, dar semnătura și răspunderea profesională rămân ale tale — documentează ce ai verificat manual, separat de output-ul AI."}}, {"@type": "Question", "name": "Pot depune declarația doar pe baza clasificării AI?", "acceptedAnswer": {"@type": "Answer", "text": "Nu ca practică sigură — verificarea umană a clasificării rămâne obligatorie înainte de depunere; păstrează un jurnal al corecțiilor făcute manual peste sugestiile AI."}}, {"@type": "Question", "name": "Pot livra codul fără să-l testez manual complet?", "acceptedAnswer": {"@type": "Answer", "text": "AI Act nu reglementează codul în sine, dar responsabilitatea profesională pentru funcționare și securitate rămâne a ta — testarea rămâne obligatorie, indiferent cine a scris codul."}}, {"@type": "Question", "name": "Pot introduce documente confidențiale ale clientului în AI?", "acceptedAnswer": {"@type": "Answer", "text": "Depinde de politica de date a instrumentului AI folosit — verifică dacă datele introduse sunt reținute/folosite pentru antrenare, mai ales pentru documente cu date sensibile."}}, {"@type": "Question", "name": "Când devine o simplă retușare o problemă legală?", "acceptedAnswer": {"@type": "Answer", "text": "O corecție tehnică minoră (lumină, contrast) nu e manipulare interzisă; dar o modificare care schimbă natura scenei sau creează o reprezentare falsă realistă a unei persoane necesită dezvăluire."}}, {"@type": "Question", "name": "Cine verifică dacă informația generată de AI e corectă?", "acceptedAnswer": {"@type": "Answer", "text": "Verificarea rămâne responsabilitatea ta profesională — AI-ul poate genera informații plauzibile dar greșite; livrarea unui material cu erori factuale rămâne pe numele tău."}}, {"@type": "Question", "name": "Trebuie o DPIA separată pentru fiecare sistem AI folosit?", "acceptedAnswer": {"@type": "Answer", "text": "Nu automat pentru toate — DPIA e necesară când prelucrarea prezintă risc ridicat pentru drepturile persoanelor; pentru sistemele AI high-risk, poate fi combinată cu evaluarea impactului asupra drepturilor fundamentale."}}, {"@type": "Question", "name": "Pot targeta reclame pe baza unor caracteristici sensibile?", "acceptedAnswer": {"@type": "Answer", "text": "Nu — targetarea pe caracteristici sensibile (sănătate, orientare, opinii) e restricționată sever de GDPR, indiferent de AI Act; verifică ce date folosește exact algoritmul de segmentare."}}, {"@type": "Question", "name": "Fiecare postare AI trebuie etichetată vizibil?", "acceptedAnswer": {"@type": "Answer", "text": "Nu toate — obligația de etichetare vizează mai ales conținutul care ar putea induce în eroare publicul (deepfake, texte informative publicate ca fiind fapt, nu opinie)."}}, {"@type": "Question", "name": "Clonarea vocii altcuiva e permisă cu acordul lui?", "acceptedAnswer": {"@type": "Answer", "text": "Da, cu consimțământ explicit — fără el, generarea vocii unei persoane reale poate constitui deepfake audio, cu obligație de dezvăluire."}}, {"@type": "Question", "name": "Clientul trebuie informat că unele segmente sunt generate de AI?", "acceptedAnswer": {"@type": "Answer", "text": "Da, mai ales dacă materialul e prezentat ca informativ/oficial — transparența protejează atât clientul cât și publicul final care vede materialul."}}, {"@type": "Question", "name": "Trebuie să declar toate instrumentele AI folosite?", "acceptedAnswer": {"@type": "Answer", "text": "Recomandat da, mai ales dacă procesezi date ale clientului prin ele — transparența privind stack-ul tehnologic evită neînțelegeri contractuale ulterioare."}}, {"@type": "Question", "name": "Cum stabilesc rapid dacă un client intră sub AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Verifică dacă folosesc/dezvoltă un sistem AI (nu doar automatizare simplă) în activitate profesională, cu efecte asupra unor persoane din UE — de acolo pornește analiza."}}, {"@type": "Question", "name": "Materialele electorale AI au reguli speciale?", "acceptedAnswer": {"@type": "Answer", "text": "Da — conținutul electoral generat de AI trebuie să evite manipularea interzisă și, pentru deepfake-uri politice, dezvăluirea originii artificiale devine importantă."}}, {"@type": "Question", "name": "Trebuie documentație tehnică completă ca la un model propriu?", "acceptedAnswer": {"@type": "Answer", "text": "Nu la fel de extinsă — dar documentează clar ce model folosești, versiunea și limitările cunoscute, pentru transparență față de clienții tăi finali."}}, {"@type": "Question", "name": "Ce documentație trebuie să am pregătită pentru un control?", "acceptedAnswer": {"@type": "Answer", "text": "Ca deployer al unui sistem high-risk, ai nevoie de inventar, evaluare de risc, dovada supravegherii umane și instrucțiunile primite de la furnizor."}}, {"@type": "Question", "name": "Riscă firma amendă dacă algoritmul e discriminatoriu?", "acceptedAnswer": {"@type": "Answer", "text": "Da — evaluarea riscului și stabilirea prețurilor pentru asigurări de viață/sănătate sunt explicit high-risk sub Anexa III; bias-ul netestat e un risc de conformitate real."}}, {"@type": "Question", "name": "Această utilizare e considerată risc ridicat?", "acceptedAnswer": {"@type": "Answer", "text": "De regulă nu, dacă AI-ul doar optimizează logistica fără impact direct asupra siguranței pasagerilor — verifică totuși dacă vehiculele intră sub Anexa I (componente de siguranță)."}}, {"@type": "Question", "name": "Ce risc legal am dacă un client nu vrea să dezvăluie că reclama e AI?", "acceptedAnswer": {"@type": "Answer", "text": "Obligația de etichetare aparține de regulă celui care publică materialul (deployer) — clarifică prin contract cine poartă această responsabilitate față de public."}}, {"@type": "Question", "name": "Clienții trebuie informați despre personalizarea AI?", "acceptedAnswer": {"@type": "Answer", "text": "De regulă e transparență de bază (GDPR + bune practici comerciale), nu neapărat obligație explicită AI Act — dar comunicarea clară crește încrederea clienților."}}, {"@type": "Question", "name": "Sunt provider sau doar deployer pentru clienții mei?", "acceptedAnswer": {"@type": "Answer", "text": "Dacă dezvolți și pui sistemul pe piață sub numele tău, ești provider — cu obligații complete de documentație tehnică, management de risc și evaluare de conformitate."}}, {"@type": "Question", "name": "Se încadrează asta la social scoring interzis?", "acceptedAnswer": {"@type": "Answer", "text": "Depinde de scop și proporționalitate — un scor limitat la solvabilitate, cu criterii clare și relevante, diferă de un scor general de comportament social; analiza cazului contează."}}, {"@type": "Question", "name": "Ce se întâmplă dacă un candidat contestă respingerea automată?", "acceptedAnswer": {"@type": "Answer", "text": "Ca operator al sistemului la scară mare, ai nevoie de proces documentat de contestare, revizuire umană efectivă și dovezi păstrate pentru fiecare decizie automatizată semnificativă."}}, {"@type": "Question", "name": "Dacă AI-ul recomandă greșit un furnizor, cine răspunde?", "acceptedAnswer": {"@type": "Answer", "text": "AI-ul rămâne instrument de informare — decizia finală de achiziție e a ta; păstrează totuși o urmă a criteriilor folosite, pentru propria protecție contractuală."}}, {"@type": "Question", "name": "Pot bloca automat un cont pe baza alertei AI?", "acceptedAnswer": {"@type": "Answer", "text": "Dacă decizia afectează direct accesul unei persoane la un serviciu, ai nevoie de verificare umană înainte de blocare definitivă, nu doar de alerta automată."}}, {"@type": "Question", "name": "Devine asta un sistem de siguranță reglementat?", "acceptedAnswer": {"@type": "Answer", "text": "Dacă AI-ul doar programează mentenanța (nu controlează direct utilajul), riscul e de regulă redus — dar verifică dacă echipamentul intră sub Anexa I ca produs reglementat."}}, {"@type": "Question", "name": "E diferit legal față de o cameră de supraveghere obișnuită?", "acceptedAnswer": {"@type": "Answer", "text": "Da — analiza video cu AI poate intra sub reguli de biometrie/profilare, mai stricte decât înregistrarea video simplă; verifică scopul exact și dacă identifică persoane."}}, {"@type": "Question", "name": "E legal ca doi clienți să vadă prețuri diferite la același produs?", "acceptedAnswer": {"@type": "Answer", "text": "Practica există legal în multe cazuri, dar riscă discriminare dacă prețul variază pe criterii sensibile (locație, profil personal) — documentează criteriile folosite de algoritm."}}, {"@type": "Question", "name": "De unde încep, dacă n-am documentat nimic până acum?", "acceptedAnswer": {"@type": "Answer", "text": "Primul pas practic e exact inventarul — listezi fiecare sistem AI, furnizorul, scopul și responsabilul; de aici pornește toată conformitatea, nu invers."}}, {"@type": "Question", "name": "Pot folosi scorul AI pentru evaluarea performanței angajatului?", "acceptedAnswer": {"@type": "Answer", "text": "Monitorizarea angajaților prin AI cere transparență clară față de aceștia și limite privind ce decizii (avertisment, concediere) se pot lua direct pe baza scorului automat."}}, {"@type": "Question", "name": "Dacă AI subestimează un risc și se produce un accident, ce se întâmplă?", "acceptedAnswer": {"@type": "Answer", "text": "AI-ul rămâne instrument de sprijin — responsabilitatea legală pentru siguranța șantierului rămâne a firmei; documentează evaluarea umană finală, nu doar output-ul AI."}}, {"@type": "Question", "name": "Pot lăsa AI să facă automat achiziții pe baza predicției?", "acceptedAnswer": {"@type": "Answer", "text": "Automatizarea deciziilor financiare pe baza unei predicții implică risc operațional propriu firmei — păstrează un prag de aprobare umană pentru decizii peste o anumită valoare."}}, {"@type": "Question", "name": "Poate AI să declanșeze automat tratamentul chimic?", "acceptedAnswer": {"@type": "Answer", "text": "Detectarea automată nu ridică probleme majore, dar declanșarea automată a unui tratament (mai ales chimic) fără verificare umană crește riscul operațional și posibil de siguranță a produselor."}}, {"@type": "Question", "name": "Cât de detaliat pot profila un client fără să depășesc limita legală?", "acceptedAnswer": {"@type": "Answer", "text": "Profilarea comercială obișnuită e permisă, dar trebuie să respecte GDPR (consimțământ, scop clar) — evită criterii sensibile (etnie, sănătate) în segmentare."}}, {"@type": "Question", "name": "Trebuie să anunț clienții că prețul e calculat automat?", "acceptedAnswer": {"@type": "Answer", "text": "Nu e o obligație explicită AI Act, dar transparența prețului (mai ales dacă variază des) reduce riscul de reclamații și ține de bune practici comerciale."}}, {"@type": "Question", "name": "Pot lăsa un client „nescorat prioritar\" să aștepte nelimitat?", "acceptedAnswer": {"@type": "Answer", "text": "Prioritizarea automată e permisă comercial, dar trebuie să existe un mecanism de escaladare umană pentru cazurile care nu se rezolvă în timp rezonabil."}}, {"@type": "Question", "name": "Poate AI să stabilească singur cine primește prioritate?", "acceptedAnswer": {"@type": "Answer", "text": "Accesul la servicii esențiale e listat explicit ca domeniu high-risk în Anexa III — decizia finală de prioritizare trebuie să rămână la o persoană, nu doar la algoritm."}}, {"@type": "Question", "name": "Pot lua decizii privind angajații pe baza unei recomandări AI?", "acceptedAnswer": {"@type": "Answer", "text": "Deciziile cu impact major asupra angajaților (concediere) trebuie să rămână decizii umane documentate — o recomandare AI nu te scutește de obligațiile legale privind dreptul muncii."}}, {"@type": "Question", "name": "Cum demonstrez, nu doar afirm, că AI-ul din firmă e controlat?", "acceptedAnswer": {"@type": "Answer", "text": "Ai nevoie de dovezi verificabile, nu doar de o politică scrisă — audit periodic, jurnal de modificări și evidența deciziilor de supraveghere umană documentate."}}, {"@type": "Question", "name": "Ce se întâmplă dacă AI-ul nu detectează la timp o problemă?", "acceptedAnswer": {"@type": "Answer", "text": "Infrastructura critică e domeniu high-risk explicit (Anexa III) — supravegherea umană continuă și planul de intervenție rapidă rămân obligatorii, AI-ul nu poate fi singurul nivel de control."}}, {"@type": "Question", "name": "Roboții industriali intră automat sub AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Depinde — dacă robotul e componentă de siguranță a unui produs reglementat (Regulamentul mașinilor), se aplică regulile specifice, cu termen de aplicare 2 august 2028."}}, {"@type": "Question", "name": "Sunt provider al modelului AI sau doar al produsului meu?", "acceptedAnswer": {"@type": "Answer", "text": "De regulă ești provider al sistemului AI final (produsul tău), nu al modelului de bază — dar responsabilitatea pentru integrare și scop rămâne a ta."}}, {"@type": "Question", "name": "Am aceleași obligații ca un provider de AI?", "acceptedAnswer": {"@type": "Answer", "text": "Nu identice — dar dacă adaptezi/integrezi modelul într-un sistem cu scop propriu, poți deveni provider al acelui sistem, chiar dacă nu ai antrenat modelul de bază."}}, {"@type": "Question", "name": "Modelele open-source sunt exceptate de la AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Unele obligații pentru modele GPAI se reduc pentru cele open-source cu licență liberă, dar sistemul final construit peste ele rămâne supus regulilor obișnuite dacă are scop propriu."}}, {"@type": "Question", "name": "Ce obligații am pentru datele de antrenare folosite?", "acceptedAnswer": {"@type": "Answer", "text": "Ca provider, trebuie să documentezi proveniența datelor, calitatea lor și măsurile de guvernanță — mai ales dacă includ date cu caracter personal."}}, {"@type": "Question", "name": "Cum verific dacă e problemă de date sau de model?", "acceptedAnswer": {"@type": "Answer", "text": "Documentează calitatea datelor separat de performanța modelului — o evaluare a calității datelor de antrenare/operare face parte din obligațiile de guvernanță a datelor."}}, {"@type": "Question", "name": "Sunt obligat legal să fac acest test?", "acceptedAnswer": {"@type": "Answer", "text": "Pentru sisteme high-risk, testarea și corectarea prejudecăților e parte din cerințele de management al riscului — poți folosi chiar date sensibile excepțional, strict pentru acest scop (Art. 4a)."}}, {"@type": "Question", "name": "Fiecare reclamă AI trebuie verificată manual înainte de publicare?", "acceptedAnswer": {"@type": "Answer", "text": "Recomandat da, cel puțin prin sondaj — mai ales pentru afirmații verificabile (preț, beneficii), pentru a evita publicitate înșelătoare generată accidental de AI."}}, {"@type": "Question", "name": "Cine răspunde legal — eu sau furnizorul modelului AI?", "acceptedAnswer": {"@type": "Answer", "text": "De regulă utilizatorul care publică materialul poartă riscul comercial imediat — verifică termenii de licență ai instrumentului AI folosit înainte de utilizare comercială extinsă."}}, {"@type": "Question", "name": "Cum știu care licențe permit uz comercial complet?", "acceptedAnswer": {"@type": "Answer", "text": "Verifică explicit clauzele fiecărei licențe — multe instrumente AI gratuite/ieftine restricționează uzul comercial sau revânzarea rezultatelor generate."}}, {"@type": "Question", "name": "De unde încep o politică de transparență AI?", "acceptedAnswer": {"@type": "Answer", "text": "Pornește de la Art. 50 — identifică toate punctele de contact cu clienții/publicul unde AI-ul interacționează direct, apoi standardizează mesajul de informare."}}, {"@type": "Question", "name": "Accesibilitatea e o cerință separată de AI Act?", "acceptedAnswer": {"@type": "Answer", "text": "Da, se suprapune cu legislația de accesibilitate digitală (European Accessibility Act) — dar un AI care exclude implicit anumiți utilizatori poate crea și risc de discriminare."}}, {"@type": "Question", "name": "Traducerea AI poate introduce erori care afectează clientul?", "acceptedAnswer": {"@type": "Answer", "text": "Da — pentru informații critice (contracte, prețuri, condiții), verifică traducerea automată prin cineva care cunoaște ambele limbi, nu doar prin AI."}}, {"@type": "Question", "name": "Ce nivel minim de instruire e suficient legal?", "acceptedAnswer": {"@type": "Answer", "text": "Nu există un standard fix de ore — obligația e de mijloace (Art. 4): măsuri proporționale cu rolul fiecărui angajat, documentate, nu neapărat un curs formal lung."}}, {"@type": "Question", "name": "Cine ar trebui să fie responsabilul de guvernanță AI?", "acceptedAnswer": {"@type": "Answer", "text": "Nu trebuie neapărat un rol nou, full-time, la firme mici — poate fi o responsabilitate adăugată unui rol existent (IT, compliance), cât timp e clar desemnată și documentată."}}, {"@type": "Question", "name": "De unde încep dacă am zero documentație AI?", "acceptedAnswer": {"@type": "Answer", "text": "Un checklist minim: listă sisteme AI → rol (provider/deployer) → date folosite → risc estimat → cine răspunde. De aici se construiește tot restul."}}, {"@type": "Question", "name": "Cât timp trebuie păstrate logurile sistemelor AI?", "acceptedAnswer": {"@type": "Answer", "text": "Diferă pe rol — provider păstrează logurile mai mult timp (Art. 19), deployer minim 6 luni (Art. 26); verifică și dacă abonamentul comercial folosit chiar oferă loguri accesibile."}}, {"@type": "Question", "name": "Ce înseamnă concret „management al calității” pentru o firmă mică?", "acceptedAnswer": {"@type": "Answer", "text": "Proporțional cu mărimea firmei — poate fi un checklist simplu de verificare + revizuire periodică, nu neapărat un sistem formal ISO complet."}}, {"@type": "Question", "name": "Monitorizarea post-lansare e obligatorie sau doar recomandată?", "acceptedAnswer": {"@type": "Answer", "text": "Pentru sisteme high-risk e obligatorie (monitorizare post-comercializare); pentru restul, e bună practică — performanța AI se poate degrada în timp fără un semnal clar."}}, {"@type": "Question", "name": "Ce trebuie documentat când retrag un sistem AI din uz?", "acceptedAnswer": {"@type": "Answer", "text": "Data retragerii, motivul, ce se întâmplă cu datele procesate anterior, și actualizarea inventarului AI — nu doar dezinstalarea tehnică a instrumentului."}}, {"@type": "Question", "name": "Ce ar trebui să cer furnizorului înainte să cumpăr?", "acceptedAnswer": {"@type": "Answer", "text": "Cere documentația tehnică minimă, clasificarea de risc a produsului lor, politica de date și dacă oferă loguri/dovezi de conformitate accesibile."}}, {"@type": "Question", "name": "Cine e provider — eu sau firma care dezvoltă efectiv?", "acceptedAnswer": {"@type": "Answer", "text": "Dacă sistemul e pus pe piață sub numele/brandul tău, tu rămâi provider legal, chiar dacă dezvoltarea tehnică a fost externalizată — clarifică asta explicit în contract."}}, {"@type": "Question", "name": "Ce obligații am ca prim aducător pe piața UE?", "acceptedAnswer": {"@type": "Answer", "text": "Ca importator, verifici că furnizorul non-UE a făcut evaluarea de conformitate, deții documentele și cooperezi cu autoritățile dacă sunt solicitate."}}, {"@type": "Question", "name": "Am aceleași obligații ca producătorul?", "acceptedAnswer": {"@type": "Answer", "text": "Nu identice — ca distribuitor, verifici marcajele și documentele de conformitate înainte de vânzare, dar nu răspunzi de proiectarea sistemului în sine."}}, {"@type": "Question", "name": "Orice automatizare software e considerată AI?", "acceptedAnswer": {"@type": "Answer", "text": "Nu — definiția legală cere inferență din date, nu doar reguli fixe predefinite; un simplu script „dacă X atunci Y” nu e sistem AI în sensul regulamentului."}}, {"@type": "Question", "name": "Există o listă scurtă de verificare rapidă?", "acceptedAnswer": {"@type": "Answer", "text": "Verifică cele 8 categorii din Art. 5: manipulare, exploatarea vulnerabilităților, social scoring, predicție penală individuală, scraping facial, emoții la muncă/educație, biometrie pe caracteristici sensibile, identificare biometrică live în spații publice."}}, {"@type": "Question", "name": "Unde e granița între marketing agresiv și manipulare interzisă?", "acceptedAnswer": {"@type": "Answer", "text": "Granița e prejudiciul semnificativ — personalizarea comercială obișnuită e permisă; exploatarea explicită a unei vulnerabilități (vârstă, situație financiară disperată) nu e."}}, {"@type": "Question", "name": "Am obligații suplimentare față de acest public?", "acceptedAnswer": {"@type": "Answer", "text": "Da — sistemele AI care ar putea exploata vulnerabilități legate de vârstă sau dizabilitate intră sub atenție specială la Art. 5; verifică design-ul pentru a evita presiune nejustificată."}}, {"@type": "Question", "name": "E permis să analizez emoțiile clienților cu camere AI?", "acceptedAnswer": {"@type": "Answer", "text": "Cu prudență mare — recunoașterea emoțiilor e strict reglementată la locul de muncă și educație (interzisă), iar pentru clienți rămâne o zonă sensibilă legal, necesitând consimțământ clar."}}, {"@type": "Question", "name": "Cum prioritizez ce sistem să evaluez primul?", "acceptedAnswer": {"@type": "Answer", "text": "Începe cu cele care afectează direct decizii despre persoane fizice (angajare, credit, acces la servicii) — acelea au cea mai mare probabilitate de a fi high-risk."}}, {"@type": "Question", "name": "Ce se schimbă pentru mine odată cu Omnibus-ul?", "acceptedAnswer": {"@type": "Answer", "text": "Termenul pentru aceste sisteme (Anexa I) a fost amânat la 2 august 2028 — ai mai mult timp de pregătire, dar procesul de evaluare a conformității tot trebuie planificat din timp."}}, {"@type": "Question", "name": "Ce domenii sunt exact în Anexa III?", "acceptedAnswer": {"@type": "Answer", "text": "Recrutare, educație, credit/asigurări, servicii esențiale, aplicarea legii, migrație/frontieră, justiție, biometrie, infrastructură critică — printre altele."}}, {"@type": "Question", "name": "Sistemele AI din zona vamală/migrație sunt speciale?", "acceptedAnswer": {"@type": "Answer", "text": "Da — sistemele AI folosite de/pentru autorități de frontieră și migrație sunt explicit high-risk în Anexa III, chiar dacă firma ta e doar prestator privat pentru acest proces."}}, {"@type": "Question", "name": "Firmele private de pază au aceleași restricții ca poliția?", "acceptedAnswer": {"@type": "Answer", "text": "Restricțiile cele mai stricte (identificare biometrică live) vizează în special autoritățile publice de aplicare a legii — dar o firmă privată trebuie oricum să respecte regulile generale de biometrie/GDPR."}}, {"@type": "Question", "name": "Vizitatorii trebuie avertizați explicit la fața locului?", "acceptedAnswer": {"@type": "Answer", "text": "Da — chiar dacă pare evident tehnologic, Art. 50 cere o informare clară că interacțiunea e cu un sistem AI, mai ales dacă avatarul pare foarte uman."}}, {"@type": "Question", "name": "Rapoartele publice generate de AI trebuie marcate?", "acceptedAnswer": {"@type": "Answer", "text": "Dacă informează publicul pe teme de interes public, poate exista obligație de dezvăluire a originii AI a textului — verifică natura exactă a raportului."}}, {"@type": "Question", "name": "Am obligații suplimentare doar pentru că folosesc un model mare?", "acceptedAnswer": {"@type": "Answer", "text": "Obligațiile de risc sistemic vizează în principal furnizorul modelului, nu utilizatorii obișnuiți — dar verifică termenii de utilizare pentru limitări specifice impuse de furnizor."}}, {"@type": "Question", "name": "DPO-ul răspunde și de conformitatea AI Act, nu doar GDPR?", "acceptedAnswer": {"@type": "Answer", "text": "Rolurile se suprapun parțial — DPO-ul acoperă protecția datelor, dar guvernanța AI Act poate necesita și un responsabil AI dedicat, mai ales pentru sisteme high-risk."}}, {"@type": "Question", "name": "Ce trebuie neapărat să conțină o politică internă AI?", "acceptedAnswer": {"@type": "Answer", "text": "Minim: ce instrumente sunt aprobate, ce date nu se introduc niciodată în AI extern, cine aprobă instrumente noi, și cum se raportează problemele."}}, {"@type": "Question", "name": "Sunt automat deployer doar pentru că îl folosesc?", "acceptedAnswer": {"@type": "Answer", "text": "Da, de regulă — deployer e cine folosește sistemul AI sub propria autoritate, în scop profesional, indiferent dacă l-a dezvoltat sau nu."}}, {"@type": "Question", "name": "Postările automate au nevoie de aprobare umană de fiecare dată?", "acceptedAnswer": {"@type": "Answer", "text": "Nu obligatoriu pentru fiecare postare, dar recomandat un control periodic — mai ales pentru a evita postări nepotrivite generate fără context."}}, {"@type": "Question", "name": "Robustețea tehnică e o cerință legală sau doar bună practică?", "acceptedAnswer": {"@type": "Answer", "text": "Pentru sisteme high-risk e cerință explicită — sistemul trebuie să funcționeze predictibil și să reziste la erori de intrare fără rezultate periculoase."}}]}, {"@context": "https://schema.org", "@type": "ItemList", "name": "100 de cazuri de utilizare AI — EU AI Act", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Software-ul de recrutare îmi scorează CV-urile candidaților"}, {"@type": "ListItem", "position": 2, "name": "Sistemul de scoring decide cine primește credit"}, {"@type": "ListItem", "position": 3, "name": "Un AI sugerează diagnosticul înainte de consultație"}, {"@type": "ListItem", "position": 4, "name": "Tezele elevilor sunt corectate automat de AI"}, {"@type": "ListItem", "position": 5, "name": "Un chatbot preia primele minute din apelul clientului"}, {"@type": "ListItem", "position": 6, "name": "Cetățenii primesc răspunsuri de la un chatbot al primăriei"}, {"@type": "ListItem", "position": 7, "name": "Accesul în clădire se face prin recunoaștere facială"}, {"@type": "ListItem", "position": 8, "name": "Folosești ChatGPT pentru textele unui client"}, {"@type": "ListItem", "position": 9, "name": "Generezi imagini AI pentru un brand al unui client"}, {"@type": "ListItem", "position": 10, "name": "Folosești AI pentru research juridic rapid"}, {"@type": "ListItem", "position": 11, "name": "Postezi conținut generat de AI pe conturile unui client"}, {"@type": "ListItem", "position": 12, "name": "Faci screening de candidați pentru mai mulți clienți cu AI"}, {"@type": "ListItem", "position": 13, "name": "Clinica ta folosește AI pentru triajul pacienților"}, {"@type": "ListItem", "position": 14, "name": "Un algoritm stabilește prima de asigurare a fiecărui client"}, {"@type": "ListItem", "position": 15, "name": "AI optimizează rutele și mentenanța flotei"}, {"@type": "ListItem", "position": 16, "name": "Agenția ta generează reclame integral cu AI pentru clienți"}, {"@type": "ListItem", "position": 17, "name": "Magazinul online recomandă produse personalizat cu AI"}, {"@type": "ListItem", "position": 18, "name": "Firma ta dezvoltă soluții AI pentru alte companii"}, {"@type": "ListItem", "position": 19, "name": "Un algoritm scorează bonitatea chiriașilor potențiali"}, {"@type": "ListItem", "position": 20, "name": "Agenția ta face screening masiv de candidați cu AI, pentru zeci de clienți"}, {"@type": "ListItem", "position": 21, "name": "Compari furnizori și contracte cu ajutorul AI"}, {"@type": "ListItem", "position": 22, "name": "Folosești AI ca să verifici clauze într-un contract al clientului"}, {"@type": "ListItem", "position": 23, "name": "Un AI îți clasifică automat facturile și cheltuielile clienților"}, {"@type": "ListItem", "position": 24, "name": "Un AI detectează tranzacții suspecte în magazinul tău"}, {"@type": "ListItem", "position": 25, "name": "AI anticipează când se defectează un utilaj"}, {"@type": "ListItem", "position": 26, "name": "Camerele magazinului folosesc AI pentru a detecta comportamente"}, {"@type": "ListItem", "position": 27, "name": "Prețurile din magazinul tău online se ajustează automat cu AI"}, {"@type": "ListItem", "position": 28, "name": "Un AI vocal sună clienții în locul tău"}, {"@type": "ListItem", "position": 29, "name": "Un AI reconstituie ce s-a întâmplat într-un incident IT"}, {"@type": "ListItem", "position": 30, "name": "Vrei un inventar clar al tuturor sistemelor AI din firmă"}, {"@type": "ListItem", "position": 31, "name": "Pregătești dosarul de credit cu ajutorul AI, dar tu semnezi recomandarea"}, {"@type": "ListItem", "position": 32, "name": "Un AI sintetizează istoricul pacientului înainte de consultație"}, {"@type": "ListItem", "position": 33, "name": "Livrezi clientului cod scris integral de AI"}, {"@type": "ListItem", "position": 34, "name": "Introduci documentele comerciale ale clientului într-un AI de traducere"}, {"@type": "ListItem", "position": 35, "name": "Modifici imagini cu persoane reale folosind AI"}, {"@type": "ListItem", "position": 36, "name": "Generezi materiale de curs cu AI pentru un client corporate"}, {"@type": "ListItem", "position": 37, "name": "Un AI monitorizează comportamentul șoferilor firmei"}, {"@type": "ListItem", "position": 38, "name": "AI estimează riscurile de siguranță ale unui șantier"}, {"@type": "ListItem", "position": 39, "name": "AI îți prezice consumul de energie al firmei"}, {"@type": "ListItem", "position": 40, "name": "AI detectează boli ale culturilor din fotografii"}, {"@type": "ListItem", "position": 41, "name": "AI personalizează ofertele turistice pentru fiecare client"}, {"@type": "ListItem", "position": 42, "name": "AI ajustează automat prețurile camerelor sau meselor disponibile"}, {"@type": "ListItem", "position": 43, "name": "AI prioritizează automat reclamațiile clienților"}, {"@type": "ListItem", "position": 44, "name": "AI identifică persoanele vulnerabile pentru prioritate în servicii"}, {"@type": "ListItem", "position": 45, "name": "AI recomandă restructurări sau reduceri de personal"}, {"@type": "ListItem", "position": 46, "name": "Vrei să verifici dacă utilizările AI din firmă sunt conforme"}, {"@type": "ListItem", "position": 47, "name": "AI monitorizează rețeaua electrică a unei firme mari"}, {"@type": "ListItem", "position": 48, "name": "Roboți cu AI lucrează alături de angajați pe linia de producție"}, {"@type": "ListItem", "position": 49, "name": "Oferi consultanță DPO unor firme mici care folosesc AI"}, {"@type": "ListItem", "position": 50, "name": "Construiești un produs SaaS cu AI de la zero"}, {"@type": "ListItem", "position": 51, "name": "Integrezi un model AI extern prin API în produsul firmei"}, {"@type": "ListItem", "position": 52, "name": "Folosești un model AI open-source în locul unuia comercial"}, {"@type": "ListItem", "position": 53, "name": "Firma ta antrenează un model AI propriu pe datele clienților"}, {"@type": "ListItem", "position": 54, "name": "Descoperi că datele folosite de AI-ul firmei au erori sistematice"}, {"@type": "ListItem", "position": 55, "name": "Vrei să testezi dacă AI-ul firmei discriminează anumite grupuri"}, {"@type": "ListItem", "position": 56, "name": "Folosești segmentare AI pentru audiențe sensibile"}, {"@type": "ListItem", "position": 57, "name": "Agenția ta rulează reclame generate integral de AI pe scară largă"}, {"@type": "ListItem", "position": 58, "name": "Ești creator de conținut și folosești AI pentru postări zilnice"}, {"@type": "ListItem", "position": 59, "name": "Folosești AI pentru a clona propria voce în reclame"}, {"@type": "ListItem", "position": 60, "name": "Editezi video corporate cu segmente generate de AI"}, {"@type": "ListItem", "position": 61, "name": "Publici conținut generat de AI și cineva contestă originalitatea"}, {"@type": "ListItem", "position": 62, "name": "Cumperi licențe pentru mai multe instrumente AI simultan"}, {"@type": "ListItem", "position": 63, "name": "Vrei o politică internă unică pentru toate utilizările AI din firmă"}, {"@type": "ListItem", "position": 64, "name": "Trebuie să explici clientului o decizie luată cu ajutorul AI"}, {"@type": "ListItem", "position": 65, "name": "Vrei ca interfața AI a firmei să fie utilizabilă de persoane cu dizabilități"}, {"@type": "ListItem", "position": 66, "name": "Chatbot-ul firmei răspunde clienților în mai multe limbi prin AI"}, {"@type": "ListItem", "position": 67, "name": "Vrei să instruiești rapid tot personalul despre utilizarea AI"}, {"@type": "ListItem", "position": 68, "name": "Vrei o structură clară de roluri pentru guvernanța AI din firmă"}, {"@type": "ListItem", "position": 69, "name": "Descoperi că folosești instrumente AI neautorizate de clienți"}, {"@type": "ListItem", "position": 70, "name": "Vrei un checklist simplu de conformitate AI pentru firma ta"}, {"@type": "ListItem", "position": 71, "name": "Vrei să știi ce loguri trebuie păstrate pentru sistemele AI ale firmei"}, {"@type": "ListItem", "position": 72, "name": "Vrei un sistem simplu de control al calității pentru output-urile AI"}, {"@type": "ListItem", "position": 73, "name": "Vrei să urmărești performanța unui sistem AI după ce a fost implementat"}, {"@type": "ListItem", "position": 74, "name": "Decizi să oprești folosirea unui sistem AI din firmă"}, {"@type": "ListItem", "position": 75, "name": "Cumperi un instrument AI nou și vrei să verifici furnizorul înainte"}, {"@type": "ListItem", "position": 76, "name": "Externalizezi dezvoltarea unui sistem AI către o firmă terță"}, {"@type": "ListItem", "position": 77, "name": "Imporți un sistem AI dintr-o țară din afara UE"}, {"@type": "ListItem", "position": 78, "name": "Revinzi produse cu AI integrat altor firme din România"}, {"@type": "ListItem", "position": 79, "name": "Ajuți alte firme mici să înțeleagă dacă AI Act li se aplică"}, {"@type": "ListItem", "position": 80, "name": "Nu ești sigur dacă un instrument din firmă e „sistem AI” legal"}, {"@type": "ListItem", "position": 81, "name": "Vrei să te asiguri că niciun instrument din firmă nu e interzis"}, {"@type": "ListItem", "position": 82, "name": "Vrei să știi dacă tehnicile de vânzare AI sunt „manipulare interzisă”"}, {"@type": "ListItem", "position": 83, "name": "Produsele firmei ajung frecvent la persoane vârstnice sau vulnerabile"}, {"@type": "ListItem", "position": 84, "name": "Vrei să folosești AI pentru a detecta satisfacția clienților la fața locului"}, {"@type": "ListItem", "position": 85, "name": "Ai mai multe sisteme AI și nu știi de unde să începi clasificarea"}, {"@type": "ListItem", "position": 86, "name": "Firma ta produce echipamente cu componente AI de siguranță"}, {"@type": "ListItem", "position": 87, "name": "Vrei o listă clară a domeniilor cu risc ridicat care te-ar putea afecta"}, {"@type": "ListItem", "position": 88, "name": "Firma ta procesează documente vamale cu ajutorul AI"}, {"@type": "ListItem", "position": 89, "name": "Ajuți un candidat local cu conținut electoral generat de AI"}, {"@type": "ListItem", "position": 90, "name": "Firma ta de pază folosește AI pentru patrulare și alertare"}, {"@type": "ListItem", "position": 91, "name": "Standul firmei la un târg folosește un avatar AI interactiv"}, {"@type": "ListItem", "position": 92, "name": "Un coleg contestă o decizie luată cu ajutorul unui sistem AI intern"}, {"@type": "ListItem", "position": 93, "name": "Firma ta publică rapoarte anuale redactate parțial de AI"}, {"@type": "ListItem", "position": 94, "name": "Firma ta folosește un model AI foarte mare, cu risc sistemic declarat"}, {"@type": "ListItem", "position": 95, "name": "Construiești produse mici peste modele GPAI generale"}, {"@type": "ListItem", "position": 96, "name": "Firma ta a numit un DPO și vrei să clarifici rolul lui față de AI"}, {"@type": "ListItem", "position": 97, "name": "Vrei să scrii prima politică internă de utilizare AI a firmei"}, {"@type": "ListItem", "position": 98, "name": "Nu ești sigur dacă ești „deployer” pentru un instrument AI cumpărat"}, {"@type": "ListItem", "position": 99, "name": "Contul de social media al firmei e gestionat parțial de AI"}, {"@type": "ListItem", "position": 100, "name": "Vrei să testezi cât de stabil e sistemul AI al firmei la date neobișnuite"}]}]}
+</script>
+
+<script>
+var activePersona = 'all';
+var activeFn = 'all';
+
+function applyFilters(){
+  document.querySelectorAll('.persona-section').forEach(function(section){
+    var group = section.getAttribute('data-persona-group');
+    section.classList.toggle('hidden', !(activePersona === 'all' || group === activePersona));
+  });
+  document.querySelectorAll('.case-card').forEach(function(card){
+    var matchFn = (activeFn === 'all' || card.getAttribute('data-fn') === activeFn);
+    card.classList.toggle('hidden', !matchFn);
+  });
+}
+function filterPersona(persona, btn){
+  activePersona = persona;
+  document.querySelectorAll('#filter-bar .filter-chip').forEach(function(c){ c.classList.remove('active'); });
+  btn.classList.add('active');
+  applyFilters();
+}
+function filterFn(fn, btn){
+  activeFn = fn;
+  document.querySelectorAll('#filter-bar-fn .filter-chip').forEach(function(c){ c.classList.remove('active'); });
+  btn.classList.add('active');
+  applyFilters();
+}
+</script>
+</body>
+</html>
