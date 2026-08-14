@@ -1,0 +1,25 @@
+{
+  "protocolVersion": "1.0",
+  "name": "EU-112",
+  "description": "Asistent conversațional pentru întrebări despre EU AI Act (Regulamentul UE 2024/1689) — corpus de 1000 de întrebări-răspunsuri, în limba română.",
+  "url": "https://eu-112.ro",
+  "provider": {
+    "organization": "AiVenture S.R.L.",
+    "url": "https://eu-112.ro"
+  },
+  "supportedInterfaces": [
+    {
+      "type": "web",
+      "url": "https://eu-112.ro/faq.html"
+    }
+  ],
+  "skills": [
+    {
+      "id": "ask-eu-ai-act",
+      "name": "Întreabă despre EU AI Act",
+      "description": "Răspunde la întrebări despre Regulamentul (UE) 2024/1689 folosind un corpus de 1000 de perechi întrebare-răspuns, organizat pe 100 de categorii.",
+      "inputModes": ["text"],
+      "outputModes": ["text"]
+    }
+  ]
+}
