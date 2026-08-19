@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modulul 02 — Clasificarea riscului: ce înseamnă pentru firma ta | EU-112</title>
+<meta name="description" content="Cum îți clasifici sistemele AI pe niveluri de risc — explicat pentru patron de IMM, freelancer/PFA, avocat și firmă IT.">
+<link rel="canonical" href="https://eu-112.ro/modul-02-clasificare-risc.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="EU-112">
+<meta property="og:url" content="https://eu-112.ro/modul-02-clasificare-risc.html">
+<meta property="og:title" content="Modulul 02 — Clasificarea riscului: ce înseamnă pentru firma ta">
+<meta property="og:description" content="Explicat pe patru roluri: patron IMM, freelancer/PFA, avocat, firmă IT.">
+<meta property="og:image" content="https://eu-112.ro/assets/images/og-image.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Modulul 02 — Clasificarea riscului: ce înseamnă pentru firma ta">
+<meta name="twitter:description" content="Explicat pe patru roluri: patron IMM, freelancer/PFA, avocat, firmă IT.">
+<meta name="theme-color" content="#0a0a0a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0a0a0a; --panel:#141410; --panel2:#1a1a15;
+    --gold:#f0c14b; --gold-dim:#a8863a;
+    --red:#c90016; --red2:#ef001c;
+    --text:#f5f5f0; --muted:#c4c4ba; --line:#2a2a22;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',Arial,sans-serif;line-height:1.5;}
+  em{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);}
+  h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
+  a{color:var(--gold);}
+
+  #utility{background:#050503;border-bottom:1px solid var(--line);font-size:11px;color:var(--muted);
+    padding:6px 20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;}
+  #utility #clock{color:var(--gold);}
+
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;
+    border-bottom:1px solid var(--line);flex-wrap:wrap;gap:10px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--text);}
+  .brand .dial{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red2));
+    display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;
+    font-size:12px;color:#fff;font-weight:700;}
+  nav .links{display:flex;gap:18px;font-size:13px;flex-wrap:wrap;}
+  nav .links a{color:var(--muted);text-decoration:none;}
+  nav .links a:hover{color:var(--gold);}
+  nav .cta{background:var(--gold);color:#0a0a0a;font-weight:700;padding:9px 18px;border-radius:8px;
+    text-decoration:none;font-size:13px;}
+
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px;}
+  .section{padding:48px 0;}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:12px;letter-spacing:.12em;
+    text-transform:uppercase;margin-bottom:12px;}
+
+  .crumbs{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);
+    padding:16px 0 0;letter-spacing:.04em;}
+  .crumbs a{color:var(--muted);text-decoration:none;}
+  .crumbs a:hover{color:var(--gold);}
+
+  h1{font-size:38px;margin-bottom:14px;}
+  .lede{font-size:17px;color:var(--muted);max-width:720px;margin-bottom:8px;}
+
+  .plain{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);
+    border-radius:0 10px 10px 0;padding:20px 22px;margin:26px 0;}
+  .plain h2{font-size:21px;margin-bottom:10px;}
+  .plain p{color:var(--muted);font-size:15px;}
+
+  h2.sec{font-size:26px;margin:38px 0 6px;}
+  .sec-sub{color:var(--muted);font-size:14.5px;margin-bottom:20px;}
+
+  .roles{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .role{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;}
+  .role .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+  .role h3{font-size:18px;margin-bottom:10px;}
+  .role p{color:var(--muted);font-size:14px;margin-bottom:10px;}
+  .role ul{list-style:none;padding:0;margin:0;}
+  .role li{color:var(--muted);font-size:13.5px;padding-left:16px;position:relative;margin-bottom:7px;}
+  .role li::before{content:"→";position:absolute;left:0;color:var(--gold-dim);}
+
+  .risk{background:#1a0d0d;border:1px solid #3a1a1a;border-radius:12px;padding:20px 22px;margin:30px 0;}
+  .risk .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:#ef6b6b;margin-bottom:8px;}
+  .risk p{color:var(--muted);font-size:14.5px;}
+
+  .legal{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:30px 0;}
+  .legal .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .legal dl{margin:0;}
+  .legal dt{font-weight:700;font-size:14px;margin-top:12px;}
+  .legal dt:first-child{margin-top:0;}
+  .legal dd{margin:4px 0 0;color:var(--muted);font-size:14px;}
+
+  .next{display:flex;gap:14px;flex-wrap:wrap;margin:34px 0 10px;}
+  .btn-primary{background:var(--gold);color:#0a0a0a;font-weight:700;padding:15px 28px;border-radius:10px;
+    text-decoration:none;font-size:15px;}
+  .btn-secondary{border:1px solid var(--gold-dim);color:var(--gold);padding:15px 28px;border-radius:10px;
+    text-decoration:none;font-size:15px;}
+
+  .modnav{display:flex;justify-content:space-between;gap:14px;border-top:1px solid var(--line);
+    padding-top:22px;margin-top:40px;font-size:13.5px;flex-wrap:wrap;}
+  .modnav a{color:var(--gold);text-decoration:none;}
+  .modnav a:hover{text-decoration:underline;}
+
+  .disclaimer{color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);
+    padding-top:18px;margin-top:34px;}
+
+  .site-footer{background:#050503;border-top:1px solid var(--line);padding:36px 20px 26px;margin-top:20px;}
+  .footer-wrap{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;}
+  .footer-brand{display:flex;align-items:center;gap:9px;font-weight:700;margin-bottom:8px;}
+  .footer-dial{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red2));
+    display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;color:#fff;}
+  .footer-tagline{color:var(--muted);font-size:13px;}
+  .footer-col-title{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+  .footer-col a{display:block;color:var(--muted);text-decoration:none;font-size:13px;margin-bottom:6px;}
+  .footer-col a:hover{color:var(--gold);}
+  .footer-legal{max-width:900px;margin:26px auto 0;padding-top:16px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:11.5px;font-family:'IBM Plex Mono',monospace;}
+
+  @media(max-width:720px){
+    .roles{grid-template-columns:1fr;}
+    h1{font-size:29px;}
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://eu-112.ro/#organization",
+      "name": "AIVENTURE S.R.L.",
+      "url": "https://eu-112.ro/",
+      "sameAs": [
+        "https://www.linkedin.com/company/107338970",
+        "https://www.linkedin.com/showcase/5thelement-ai/",
+        "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+        "https://www.crunchbase.com/organization/aiventure-s-r-l",
+        "https://www.facebook.com/people/Aiventure/61573220584246/",
+        "https://x.com/aipath512",
+        "https://www.youtube.com/@AIVenture-q8u",
+        "https://medium.com/@aipath512",
+        "https://api.whatsapp.com/send/?phone=40737123540"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eu-112.ro/#website",
+      "url": "https://eu-112.ro/",
+      "name": "EU-112",
+      "publisher": {
+        "@id": "https://eu-112.ro/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://eu-112.ro/modul-02-clasificare-risc.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "EU-112",
+          "item": "https://eu-112.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Module",
+          "item": "https://eu-112.ro/#module-uri"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Modulul 02 — Clasificarea riscului",
+          "item": "https://eu-112.ro/modul-02-clasificare-risc.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eu-112.ro/modul-02-clasificare-risc.html#webpage",
+      "url": "https://eu-112.ro/modul-02-clasificare-risc.html",
+      "name": "Modulul 02 — Clasificarea riscului: ce înseamnă pentru firma ta",
+      "isPartOf": {
+        "@id": "https://eu-112.ro/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://eu-112.ro/modul-02-clasificare-risc.html#breadcrumb"
+      },
+      "inLanguage": "ro"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div id="utility">
+  <span>EU-112 · LINIA DE ÎNTREBĂRI EU AI ACT</span>
+  <span id="clock">--:--:--</span>
+</div>
+
+<nav>
+  <a class="brand" href="/"><span class="dial">112</span> EU-112</a>
+  <div class="links">
+    <a href="/faq-hub.html">FAQ Hub</a>
+    <a href="/faq.html">Toate întrebările</a>
+    <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    <a href="/#module-uri">Module</a>
+  </div>
+  <a class="cta" href="/#ask">Întreabă gratuit</a>
+</nav>
+
+<div class="wrap">
+  <div class="crumbs">
+    <a href="/">EU-112</a> / <a href="/#module-uri">Module</a> / Modulul 02
+  </div>
+</div>
+
+<div class="wrap section">
+  <div class="eyebrow">Modulul 02 · Guvernanță</div>
+  <h1>Clasificarea riscului — <em>unde se încadrează sistemele tale</em></h1>
+  <p class="lede">Regulamentul nu tratează toate sistemele la fel. Nivelul de risc decide ce obligații ai efectiv — și, în majoritatea cazurilor, ele sunt mult mai puține decât te temi.</p>
+
+  <div class="plain">
+    <h2>Pe scurt, fără termeni juridici</h2>
+    <p>Clasificarea riscului înseamnă să încadrezi fiecare sistem din inventar într-una din categorii: interzis, risc ridicat, risc limitat (obligații de transparență) sau risc minim. Cele mai multe unelte de birou cad în ultimele două. Important e să poți arăta cum ai ajuns la concluzie, nu doar care e concluzia.</p>
+  </div>
+
+  <div class="risk">
+    <div class="tag">Capcana cea mai frecventă</div>
+    <p>Clasificarea „risc minim" fără nicio motivare scrisă e mai rea decât lipsa clasificării. Un registru cu verdicte pre-completate, fără raționament și fără dată, arată unui inspector că exercițiul nu s-a făcut niciodată.</p>
+  </div>
+
+  <h2 class="sec">Ce înseamnă concret, pe rolul tău</h2>
+  <p class="sec-sub">Aceleași obligații, consecințe foarte diferite.</p>
+
+  <div class="roles">
+    <div class="role">
+      <div class="tag">Patron de IMM</div>
+      <h3>Vestea bună: probabil nu ai risc ridicat</h3>
+      <p>Majoritatea IMM-urilor folosesc sisteme de risc limitat sau minim. Dar dacă folosești AI la recrutare, evaluarea angajaților sau acordarea de credite, ești în altă categorie.</p>
+      <ul>
+        <li>Verifică întâi dacă vreun sistem atinge domeniile din Anexa III (HR, credit, educație)</li>
+        <li>Scrie motivul clasificării în două rânduri, nu doar verdictul</li>
+        <li>Reclasifică atunci când schimbi scopul de utilizare, nu doar sistemul</li>
+        <li>Termenele pentru risc ridicat s-au mutat la 2 decembrie 2027 — ai timp, dar nu la nesfârșit</li>
+      </ul>
+    </div>
+    <div class="role">
+      <div class="tag">Freelancer / PFA</div>
+      <h3>Contează ce faci cu el, nu ce e</h3>
+      <p>Același asistent de scriere e risc minim dacă îți redactezi ofertele și risc mai mare dacă îl folosești ca să evaluezi oameni.</p>
+      <ul>
+        <li>Clasifică pe utilizare, nu pe unealtă</li>
+        <li>Dacă produci conținut publicat, intri în obligații de transparență (Art. 50)</li>
+        <li>Notează data clasificării — e primul lucru pe care îl cere un client atent</li>
+        <li>Reia exercițiul când adaugi un serviciu nou în ofertă</li>
+      </ul>
+    </div>
+    <div class="role">
+      <div class="tag">Avocat / cabinet</div>
+      <h3>Aici se decide tot restul dosarului</h3>
+      <p>Clasificarea e pasul care determină volumul obligațiilor. O încadrare greșită în plus costă clientul bani; una în minus îl expune.</p>
+      <ul>
+        <li>Cere clientului utilizarea reală, nu descrierea din contractul de licență</li>
+        <li>Documentează raționamentul — el e apărarea, nu verdictul</li>
+        <li>Atenție la sistemele care își schimbă categoria prin schimbarea scopului</li>
+        <li>Omnibus a mutat termenele Anexa III la 2 dec 2027 și Anexa I la 2 aug 2028</li>
+      </ul>
+    </div>
+    <div class="role">
+      <div class="tag">Firmă IT / dezvoltator</div>
+      <h3>Clasifici și pentru clienții tăi</h3>
+      <p>Produsul pe care îl livrezi primește o clasificare la tine și alta la client, în funcție de cum e folosit. Ambele contează.</p>
+      <ul>
+        <li>Declară clar în documentația de produs scopul preconizat</li>
+        <li>Un sistem devine risc ridicat prin integrare, chiar dacă la tine nu era</li>
+        <li>Modificarea substanțială a unui sistem existent redeschide evaluarea</li>
+        <li>Componentele de siguranță din mașini au regim separat (Reg. 2023/1230)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="legal">
+    <div class="tag">Ancorele juridice</div>
+    <dl>
+      <dt>Art. 6 și Anexa III — sistemele cu risc ridicat</dt>
+      <dd>Lista domeniilor. Aplicabilitate mutată la 2 decembrie 2027 prin Omnibus.</dd>
+      <dt>Art. 5 — practicile interzise</dt>
+      <dd>Categoria de risc inacceptabil. Aici nu există clasificare, doar interdicție.</dd>
+      <dt>Art. 50 — riscul limitat</dt>
+      <dd>Obligații de transparență pentru chatboți, conținut sintetic, deepfake.</dd>
+    </dl>
+  </div>
+
+  <div class="legal" style="border-left:3px solid var(--gold);">
+    <div class="tag">Mai multe · în rețeaua AiVenture</div>
+    <dl>
+      <dt><a href="https://eu-ai-act.ro/modul-02-clasificare-risc.html?utm_source=eu-112.ro&utm_medium=referral&utm_campaign=modul-02">Detaliul complet al modulului pe eu-ai-act.ro →</a></dt>
+      <dd>Documentele modulului, structura lor și generatorul care le completează cu datele firmei tale.</dd>
+      <dt><a href="https://eu-ai-audit.eu/?utm_source=eu-112.ro&utm_medium=referral&utm_campaign=modul-02">Verifică-ți expunerea — eu-ai-audit.eu →</a></dt>
+      <dd>AUDIT-AI arată ce semnale despre sistemele tale AI sunt deja publice și cum arată ele pentru un evaluator extern.</dd>
+      <dt><a href="https://5thelement.ai/?utm_source=eu-112.ro&utm_medium=referral&utm_campaign=modul-02">Infrastructura din spate — 5thelement.ai →</a></dt>
+      <dd>Standardul canonic al rețelei ADI din care fac parte toate aceste instrumente.</dd>
+    </dl>
+  </div>
+
+  <h2 class="sec">Ai o întrebare care nu e aici?</h2>
+  <p class="sec-sub">Asistentul răspunde din regulament, din cele 1000 de întrebări-răspunsuri și din cele 70 de documente.</p>
+
+  <div class="next">
+    <a class="btn-primary" href="/#ask">Întreabă despre inventar →</a>
+    <a class="btn-secondary" href="/faq-hub.html">Vezi toate categoriile</a>
+  </div>
+
+  <div class="modnav">
+    <a href="/modul-01-inventar-sisteme-ai.html">← Modulul 01 · Inventarul sistemelor AI</a>
+    <a href="/modul-03-competente-ai.html">Modulul 03 · Alfabetizarea AI →</a>
+  </div>
+
+  <p class="disclaimer">Conținut orientativ, cu scop de pregătire documentară. Nu constituie consultanță juridică și nu certifică conformitatea cu Regulamentul (UE) 2024/1689. Pentru sisteme cu risc ridicat, modele GPAI sau utilizări cu impact asupra drepturilor fundamentale este necesară analiză juridică individuală.</p>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <div class="footer-brand"><span class="footer-dial">112</span> EU-112</div>
+      <p class="footer-tagline">Linia de întrebări gratuite despre EU AI Act.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Linkuri rapide</div>
+      <a href="/">Acasă</a>
+      <a href="/faq-hub.html">FAQ Hub</a>
+      <a href="/faq.html">Toate întrebările</a>
+      <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-title">Pasul următor</div>
+      <a href="https://eu-ai-act.ro/?utm_source=eu-112.ro&utm_medium=referral&utm_campaign=modul-02">Generează documentele →</a>
+    </div>
+      <div class="footer-col">
+      <div class="footer-col-title">AiVenture · oficial</div>
+      <a href="https://www.linkedin.com/company/107338970" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/showcase/5thelement-ai/" target="_blank" rel="noopener">Showcase</a>
+      <a href="https://ro.linkedin.com/in/dan-ionesco-a856082a0" target="_blank" rel="noopener">Fondator</a>
+      <a href="https://www.crunchbase.com/organization/aiventure-s-r-l" target="_blank" rel="noopener">Crunchbase</a>
+      <a href="https://www.facebook.com/people/Aiventure/61573220584246/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://x.com/aipath512" target="_blank" rel="noopener">X</a>
+      <a href="https://www.youtube.com/@AIVenture-q8u" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://medium.com/@aipath512" target="_blank" rel="noopener">Medium</a>
+      <a href="https://api.whatsapp.com/send/?phone=40737123540" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="footer-legal">
+    AIVENTURE S.R.L. · CUI 51415878 · București, România
+  </div>
+</footer>
+
+<script>
+  function tick(){
+    const d = new Date();
+    const el = document.getElementById('clock');
+    if(el) el.textContent = d.toLocaleTimeString('ro-RO');
+  }
+  tick(); setInterval(tick, 1000);
+</script>
+
+</body>
+</html>

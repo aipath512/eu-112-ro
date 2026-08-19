@@ -69,7 +69,10 @@
 
   .stats{display:flex;justify-content:center;gap:0;flex-wrap:wrap;padding:32px 20px;border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);}
-  .stat{padding:0 30px;text-align:center;border-right:1px solid var(--line);}
+  .stat{padding:0 30px;text-align:center;border-right:1px solid var(--line);
+    text-decoration:none;color:inherit;display:block;transition:transform .15s;}
+  .stat:hover{transform:translateY(-2px);}
+  .stat:hover .num{color:#fff;}
   .stat:last-child{border-right:none;}
   .stat .num{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:var(--gold);}
   .stat .lab{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);text-transform:uppercase;}
@@ -78,14 +81,21 @@
   .section h2{font-size:30px;text-align:center;margin-bottom:44px;}
   .pipeline{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;max-width:960px;margin:0 auto;}
   .pstep{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 16px;
-    width:150px;text-align:center;}
+    width:150px;text-align:center;text-decoration:none;color:inherit;display:block;
+    transition:border-color .15s, transform .15s;}
+  .pstep:hover{border-color:var(--gold-dim);transform:translateY(-2px);}
   .pstep .n{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;margin-bottom:6px;}
   .pstep .t{font-weight:700;font-size:14px;margin-bottom:4px;}
   .pstep .d{color:var(--muted);font-size:12px;}
   .arrow{color:var(--gold-dim);font-size:20px;}
 
   .personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:960px;margin:0 auto;}
-  .persona{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;}
+  .persona{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;
+    display:flex;flex-direction:column;text-decoration:none;color:inherit;
+    transition:border-color .15s, transform .15s;}
+  .persona:hover{border-color:var(--gold-dim);transform:translateY(-2px);}
+  .persona-more{margin-top:auto;padding-top:12px;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;letter-spacing:.06em;color:var(--gold);}
   .persona .role{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:8px;}
   .persona h3{font-size:17px;margin-bottom:6px;}
   .persona p{color:var(--muted);font-size:13.5px;}
@@ -97,15 +107,25 @@
   #ask-q{flex:1;padding:14px 16px;border:1.5px solid #d8d2bf;border-radius:10px;font-size:15px;
     font-family:'Inter',sans-serif;color:#141414;}
   #ask-send{background:var(--red);color:#fff;border:none;border-radius:10px;padding:0 22px;font-weight:700;cursor:pointer;}
+  .ask-ex-title{max-width:760px;margin:26px auto 10px;font-size:12px;letter-spacing:.08em;
+    text-transform:uppercase;color:#5a5648;font-family:'IBM Plex Mono',monospace;text-align:center;}
   .ask-examples{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;margin:0 auto;}
-  .ask-ex{background:#fff;border:1px solid #e5e0d0;border-radius:10px;padding:14px 16px;font-size:13px;}
+  .ask-ex{background:#fff;border:1px solid #e5e0d0;border-radius:10px;padding:14px 16px;font-size:13px;
+    transition:border-color .15s, box-shadow .15s, transform .15s;}
+  .ask-ex:hover{border-color:var(--red,#c1121f);box-shadow:0 3px 10px rgba(0,0,0,.08);transform:translateY(-1px);}
+  .ask-ex:focus-visible{outline:2px solid var(--red,#c1121f);outline-offset:2px;}
   .ask-ex .q{font-weight:700;margin-bottom:5px;}
   .ask-ex .a{color:#5a5648;}
   #ask-answer{max-width:640px;margin:20px auto 0;background:#fff;border:1px solid #e5e0d0;border-radius:10px;
-    padding:16px 18px;font-size:14.5px;line-height:1.7;white-space:pre-wrap;display:none;}
+    padding:16px 18px;font-size:14.5px;line-height:1.7;display:none;text-align:left;}
 
   .modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;max-width:960px;margin:0 auto;}
-  .module{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;font-size:13px;}
+  .module{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;font-size:13px;
+    display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--text);
+    transition:border-color .15s, transform .15s;}
+  .module:hover{border-color:var(--gold-dim);transform:translateY(-2px);}
+  .module-more{margin-top:auto;padding-top:8px;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;letter-spacing:.06em;color:var(--gold);}
   .module .num{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;}
 
   .pricing{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;max-width:960px;margin:0 auto;}
@@ -134,6 +154,150 @@
     font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6;}
   @media (max-width:600px){.footer-wrap{grid-template-columns:1fr;gap:20px;}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://eu-112.ro/#organization",
+      "name": "AIVENTURE S.R.L.",
+      "alternateName": "EU-112",
+      "url": "https://eu-112.ro/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Drumul Pădurea Pustnicu 141C, Corp A, Etaj 2, Ap. 5",
+        "addressLocality": "București",
+        "addressRegion": "Sectorul 1",
+        "postalCode": "014044",
+        "addressCountry": "RO"
+      },
+      "vatID": "51415878",
+      "sameAs": [
+        "https://www.linkedin.com/company/107338970",
+        "https://www.linkedin.com/showcase/5thelement-ai/",
+        "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+        "https://www.crunchbase.com/organization/aiventure-s-r-l",
+        "https://www.facebook.com/people/Aiventure/61573220584246/",
+        "https://x.com/aipath512",
+        "https://www.youtube.com/@AIVenture-q8u",
+        "https://medium.com/@aipath512",
+        "https://api.whatsapp.com/send/?phone=40737123540"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eu-112.ro/#website",
+      "url": "https://eu-112.ro/",
+      "name": "EU-112",
+      "description": "Linia de întrebări gratuite despre EU AI Act, pentru salariați și firme din România.",
+      "inLanguage": "ro",
+      "publisher": {
+        "@id": "https://eu-112.ro/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eu-112.ro/#webpage",
+      "url": "https://eu-112.ro/",
+      "name": "EU-112 — Întreabă orice despre EU AI Act",
+      "isPartOf": {
+        "@id": "https://eu-112.ro/#website"
+      },
+      "about": {
+        "@id": "https://eu-112.ro/#service"
+      },
+      "inLanguage": "ro"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://eu-112.ro/#service",
+      "name": "EU-112 — asistent conversațional EU AI Act",
+      "provider": {
+        "@id": "https://eu-112.ro/#organization"
+      },
+      "areaServed": [
+        "RO",
+        "EU"
+      ],
+      "serviceType": "Informare privind Regulamentul (UE) 2024/1689",
+      "description": "Răspunsuri din Regulamentul (UE) 2024/1689 cu modificările Omnibus (UE) 2026/1744, 1000 de întrebări-răspunsuri, 100 de cazuri de utilizare și 70 de documente de guvernanță.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://eu-112.ro/#module",
+      "name": "Cele 10 module de guvernanță AI",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inventar sisteme AI",
+          "url": "https://eu-112.ro/modul-01-inventar-sisteme-ai.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Clasificare risc",
+          "url": "https://eu-112.ro/modul-02-clasificare-risc.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Alfabetizare AI",
+          "url": "https://eu-112.ro/modul-03-competente-ai.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Practici interzise",
+          "url": "https://eu-112.ro/modul-04-practici-interzise.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Evaluare risc ridicat",
+          "url": "https://eu-112.ro/modul-05-evaluare-risc-ridicat.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Documentație tehnică",
+          "url": "https://eu-112.ro/modul-06-documentatie-tehnica.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Supraveghere umană",
+          "url": "https://eu-112.ro/modul-07-supraveghere-umana.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Guvernanță date",
+          "url": "https://eu-112.ro/modul-08-guvernanta-datelor.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Logging & monitorizare",
+          "url": "https://eu-112.ro/modul-09-logging-monitorizare.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Raportare incidente",
+          "url": "https://eu-112.ro/modul-10-raportare-incidente.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -195,29 +359,29 @@
 </div>
 
 <div class="stats">
-  <div class="stat"><div class="num">1000</div><div class="lab">Întrebări Conversaționale</div></div>
-  <div class="stat"><div class="num">100</div><div class="lab">Cazuri de Studiu</div></div>
-  <div class="stat"><div class="num">70</div><div class="lab">Documente Governance</div></div>
-  <div class="stat"><div class="num">113</div><div class="lab">Articole Regulament</div></div>
-  <div class="stat"><div class="num">10</div><div class="lab">Module Conformitate</div></div>
-  <div class="stat"><div class="num">5</div><div class="lab">Surse Corpus Unificate</div></div>
-  <div class="stat"><div class="num">0€</div><div class="lab">Cost Acces Întrebări</div></div>
-  <div class="stat"><div class="num">24/7</div><div class="lab">Asistent AI</div></div>
+  <a class="stat" href="/faq.html"><div class="num">1000</div><div class="lab">Întrebări Conversaționale</div></a>
+  <a class="stat" href="/cazuri-de-utilizare.html"><div class="num">100</div><div class="lab">Cazuri de Studiu</div></a>
+  <a class="stat" href="/modul-01-inventar-sisteme-ai.html"><div class="num">70</div><div class="lab">Documente Governance</div></a>
+  <a class="stat" href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener"><div class="num">113</div><div class="lab">Articole Regulament</div></a>
+  <a class="stat" href="#module-uri"><div class="num">10</div><div class="lab">Module Conformitate</div></a>
+  <a class="stat" href="/faq-hub.html"><div class="num">6</div><div class="lab">Surse Corpus Unificate</div></a>
+  <a class="stat" href="#ask"><div class="num">0€</div><div class="lab">Cost Acces Întrebări</div></a>
+  <a class="stat" href="#ask"><div class="num">24/7</div><div class="lab">Asistent AI</div></a>
 </div>
 
 <div class="section">
   <div class="eyebrow" style="text-align:center;">CUM FUNCȚIONEAZĂ</div>
   <h2>De la întrebare, la dovadă de pregătire</h2>
   <div class="pipeline">
-    <div class="pstep"><div class="n">01</div><div class="t">Întrebi</div><div class="d">Orice, în română, ca la un avocat</div></div>
+    <a class="pstep" href="#ask"><div class="n">01</div><div class="t">Întrebi</div><div class="d">Orice, în română, ca la un avocat</div></a>
     <div class="arrow">→</div>
-    <div class="pstep"><div class="n">02</div><div class="t">Primești răspuns</div><div class="d">Din textul oficial + 70 doc.</div></div>
+    <a class="pstep" href="/faq-hub.html"><div class="n">02</div><div class="t">Primești răspuns</div><div class="d">Din textul oficial + 70 doc.</div></a>
     <div class="arrow">→</div>
-    <div class="pstep"><div class="n">03</div><div class="t">Descoperi expunerea</div><div class="d">Ce din ce folosești e AI</div></div>
+    <a class="pstep" href="/modul-01-inventar-sisteme-ai.html"><div class="n">03</div><div class="t">Descoperi expunerea</div><div class="d">Ce din ce folosești e AI</div></a>
     <div class="arrow">→</div>
-    <div class="pstep"><div class="n">04</div><div class="t">Te abonezi (opțional)</div><div class="d">Alertă la modificări legale</div></div>
+    <a class="pstep" href="#preturi"><div class="n">04</div><div class="t">Te abonezi (opțional)</div><div class="d">Alertă la modificări legale</div></a>
     <div class="arrow">→</div>
-    <div class="pstep"><div class="n">05</div><div class="t">Generezi dosarul</div><div class="d">Pe eu-ai-act.ro, Governance</div></div>
+    <a class="pstep" href="https://eu-ai-act.ro/?utm_source=eu-112.ro&utm_medium=referral&utm_campaign=pipeline" target="_blank" rel="noopener"><div class="n">05</div><div class="t">Generezi dosarul</div><div class="d">Pe eu-ai-act.ro, Governance</div></a>
   </div>
 </div>
 
@@ -225,22 +389,23 @@
   <div class="eyebrow" style="text-align:center;">PENTRU CINE E</div>
   <h2>Oricine atinge un sistem AI la muncă</h2>
   <div class="personas">
-    <div class="persona"><div class="role">Salariat</div><h3>Folosești ChatGPT la raport</h3><p>Vrei să știi dacă asta te expune sau expune firma.</p></div>
-    <div class="persona"><div class="role">Patron IMM</div><h3>Nu faci reclame pe AI</h3><p>Dar CRM-ul, facturarea, HR-ul — poate au deja AI.</p></div>
-    <div class="persona"><div class="role">Responsabil AI</div><h3>Numit intern, fără pregătire</h3><p>Vrei răspunsuri rapide, nu un curs de 3 zile.</p></div>
-    <div class="persona"><div class="role">Consultant</div><h3>Clienți care întreabă</h3><p>Ai nevoie de răspunsuri corecte, citate din lege.</p></div>
+    <a class="persona" href="/cazuri-de-utilizare.html"><div class="role">Salariat</div><h3>Folosești ChatGPT la raport</h3><p>Vrei să știi dacă asta te expune sau expune firma.</p><span class="persona-more">Vezi ce te privește →</span></a>
+    <a class="persona" href="/modul-01-inventar-sisteme-ai.html"><div class="role">Patron IMM</div><h3>Nu faci reclame pe AI</h3><p>Dar CRM-ul, facturarea, HR-ul — poate au deja AI.</p><span class="persona-more">Vezi ce te privește →</span></a>
+    <a class="persona" href="/modul-03-competente-ai.html"><div class="role">Responsabil AI</div><h3>Numit intern, fără pregătire</h3><p>Vrei răspunsuri rapide, nu un curs de 3 zile.</p><span class="persona-more">Vezi ce te privește →</span></a>
+    <a class="persona" href="/faq-hub.html"><div class="role">Consultant</div><h3>Clienți care întreabă</h3><p>Ai nevoie de răspunsuri corecte, citate din lege.</p><span class="persona-more">Vezi ce te privește →</span></a>
   </div>
 </div>
 
 <div class="section" id="ask">
   <div id="ask-panel">
     <h2>Întreabă orice despre EU AI Act</h2>
-    <div class="sub">Răspuns din Regulamentul (UE) 2024/1689 + cele 70 de documente + FAQ. Gratuit, fără cont.</div>
+    <div class="sub">Răspuns din Regulamentul (UE) 2024/1689, cu modificările Omnibus (UE) 2026/1744 în vigoare din 27 iulie 2026 — plus 1000 de întrebări-răspunsuri, 100 de cazuri de utilizare și cele 70 de documente Governance. Gratuit, fără cont.</div>
     <div id="ask-input-row">
       <input id="ask-q" type="text" placeholder="Ex: Folosim ChatGPT în firmă — se aplică AI Act?">
       <button id="ask-send">Întreabă</button>
     </div>
     <div id="ask-answer"></div>
+    <div class="ask-ex-title">Întrebări frecvente — apasă pe oricare ca să primești răspunsul</div>
     <div class="ask-examples">
       <div class="ask-ex"><div class="q">CRM cu scoring automat al clienților?</div><div class="a">Sistem AI — trebuie inventariat, chiar dacă nu l-ai cumpărat ca "AI".</div></div>
       <div class="ask-ex"><div class="q">Chatbot pe site-ul firmei?</div><div class="a">Obligație directă de transparență (Art. 50) — trebuie declarat.</div></div>
@@ -254,16 +419,16 @@
   <div class="eyebrow" style="text-align:center;">GOVERNANCE LAYER</div>
   <h2>10 module, 70 de documente — pas următor, gratuit</h2>
   <div class="modules">
-    <div class="module"><span class="num">01</span> Inventar sisteme AI</div>
-    <div class="module"><span class="num">02</span> Clasificare risc</div>
-    <div class="module"><span class="num">03</span> Alfabetizare AI</div>
-    <div class="module"><span class="num">04</span> Practici interzise</div>
-    <div class="module"><span class="num">05</span> Evaluare risc ridicat</div>
-    <div class="module"><span class="num">06</span> Documentație tehnică</div>
-    <div class="module"><span class="num">07</span> Supraveghere umană</div>
-    <div class="module"><span class="num">08</span> Guvernanță date</div>
-    <div class="module"><span class="num">09</span> Logging & monitorizare</div>
-    <div class="module"><span class="num">10</span> Raportare incidente</div>
+    <a class="module" href="/modul-01-inventar-sisteme-ai.html"><span class="num">01</span> Inventar sisteme AI<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-02-clasificare-risc.html"><span class="num">02</span> Clasificare risc<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-03-competente-ai.html"><span class="num">03</span> Alfabetizare AI<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-04-practici-interzise.html"><span class="num">04</span> Practici interzise<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-05-evaluare-risc-ridicat.html"><span class="num">05</span> Evaluare risc ridicat<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-06-documentatie-tehnica.html"><span class="num">06</span> Documentație tehnică<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-07-supraveghere-umana.html"><span class="num">07</span> Supraveghere umană<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-08-guvernanta-datelor.html"><span class="num">08</span> Guvernanță date<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-09-logging-monitorizare.html"><span class="num">09</span> Logging & monitorizare<span class="module-more">Mai multe →</span></a>
+    <a class="module" href="/modul-10-raportare-incidente.html"><span class="num">10</span> Raportare incidente<span class="module-more">Mai multe →</span></a>
   </div>
 </div>
 
@@ -304,6 +469,18 @@
       <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=footer">eu-ai-act.ro</a>
       <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
       <a href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+    </div>
+      <div class="footer-col">
+      <div class="footer-col-title">AiVenture · oficial</div>
+      <a href="https://www.linkedin.com/company/107338970" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/showcase/5thelement-ai/" target="_blank" rel="noopener">Showcase</a>
+      <a href="https://ro.linkedin.com/in/dan-ionesco-a856082a0" target="_blank" rel="noopener">Fondator</a>
+      <a href="https://www.crunchbase.com/organization/aiventure-s-r-l" target="_blank" rel="noopener">Crunchbase</a>
+      <a href="https://www.facebook.com/people/Aiventure/61573220584246/" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://x.com/aipath512" target="_blank" rel="noopener">X</a>
+      <a href="https://www.youtube.com/@AIVenture-q8u" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://medium.com/@aipath512" target="_blank" rel="noopener">Medium</a>
+      <a href="https://api.whatsapp.com/send/?phone=40737123540" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
   <div class="footer-legal">
