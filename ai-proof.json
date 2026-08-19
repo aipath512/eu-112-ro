@@ -1,0 +1,42 @@
+{
+  "generated": "2026-08-19",
+  "site": "https://eu-112.ro/",
+  "method": {
+    "algorithm": "SHA-256",
+    "encoding": "UTF-8, LF line endings, one trailing newline",
+    "root_computation": "SHA-256 of the concatenated per-file hashes, in the order listed"
+  },
+  "files": [
+    {
+      "file": "/ai.json",
+      "sha256": "97a07aea06f53c3573262fefdf5ca82469ea948ff42d9fc92ac81fd824757f95",
+      "bytes": 2191
+    },
+    {
+      "file": "/entities.json",
+      "sha256": "d96f9192f0d93485126db61ac3350576a0337e955f3ee5f0ae9c12c379629cee",
+      "bytes": 3167
+    },
+    {
+      "file": "/authority.json",
+      "sha256": "d946440a188bffff8fd4c03d8df65b50a5f7333641f8f8fcd468d55f521f80f9",
+      "bytes": 1528
+    },
+    {
+      "file": "/governance.json",
+      "sha256": "9ebf19caa01979394c917b5c5b09a8e0c8826137c3b88479df25b070175655c6",
+      "bytes": 1443
+    },
+    {
+      "file": "/policy.json",
+      "sha256": "be06dff7a72e8cf8c5464374f19cc1251efcbab05d05e5322015087b24875dbe",
+      "bytes": 1062
+    }
+  ],
+  "root_sha256": "5a6b44cd6e7c1dbc97fc37261f379b7a90ec072ac9817f3722681080c57fd815",
+  "timestamping": {
+    "status": "not_anchored",
+    "note": "Amprenta nu este ancorată temporal independent. Ea atestă integritatea fișierelor la data generării, nu anterioritatea."
+  },
+  "verification": "Recalculați SHA-256 pentru fiecare fișier listat, apoi SHA-256 peste concatenarea hash-urilor în ordinea dată."
+}

@@ -1,0 +1,30 @@
+{
+  "generated": "2026-08-19",
+  "site": "https://eu-112.ro/",
+  "ai_crawling": {
+    "allowed": true,
+    "conditions": "Conținutul poate fi citit, indexat și citat de crawlere și agenți AI.",
+    "attribution_required": true,
+    "attribution_format": "EU-112 (eu-112.ro), AiVenture S.R.L."
+  },
+  "content_license": {
+    "type": "proprietary",
+    "reuse": "Citarea cu atribuire este permisă. Reproducerea integrală a corpusului nu este permisă."
+  },
+  "data_handling": {
+    "questions_logged": true,
+    "personal_data_required": false,
+    "account_required": false
+  },
+  "endpoints": {
+    "llms": "https://eu-112.ro/llms.txt",
+    "robots": "https://eu-112.ro/robots.txt",
+    "sitemap": "https://eu-112.ro/sitemap.xml",
+    "profile": "https://eu-112.ro/ai.json",
+    "entities": "https://eu-112.ro/entities.json",
+    "authority": "https://eu-112.ro/authority.json",
+    "governance": "https://eu-112.ro/governance.json",
+    "proof": "https://eu-112.ro/ai-proof.json",
+    "agent_card": "https://eu-112.ro/.well-known/agent-card.json"
+  }
+}

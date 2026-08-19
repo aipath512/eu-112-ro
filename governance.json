@@ -1,0 +1,41 @@
+{
+  "generated": "2026-08-19",
+  "lastReviewed": "2026-08-19",
+  "declaringEntity": "AIVENTURE S.R.L.",
+  "scope": "Sistemele AI utilizate în operarea eu-112.ro",
+  "role_under_eu_ai_act": "deployer",
+  "aiSystemsUsed": [
+    {
+      "id": "AI-001",
+      "name": "Groq — openai/gpt-oss-120b",
+      "purpose": "Generarea răspunsurilor în asistentul conversațional",
+      "provider": "Groq, Inc.",
+      "riskLevel": "limited",
+      "transparencyObligation": "Art. 50 — utilizatorul este informat că dialoghează cu un sistem AI"
+    },
+    {
+      "id": "AI-002",
+      "name": "Cloudflare Workers AI — bge-m3",
+      "purpose": "Generarea reprezentărilor vectoriale pentru căutarea semantică",
+      "provider": "Cloudflare, Inc.",
+      "riskLevel": "minimal"
+    },
+    {
+      "id": "AI-003",
+      "name": "Cloudflare Vectorize",
+      "purpose": "Căutare semantică în corpusul de 2202 vectori",
+      "provider": "Cloudflare, Inc.",
+      "riskLevel": "minimal"
+    }
+  ],
+  "humanOversight": {
+    "designated": true,
+    "description": "Conținutul corpusului este redactat și revizuit uman înainte de indexare."
+  },
+  "prohibitedPractices": {
+    "assessed": true,
+    "result": "Niciun sistem utilizat nu intră sub Art. 5."
+  },
+  "userDisclosure": "Interfața afișează permanent că dialogul are loc cu un asistent AI.",
+  "disclaimer": "Sprijină pregătirea documentară. Nu certifică conformitatea."
+}

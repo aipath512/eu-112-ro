@@ -1,0 +1,71 @@
+{
+  "site": "https://eu-112.ro/",
+  "operator": "AIVENTURE S.R.L.",
+  "owner": "AIVENTURE S.R.L.",
+  "founder": "Dan Ionescu",
+  "language": "ro",
+  "updated": "2026-08-19",
+  "description": "EU-112 — linie de întrebări gratuite despre Regulamentul (UE) 2024/1689 (EU AI Act), în limba română, pentru salariați, freelanceri, patroni de IMM, avocați și firme IT.",
+  "services": [
+    "Asistent conversațional EU AI Act (gratuit, fără cont)",
+    "1000 de perechi întrebare-răspuns pe 100 de categorii",
+    "100 de cazuri de utilizare pe persona și industrie",
+    "10 module de guvernanță explicate pe roluri"
+  ],
+  "corpus": {
+    "sources": 6,
+    "rows": 1840,
+    "detail": {
+      "regulament_2024_1689": 643,
+      "omnibus_2026_1744": 19,
+      "dictionar_ere": 8,
+      "intrebari_raspunsuri": 1000,
+      "cazuri_utilizare": 100,
+      "documente_governance": 70
+    }
+  },
+  "offers": [
+    {
+      "name": "Acces la asistent",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  ],
+  "knowsAbout": [
+    "EU AI Act",
+    "Regulation (EU) 2024/1689",
+    "Regulation (EU) 2026/1744",
+    "AI Governance",
+    "AI Compliance",
+    "Article 50 Transparency"
+  ],
+  "audience": [
+    "salariați",
+    "freelanceri / PFA",
+    "patroni IMM",
+    "avocați",
+    "firme IT"
+  ],
+  "disclaimer": "Sprijină pregătirea documentară. Nu constituie consultanță juridică și nu certifică conformitatea.",
+  "network": {
+    "role": "entry node",
+    "flagship": "https://5thelement.ai",
+    "delivery_domain": "https://aiventure.ro",
+    "doctrine": "ADI — AI Delivery Infrastructure"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/107338970",
+    "https://www.linkedin.com/showcase/5thelement-ai/",
+    "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+    "https://www.crunchbase.com/organization/aiventure-s-r-l",
+    "https://www.facebook.com/people/Aiventure/61573220584246/",
+    "https://x.com/aipath512",
+    "https://www.youtube.com/@AIVenture-q8u",
+    "https://medium.com/@aipath512",
+    "https://api.whatsapp.com/send/?phone=40737123540"
+  ],
+  "contact": {
+    "email": "contact@5thelement.ai",
+    "whatsapp": "+40737123540"
+  }
+}

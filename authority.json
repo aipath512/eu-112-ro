@@ -1,0 +1,52 @@
+{
+  "generated": "2026-08-19",
+  "operator": {
+    "legalName": "AIVENTURE S.R.L.",
+    "brand": "EU-112",
+    "CUI": "51415878",
+    "EUID": "ROONRC.J2025016406000",
+    "nrRegistrulComertului": "J2025016406000",
+    "incorporated": "2025-03-07",
+    "address": {
+      "street": "Drumul Pădurea Pustnicu 141C, Corp A, Etaj 2, Ap. 5",
+      "locality": "București",
+      "region": "Sectorul 1",
+      "postalCode": "014044",
+      "country": "RO"
+    },
+    "contact": {
+      "email": "contact@5thelement.ai",
+      "whatsapp": "+40737123540"
+    }
+  },
+  "epistemic_status": {
+    "self_declared": [
+      "corpus size",
+      "service scope",
+      "free access"
+    ],
+    "publicly_verifiable": [
+      "company registration",
+      "website content",
+      "sameAs profiles",
+      "contact email"
+    ],
+    "independently_certified": []
+  },
+  "claims_not_made": [
+    "Nu certificăm conformitatea cu Regulamentul (UE) 2024/1689.",
+    "Nu oferim consultanță juridică.",
+    "Nu garantăm poziționare în motoare de căutare."
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/107338970",
+    "https://www.linkedin.com/showcase/5thelement-ai/",
+    "https://ro.linkedin.com/in/dan-ionesco-a856082a0",
+    "https://www.crunchbase.com/organization/aiventure-s-r-l",
+    "https://www.facebook.com/people/Aiventure/61573220584246/",
+    "https://x.com/aipath512",
+    "https://www.youtube.com/@AIVenture-q8u",
+    "https://medium.com/@aipath512",
+    "https://api.whatsapp.com/send/?phone=40737123540"
+  ]
+}
