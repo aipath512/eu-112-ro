@@ -322,6 +322,37 @@
   const API = "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=";
   const qEl = document.getElementById('ask-q');
   const ansEl = document.getElementById('ask-answer');
+  function esc(t){
+    return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+  function renderAnswer(raw){
+    ansEl.innerHTML = '';
+    const blocks = raw.split(/\n{2,}/);
+    for(const block of blocks){
+      const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+      if(!lines.length) continue;
+      const isList = lines.every(l => /^[-*\u2022]\s+/.test(l));
+      if(isList){
+        const ul = document.createElement('ul');
+        ul.style.margin = '10px 0';
+        ul.style.paddingLeft = '20px';
+        for(const l of lines){
+          const li = document.createElement('li');
+          li.style.marginBottom = '6px';
+          li.innerHTML = esc(l.replace(/^[-*\u2022]\s+/, ''))
+            .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          ul.appendChild(li);
+        }
+        ansEl.appendChild(ul);
+      } else {
+        const pEl = document.createElement('p');
+        pEl.style.margin = '10px 0';
+        pEl.innerHTML = esc(lines.join(' '))
+          .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+        ansEl.appendChild(pEl);
+      }
+    }
+  }
   async function askQuestion(){
     const text = qEl.value.trim();
     if(!text) return;
@@ -330,13 +361,33 @@
     try{
       const resp = await fetch(API + encodeURIComponent(text) + "&lang=ro");
       const data = await resp.json();
-      ansEl.textContent = data.generated_answer || data.answer || "Nu am găsit un răspuns clar — reformulează întrebarea.";
+      const raw = data.generated_answer || data.answer || "";
+      if(raw){ renderAnswer(raw); }
+      else { ansEl.textContent = "Nu am găsit un răspuns clar — reformulează întrebarea."; }
     }catch(e){
       ansEl.textContent = "Eroare de conexiune. Încearcă din nou.";
     }
   }
   document.getElementById('ask-send').addEventListener('click', askQuestion);
   qEl.addEventListener('keydown', e => { if(e.key === 'Enter'){ askQuestion(); } });
+
+  // Cardurile de exemplu declanseaza cautarea
+  document.querySelectorAll('.ask-ex').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.setAttribute('role', 'button');
+    card.setAttribute('tabindex', '0');
+    const fire = () => {
+      const qNode = card.querySelector('.q');
+      if(!qNode) return;
+      qEl.value = qNode.textContent.trim();
+      document.getElementById('ask-panel').scrollIntoView({behavior:'smooth', block:'start'});
+      askQuestion();
+    };
+    card.addEventListener('click', fire);
+    card.addEventListener('keydown', e => {
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); fire(); }
+    });
+  });
 
   document.getElementById('ask-scroll-btn').addEventListener('click', function(e){
     e.preventDefault();
