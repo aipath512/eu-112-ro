@@ -1,25 +1,96 @@
-# EU-112
+# AI OS: eu-ai-act.ro
+Profile: /ai.json
+Proof (content fingerprint): /ai-proof.json
+Innovation registry (network): /proof.json
+Operator: AIVENTURE S.R.L. · CUI 51415878 · EUID ROONRC.J2025016406000 · București, RO
+Language: ro (primary) · Updated: 2026-08-02
 
-> Linia de urgență pentru EU AI Act. Corpus de 1000 de întrebări-răspunsuri despre Regulamentul (UE) 2024/1689, organizat pe 100 de categorii (roluri, risc, transparență, GPAI, HR, sănătate, justiție, GDPR, conformitate). Public țintă: salariați și patroni de IMM din România.
+## What
+EU AI Act Ready™ — infrastructură operațională pentru pregătirea firmelor pentru Regulamentul (UE) 2024/1689.
+Flux: Guvernanță (documente) → Dovezi (evidence) → Transparență (Art. 50) → Verificare (RRVI).
 
-## Conținut principal
+## Free
+- ASK EU AI Act™ — asistent conversațional peste textul oficial, 113 articole indexate, multilingv.
+- Governance — Free Readiness Pack, Demo complet cu toate cele 70 de documente (10 module), ASK. Gratuit, permanent.
+- Demo fără cont. Restul: cont gratuit prin link pe email, fără card.
 
-- [FAQ Hub](https://eu-112.ro/faq-hub.html): index cu toate 100 de categorii, grupate pe 8 teme majore
-- [Toate întrebările](https://eu-112.ro/faq.html): cele 1000 de perechi întrebare-răspuns, complet, cu schema FAQPage
+## Pricing
+- Pagina completă de ofertă: https://eu-ai-act.ro/oferta.html
+- Governance (Free Readiness Pack, Demo, ASK): 0 EUR, permanent.
+- Transparency — pachet complet (70 documente, 10 module, completate cu datele firmei, RRVI™ inclus): 690 EUR.
+- Conformitate activă (opțional, separat, anual): 390 EUR/an — RRVI activ, documente actualizate la fiecare termen legal, alertă la modificări.
+- Transparency: plată unică, fără abonament, fără card la înscriere. Preț identic indiferent de mărimea firmei.
 
-## Sursa juridică
+## Why different
+1. Documente complete, nu șabloane de completat.
+2. Fiecare document: identificator unic, versiune, timestamp, hash criptografic — verificabil la distanță
+   de auditor, client sau partener, fără acces la sistemele interne (RRVI™ — Remote Regulatory
+   Verification Infrastructure™).
+3. Conversație directă cu textul regulamentului.
+4. Distribuție prin parteneri de încredere (ECB Tax Accounting & HR).
+5. Gratuit la start (Governance) — Transparency 690 EUR, plată unică; abonament anual (Conformitate activă) doar opțional.
 
-Regulamentul (UE) 2024/1689 al Parlamentului European și al Consiliului din 13 iunie 2024 de stabilire a unor norme armonizate privind inteligența artificială (Regulamentul privind IA), modificat de Regulamentul (UE) 2026/1744 (Omnibus, 8 iulie 2026).
+## Built with AI (declared)
+Ecosistemul a fost construit de o singură persoană, în ultimele 6 luni, folosind sisteme AI (Claude/Anthropic pentru cod, arhitectură și documentație).
+Sistemul e declarat public în inventarul propriu de sisteme AI, cu scop, nivel de risc (minimal) și persoană responsabilă desemnată.
+Structura, verificarea juridică și deciziile de conținut rămân umane.
 
-## Natura conținutului
+## Timeline (post Digital Omnibus, iunie 2026)
+2026-08-02 · Articolul 50 — obligații de transparență, în vigoare.
+2026-12-02 · Art. 50 alin. 2 — marcarea conținutului generat, pentru sisteme deja pe piață.
+2027-12-02 · High-risk, Anexa III (sisteme de sine stătătoare).
+2028-08-02 · High-risk, Anexa I (AI încorporat în produse).
 
-Răspunsurile sunt orientative, generate ca ghid practic — nu constituie consultanță juridică. Pentru sisteme cu risc ridicat, modele GPAI sau utilizări cu impact asupra drepturilor fundamentale este necesară analiză juridică individuală.
+## Limits
+Susținem pregătirea. Nu certificăm conformitatea. Verificarea oficială rămâne la autoritatea competentă
+(România: ANCOM și celelalte autorități desemnate prin memorandumul din 12 martie 2026).
 
-## Organizație
+## Q&A (121 întrebări cu răspuns, pe categorii — cel mai bogat conținut informațional al site-ului)
+/faq-hub.html — index complet, 12 categorii
+/faq-general.html — generalități despre EU AI Act
+/faq-article50.html — obligațiile de transparență din Articolul 50
+/faq-governance.html — guvernanța AI în organizație
+/faq-governance-pack.html — ce conține pachetul de documente
+/faq-evidence.html — dovezi digitale, audit trail, hash, timestamp
+/faq-rrvi.html — verificare la distanță (RRVI™)
+/faq-ask.html — asistentul conversațional ASK
+/faq-imm.html — întrebări specifice IMM-urilor
+/faq-industrii.html — cazuri de utilizare pe industrii
+/faq-securitate.html — securitate și confidențialitate
+/faq-comercial.html — preț, demo, implementare
+/faq-despre.html — despre AIVENTURE și încredere
 
-EU-112 este un serviciu AiVenture S.R.L. (CUI 51415878, București, România). Produs asociat: [eu-ai-act.ro](https://eu-ai-act.ro) — generator gratuit de documentație de conformitate (70 de documente, 10 module).
+## Rol / audiență (aceeași obligație, explicată din unghiul fiecărui rol)
+/imm.html — firme care folosesc ChatGPT, Copilot sau alte instrumente AI
+/avocati.html — cabinete care vor să ofere conformitate AI ca serviciu
+/consultanti.html — consultanți care își extind oferta
+/it-software.html — distincția Provider vs. Deployer pentru firme de software
+/marketing-digital.html — agenții care folosesc AI pentru conținut și automatizări
+/freelanceri.html — responsabilitatea individuală a freelancerului
+
+## Demonstrații și dovezi
+/demo.html — cele 70 de documente, vizibile fără cont
+/verificare.html — verificarea unui document după identificator, versiune, timestamp și amprentă
+/innovations.html — cele 4 capabilități: Governance Pack, ASK, RRVI, Evidence Layer
+/why-us.html — comparație cu platformele enterprise GRC și consultanța clasică
+/intentii.html — întrebările reale, pe categorie de utilizator
+/oferta.html — oferta completă
+/transparency.html — Articolul 50 explicat operațional: rol Provider/Deployer, disclosure, marcare machine-readable, deepfake, texte de interes public, evidence și verificare; 20 de întrebări cu răspuns
+
+## Module pages (one per governance module, RO)
+/modul-01-inventar-sisteme-ai.html — inventarul sistemelor AI
+/modul-02-clasificare-risc.html — clasificarea riscului
+/modul-03-competente-ai.html — competențe AI (AI literacy)
+/modul-04-practici-interzise.html — practici interzise (Art. 5)
+/modul-05-evaluare-risc-ridicat.html — evaluarea sistemelor cu risc ridicat
+/modul-06-documentatie-tehnica.html — documentație tehnică
+/modul-07-supraveghere-umana.html — supraveghere umană
+/modul-08-guvernanta-datelor.html — guvernanța datelor
+/modul-09-logging-monitorizare.html — logging și monitorizare
+/modul-10-raportare-incidente.html — raportarea incidentelor
+
+## Legal
+/termeni.html · /confidentialitate.html · /cookies.html · /disclaimer.html
 
 ## Agent resources
-
-- /sitemap.xml
-- /robots.txt
+/ai.json · /ai-proof.json · /adn.json · /authority.json · /entities.json · /governance.json · /intents.json · /organization.json · /policy.json · /proof.json · /trust-state.json · /robots.txt · /sitemap.xml · /humans.txt · /security.txt
