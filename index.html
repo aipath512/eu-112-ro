@@ -3,370 +3,1318 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EU-112 — 1000 Întrebări Răspunsuri despre EU AI Act</title>
-<meta name="description" content="Linia de urgență pentru EU AI Act. Întrebi, primești răspuns din text oficial + 70 de documente. Gratuit pentru salariați și patroni de IMM.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>EU AI Act Ready™ — Articolul 50 se aplică deja, de la 2 august 2026. Firma ta poate demonstra?</title>
+<meta name="description" content="Obligațiile de transparență din Articolul 50 sunt în vigoare de la 2 august 2026. Vezi gratuit demo-ul cu toate cele 70 de documente, apoi generează-le complet cu datele firmei tale prin Transparency, în aproximativ 15 minute.">
+<link rel="canonical" href="https://eu-ai-act.ro/">
+<link rel="alternate" hreflang="ro" href="https://eu-ai-act.ro/">
+<link rel="alternate" hreflang="en" href="https://eu-ai-act-ready.eu/">
+<link rel="alternate" hreflang="x-default" href="https://eu-ai-act-ready.eu/">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EU AI Act Ready™">
+<meta property="og:url" content="https://eu-ai-act.ro/">
+<meta property="og:title" content="EU AI Act Ready™ — Articolul 50 e în vigoare. Firma ta poate demonstra?">
+<meta property="og:description" content="Articolul 50 se aplică deja, de la 2 august 2026. Demo gratuit cu toate cele 70 de documente — generarea completă cu datele firmei tale, prin Transparency, în aproximativ 15 minute.">
+<meta property="og:image" content="https://eu-ai-act.ro/assets/images/og-image.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EU AI Act Ready™ — Articolul 50 e în vigoare. Firma ta poate demonstra?">
+<meta name="twitter:description" content="Articolul 50 se aplică deja, de la 2 august 2026. Demo gratuit cu toate cele 70 de documente — generarea completă cu datele firmei tale, prin Transparency, în aproximativ 15 minute.">
+<meta name="twitter:image" content="https://eu-ai-act.ro/assets/images/og-image.webp">
+<meta property="og:locale" content="ro_RO">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="generator" content="AiVenture">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="stylesheet" href="/assets/css/main.css?v=3">
+<link rel="stylesheet" href="/assets/css/additions.css?v=24">
 <style>
-  :root{
-    --bg:#0a0a0a; --panel:#141410; --panel2:#1a1a15;
-    --gold:#f0c14b; --gold-dim:#a8863a;
-    --red:#c90016; --red2:#ef001c;
-    --text:#f5f5f0; --muted:#c4c4ba; --line:#2a2a22;
+@media (max-width: 640px) {
+  .hero.no-border {
+    background-image: linear-gradient(rgba(10,10,10,.75), rgba(10,10,10,.9)), url('assets/images/eu-ai-act-hero-mobile.webp');
+    background-size: cover;
+    background-position: top center;
   }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  body{background:var(--bg);color:var(--text);font-family:'Inter',Arial,sans-serif;line-height:1.5;}
-  em{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);}
-  .mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;}
-  h1,h2,h3{font-family:'Playfair Display',serif;font-weight:700;line-height:1.15;}
-  a{color:inherit;}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 20px;}
-
-  #utility{background:#050503;border-bottom:1px solid var(--line);font-size:11px;color:var(--muted);
-    padding:6px 20px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;}
-  #utility #clock{color:var(--gold);}
-
-  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;
-    border-bottom:1px solid var(--line);}
-  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;}
-  .brand .dial{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--red2));
-    display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;
-    font-weight:700;font-size:12px;color:#fff;}
-  nav .links{display:flex;gap:22px;font-size:14px;color:var(--muted);}
-  nav .cta{background:var(--gold);color:#0a0a0a;font-weight:700;padding:9px 18px;border-radius:8px;
-    font-size:13px;text-decoration:none;}
-
-  #alert{background:linear-gradient(90deg,var(--red),var(--red2),var(--red));color:#fff;text-align:center;
-    padding:11px 16px;font-weight:800;font-size:13px;letter-spacing:.02em;text-transform:uppercase;
-    font-family:'IBM Plex Mono',monospace;}
-  #alert a{text-decoration:underline;color:#fff;}
-
-  .hero{padding:76px 20px 56px;text-align:center;}
-  .eyebrow{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:12px;letter-spacing:.12em;
-    text-transform:uppercase;margin-bottom:18px;}
-  .hero h1{font-size:44px;max-width:760px;margin:0 auto 18px;}
-  .hero p{color:#e8e8e0;font-size:17px;max-width:600px;margin:0 auto 32px;}
-  .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
-  .btn-primary{background:var(--gold);color:#0a0a0a;font-weight:700;padding:15px 30px;border-radius:10px;
-    text-decoration:none;font-size:15px;}
-  .btn-secondary{border:1px solid var(--gold-dim);color:var(--gold);padding:15px 30px;border-radius:10px;
-    text-decoration:none;font-size:15px;}
-  .btn-tertiary{border:1px solid var(--gold-dim);color:var(--gold);padding:15px 30px;border-radius:10px;
-    text-decoration:none;font-size:15px;}
-  .btn-ask-bubble{display:inline-flex;align-items:center;gap:8px;background:var(--panel);
-    border:1.5px solid var(--gold);color:var(--gold);padding:14px 26px;border-radius:999px;
-    text-decoration:none;font-size:15px;font-weight:600;}
-  .btn-ask-bubble svg{width:16px;height:16px;flex-shrink:0;}
-  .btn-ask-main{background:var(--gold);color:#0a0a0a;padding:17px 36px;font-size:17px;
-    box-shadow:0 4px 20px rgba(240,193,75,.35);}
-  .btn-ask-main svg{width:19px;height:19px;}
-  html{scroll-behavior:smooth;}
-  .hero-cta-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--muted);margin-top:6px;text-align:center;}
-  .hero-cta-item{position:relative;display:flex;flex-direction:column;align-items:center;}
-  .sticker-nou{position:absolute;top:-12px;right:-8px;background:linear-gradient(135deg,var(--red),var(--red2));
-    color:#fff;font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:10px;letter-spacing:.05em;
-    padding:3px 9px;border-radius:6px;transform:rotate(8deg);box-shadow:0 2px 8px rgba(201,0,22,.5);z-index:2;}
-
-  .stats{display:flex;justify-content:center;gap:0;flex-wrap:wrap;padding:32px 20px;border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);}
-  .stat{padding:0 30px;text-align:center;border-right:1px solid var(--line);}
-  .stat:last-child{border-right:none;}
-  .stat .num{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;color:var(--gold);}
-  .stat .lab{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--muted);text-transform:uppercase;}
-
-  .section{padding:64px 20px;}
-  .section h2{font-size:30px;text-align:center;margin-bottom:44px;}
-  .pipeline{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;max-width:960px;margin:0 auto;}
-  .pstep{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 16px;
-    width:150px;text-align:center;}
-  .pstep .n{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;margin-bottom:6px;}
-  .pstep .t{font-weight:700;font-size:14px;margin-bottom:4px;}
-  .pstep .d{color:var(--muted);font-size:12px;}
-  .arrow{color:var(--gold-dim);font-size:20px;}
-
-  .personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:960px;margin:0 auto;}
-  .persona{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;}
-  .persona .role{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:8px;}
-  .persona h3{font-size:17px;margin-bottom:6px;}
-  .persona p{color:var(--muted);font-size:13.5px;}
-
-  #ask-panel{background:#f7f4ec;color:#141414;border-radius:20px;max-width:900px;margin:0 auto;padding:44px 32px;}
-  #ask-panel h2{color:#141414;text-align:center;margin-bottom:8px;}
-  #ask-panel .sub{text-align:center;color:#5a5648;margin-bottom:28px;font-size:14.5px;}
-  #ask-input-row{display:flex;gap:10px;max-width:640px;margin:0 auto 20px;}
-  #ask-q{flex:1;padding:14px 16px;border:1.5px solid #d8d2bf;border-radius:10px;font-size:15px;
-    font-family:'Inter',sans-serif;color:#141414;}
-  #ask-send{background:var(--red);color:#fff;border:none;border-radius:10px;padding:0 22px;font-weight:700;cursor:pointer;}
-  .ask-examples{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;margin:0 auto;}
-  .ask-ex{background:#fff;border:1px solid #e5e0d0;border-radius:10px;padding:14px 16px;font-size:13px;}
-  .ask-ex .q{font-weight:700;margin-bottom:5px;}
-  .ask-ex .a{color:#5a5648;}
-  #ask-answer{max-width:640px;margin:20px auto 0;background:#fff;border:1px solid #e5e0d0;border-radius:10px;
-    padding:16px 18px;font-size:14.5px;line-height:1.7;white-space:pre-wrap;display:none;}
-
-  .modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;max-width:960px;margin:0 auto;}
-  .module{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;font-size:13px;}
-  .module .num{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;}
-
-  .pricing{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;max-width:960px;margin:0 auto;}
-  .price-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px;width:280px;}
-  .price-card.gold{border-color:var(--gold);}
-  .price-card .tier{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;text-transform:uppercase;margin-bottom:8px;}
-  .price-card h3{font-size:18px;margin-bottom:6px;}
-  .price-card .price{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold);margin-bottom:14px;}
-  .price-card ul{list-style:none;color:var(--muted);font-size:13.5px;}
-  .price-card li{padding:4px 0;}
-
-  footer{border-top:1px solid var(--line);padding:36px 20px;text-align:center;color:var(--muted);font-size:12px;}
-
-  @media(max-width:640px){.hero h1{font-size:30px;} nav .links{display:none;} .stat{padding:0 16px;}}
-  .site-footer{border-top:1px solid var(--line);padding:32px 20px 20px;margin-top:20px;}
-  .footer-wrap{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px;margin-bottom:22px;}
-  .footer-col-title{font-size:11px;color:var(--gold);text-transform:uppercase;letter-spacing:.05em;
-    font-family:'IBM Plex Mono',monospace;margin-bottom:10px;}
-  .footer-col a{display:block;font-size:13px;color:var(--muted);text-decoration:none;margin-bottom:7px;}
-  .footer-col a:hover{color:var(--gold);}
-  .footer-brand{font-weight:800;font-size:16px;color:var(--text);margin-bottom:6px;}
-  .footer-dial{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;
-    border-radius:50%;background:#c90016;color:#fff;font-size:9px;font-weight:800;margin-right:5px;}
-  .footer-tagline{font-size:12.5px;color:var(--muted);line-height:1.5;}
-  .footer-legal{max-width:960px;margin:0 auto;padding-top:16px;border-top:1px solid var(--line);
-    font-size:11.5px;color:var(--muted);text-align:center;line-height:1.6;}
-  @media (max-width:600px){.footer-wrap{grid-template-columns:1fr;gap:20px;}}
+}
+</style>
+<style>
+  .privacy-note { font-size: 11.5px; line-height: 1.6; color: #7a7568; margin-top: 12px; }
+  .privacy-note a { color: var(--gold, #f0c14b); text-decoration: underline; }
+  .trust-badge-wrap { margin-top: 30px; }
+  .trust-badge-wrap:empty { display: none; }
+  .trust-badge-wrap > div {
+    border: 1px solid rgba(240,193,75,0.32) !important;
+    background: rgba(240,193,75,0.06) !important;
+    border-radius: 10px !important;
+    padding: 14px 16px !important;
+    margin: 0 !important;
+    font-family: var(--mono, monospace) !important;
+    font-size: 11.5px !important;
+    line-height: 1.7 !important;
+    color: #8a8578 !important;
+  }
+  .trust-badge-wrap > div a { color: var(--gold, #f0c14b) !important; text-decoration: none; }
+  .trust-badge-wrap > div a:hover { text-decoration: underline; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://eu-ai-act.ro/#organization",
+      "name": "EU AI ACT READY™",
+      "legalName": "AIVENTURE S.R.L.",
+      "url": "https://eu-ai-act.ro/",
+      "logo": "https://eu-ai-act.ro/assets/images/og-image.webp",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "CUI",
+        "value": "51415878"
+      },
+      "vatID": "RO51415878",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Drumul Pădurea Pustnicu, Nr. 141C, Corp A, Etaj 2, Ap. 5",
+        "addressLocality": "București",
+        "addressRegion": "Sector 1",
+        "postalCode": "014044",
+        "addressCountry": "RO"
+      },
+      "sameAs": [
+        "https://eu-ai-act-ready.eu",
+        "https://5thelement.ai",
+        "https://aiventure.ro",
+        "https://www.linkedin.com/company/107338970",
+        "https://www.linkedin.com/in/dan-ionesco-a856082a0",
+        "https://www.linkedin.com/showcase/5thelement-ai/",
+        "https://www.crunchbase.com/organization/aiventure-s-r-l",
+        "https://x.com/aipath512",
+        "https://www.facebook.com/people/Aiventure/61573220584246/",
+        "https://www.youtube.com/@AIVenture-q8u",
+        "https://medium.com/@aipath512"
+      ],
+      "areaServed": [
+        "RO",
+        "EU"
+      ],
+      "knowsAbout": [
+        "EU AI Act",
+        "AI Compliance",
+        "AI Governance",
+        "Article 50 Transparency"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Dan Ionescu",
+        "alternateName": "Eli",
+        "image": "https://eu-ai-act.ro/assets/images/dan-founder.jpg",
+        "sameAs": [
+          "https://www.linkedin.com/in/dan-ionesco-a856082a0"
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://eu-ai-act.ro/#website",
+      "url": "https://eu-ai-act.ro/",
+      "name": "EU AI ACT READY™",
+      "inLanguage": "ro",
+      "publisher": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://eu-ai-act.ro/#webpage",
+      "url": "https://eu-ai-act.ro/",
+      "name": "EU AI ACT READY™",
+      "inLanguage": "ro",
+      "isPartOf": {
+        "@id": "https://eu-ai-act.ro/#website"
+      },
+      "about": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      },
+      "mentions": [
+        {
+          "@id": "https://eu-ai-act.ro/#article50"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#ai-system"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#high-risk-ai"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#ai-responsible-person"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#rrvi"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#evidence-layer"
+        },
+        {
+          "@id": "https://eu-ai-act.ro/#governance-pack"
+        }
+      ],
+      "primaryImageOfPage": "https://eu-ai-act.ro/assets/images/og-image.webp"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://eu-ai-act.ro/#governance-pack",
+      "name": "EU AI ACT READY™ Governance Pack",
+      "provider": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "areaServed": [
+        "RO",
+        "EU"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "SME, cabinete de avocatură, consultanți, freelanceri"
+      },
+      "description": "Generare automată a 70+ documente operaționale de guvernanță AI, organizate în 10 module, plus asistent conversațional ASK EU AI Act și infrastructură RRVI de verificare la distanță.",
+      "serviceType": "EU AI Act Compliance Governance",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free Readiness Pack",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Transparency — pachet complet 70 documente, completate cu datele firmei, RRVI inclus",
+          "price": "690",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Conformitate activă — abonament anual opțional",
+          "price": "390",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://eu-ai-act.ro/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "EU AI Act Ready",
+          "item": "https://eu-ai-act.ro/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "S-a amânat EU AI Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parțial. Prin pachetul Digital Omnibus, obligațiile pentru sistemele high-risk din Anexa III s-au mutat la 2 decembrie 2027, iar cele din Anexa I la 2 august 2028. Articolul 50, transparența interacțiunilor AI și a conținutului generat, se aplică deja, de la 2 august 2026. Marcarea automată a conținutului generat (Articolul 50 alineatul 2) pentru sistemele deja pe piață se aplică din 2 decembrie 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Folosim ChatGPT în firmă. Ce trebuie să facem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Primul pas este un inventar al sistemelor AI folosite — inclusiv cele introduse informal de angajați (Shadow AI). Pornește de la ASK sau de la Free Readiness Pack pentru o imagine inițială."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "EU AI Act se aplică IMM-ului meu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Obligațiile depind de modul în care este folosit AI-ul, nu doar de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce documente trebuie să pregătesc?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Nu trebuie să le completezi tu: ajung deja generate și completate cu datele firmei tale, gata de folosit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cum demonstrez conformitatea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prin dovezi digitale verificabile — identificator unic, versiune, timestamp, hash criptografic și audit trail — nu doar prin documente declarative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ce este Articolul 50?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Articolul 50 reglementează obligațiile de transparență privind interacțiunea AI cu oamenii — conținut generat AI, conținut sintetic și dezvăluirea deepfake — aplicabile de la 2 august 2026."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://eu-ai-act.ro/#euaiact",
+      "name": "EU AI Act — Regulamentul (UE) 2024/1689",
+      "description": "Regulamentul european care stabilește reguli armonizate privind inteligența artificială în Uniunea Europeană.",
+      "sameAs": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://eu-ai-act.ro/#article50",
+      "name": "Articolul 50 — Obligații de Transparență",
+      "description": "Obligații de transparență privind interacțiunea AI cu oamenii, conținut generat AI, conținut sintetic și dezvăluirea deepfake, aplicabile de la 2 august 2026.",
+      "inDefinedTermSet": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://eu-ai-act.ro/#ai-system",
+      "name": "Sistem AI",
+      "description": "Orice instrument sau aplicație cu funcții de inteligență artificială folosit de o organizație — inclusiv ChatGPT, Microsoft Copilot, Google Gemini, Claude sau automatizări AI de marketing.",
+      "inDefinedTermSet": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://eu-ai-act.ro/#high-risk-ai",
+      "name": "Sistem AI cu Risc Înalt",
+      "description": "Categorie de clasificare a sistemelor AI, definită de EU AI Act, cu obligații suplimentare de documentație tehnică și evaluare de conformitate.",
+      "inDefinedTermSet": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://eu-ai-act.ro/#ai-responsible-person",
+      "name": "Persoană Responsabilă AI",
+      "description": "Persoana desemnată într-o organizație responsabilă pentru guvernanța și conformitatea sistemelor AI utilizate.",
+      "inDefinedTermSet": {
+        "@id": "https://eu-ai-act.ro/#euaiact"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://eu-ai-act.ro/#rrvi",
+      "name": "RRVI™ — Remote Regulatory Verification Infrastructure",
+      "provider": {
+        "@id": "https://eu-ai-act.ro/#organization"
+      },
+      "description": "Infrastructură de verificare la distanță a documentelor de guvernanță AI, prin identificatori unici, timestamp și hash criptografic, fără deplasare fizică a auditorului.",
+      "serviceOutput": {
+        "@id": "https://eu-ai-act.ro/#evidence-layer"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://eu-ai-act.ro/#evidence-layer",
+      "name": "Evidence Layer",
+      "description": "Modelul de dovezi digitale al platformei — identificator unic, versiune, timestamp, hash criptografic, audit trail, istoric.",
+      "about": {
+        "@id": "https://eu-ai-act.ro/#ai-responsible-person"
+      }
+    }
+  ]
+}
+</script>
+<script>
+// Visible error banner — catches ANY JS error on this page and shows it
+// on screen, so problems are diagnosable without opening DevTools.
+window.addEventListener("error", function (e) {
+  var el = document.getElementById("jsErrorBanner");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "jsErrorBanner";
+    el.style.cssText =
+      "position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#b91c1c;color:#fff;" +
+      "font-family:monospace;font-size:12px;padding:10px 14px;max-height:30vh;overflow:auto;" +
+      "white-space:pre-wrap;";
+    document.body.appendChild(el);
+  }
+  el.textContent +=
+    "EROARE JS: " + e.message + " (" + (e.filename || "") + ":" + (e.lineno || "") + ")\n";
+});
+</script>
+<style>
+  .of-home-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+  @media (max-width:900px){ .of-home-grid{ grid-template-columns:1fr; } }
+  .of-home-card { border:1px solid rgba(255,255,255,.10); border-radius:4px; padding:24px 20px; background:rgba(255,255,255,.015); display:flex; flex-direction:column; }
+  .of-home-card.featured { border-color:var(--gold); background:rgba(240,193,75,.05); box-shadow:0 0 34px rgba(240,193,75,.09); }
+  .of-home-eyebrow { font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--text-faint); }
+  .of-home-card.featured .of-home-eyebrow { color:var(--gold); }
+  .of-home-name { font-family:var(--serif); font-size:21px; color:var(--text); margin:10px 0 2px; }
+  .of-home-price { font-family:var(--serif); font-size:38px; line-height:1.05; color:var(--gold); margin:10px 0 14px; }
+  .of-home-price small { font-family:var(--mono); font-size:12px; color:var(--text-faint); letter-spacing:.04em; }
+  .of-home-desc { font-size:14px; line-height:1.6; color:var(--text-dim); margin:0 0 20px; }
+  .of-home-card .btn { margin-top:auto; align-self:flex-start; }
+  .contact-channels { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; max-width:640px; margin:24px 0 22px; }
+  @media (max-width:640px){ .contact-channels{ grid-template-columns:1fr; } }
+  .contact-channel { display:block; border:1px solid rgba(255,255,255,.12); border-radius:4px; padding:16px 18px; text-decoration:none; background:rgba(255,255,255,.015); transition:border-color .2s,background .2s; }
+  .contact-channel:hover { border-color:var(--gold); background:rgba(240,193,75,.05); }
+  .cc-label { display:block; font-family:var(--mono); font-size:10.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--text-faint); }
+  .cc-value { display:block; font-family:var(--serif); font-size:19px; color:var(--gold); margin:6px 0 4px; }
+  .cc-note { display:block; font-size:12.5px; line-height:1.45; color:var(--text-dim); }
 </style>
 </head>
 <body>
 
-<div id="utility">
-  <span>ROMÂNIA · <span class="mono">EU AI ACT — REGULAMENTUL (UE)</span></span>
-  <span style="display:flex;align-items:center;gap:12px;">
-    <span id="visitor-count-inline" class="mono" style="opacity:.85;">👁 <span id="visitor-count-num-idx">—</span></span>
-    <span id="clock" class="mono">—</span>
-  </span>
-</div>
-
-<script>
-  (function(){
-    fetch('https://api.countapi.xyz/hit/eu-112-ro/sitewide')
-      .then(function(r){ return r.json(); })
-      .then(function(data){
-        var el = document.getElementById('visitor-count-num-idx');
-        if(el && data && typeof data.value === 'number'){
-          el.textContent = data.value.toLocaleString('ro-RO');
-        }
-      })
-      .catch(function(){
-        var el = document.getElementById('visitor-count-num-idx');
-        if(el) el.textContent = '—';
-      });
-  })();
-</script>
-
-<nav>
-  <div class="brand"><div class="dial">112</div> EU-112<span style="color:var(--muted);font-weight:400;font-size:13px;margin-left:6px;">.ro</span></div>
-  <div class="links">
-    <a href="#ask">Întreabă</a>
-    <a href="/faq-hub.html">FAQ</a>
-    <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
-    <a href="#module-uri">Module</a>
-    <a href="#preturi">Prețuri</a>
-    <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=nav">Generează Documente</a>
-  </div>
-  <a class="cta" href="#ask">Întreabă Acum</a>
-</nav>
-
-<div id="alert">
-  ⚠ EU AI ACT — <a href="#ask">1000 ÎNTREBĂRI RĂSPUNSURI</a> →
-</div>
-
-<div class="hero">
-  <div class="eyebrow">LINIA DE URGENȚĂ PENTRU AI LA MUNCĂ</div>
-  <h1>Firma ta folosește deja <em>AI</em>.<br>Află în 2 minute dacă te privește.</h1>
-  <p>EU-112 e ca 112 dar pentru EU AI Act — întrebi, generezi toată documentația gata completată, răspunsuri și textul oficial, gratuit.</p>
-  <div class="hero-cta">
-    <div class="hero-cta-item">
-      <a class="btn-ask-bubble btn-ask-main" href="#ask" id="ask-scroll-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 0 1 1 1v1.06A8.004 8.004 0 0 1 20 12v1a2 2 0 0 1-2 2h-.17A4 4 0 0 1 14 18h-4a4 4 0 0 1-3.83-3H6a2 2 0 0 1-2-2v-1a8.004 8.004 0 0 1 7-7.94V3a1 1 0 0 1 1-1zm-3 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg>
-        Ask anything…
-      </a>
-      <div class="hero-cta-sub">întrebi acum, gratuit, fără cont</div>
+<div class="status-bar">
+  <div class="wrap status-row">
+    <div class="status-left">
+      <button id="loginToggle" class="login-link" type="button">Acces cu email</button>
+      <span class="live">live · EU AI Act Readiness Engine</span>
     </div>
+    <span>Răspundem &lt; 4h în ziua lucrătoare</span>
   </div>
-</div>
 
-<div class="stats">
-  <div class="stat"><div class="num">1000</div><div class="lab">Întrebări Conversaționale</div></div>
-  <div class="stat"><div class="num">100</div><div class="lab">Cazuri de Studiu</div></div>
-  <div class="stat"><div class="num">70</div><div class="lab">Documente Governance</div></div>
-  <div class="stat"><div class="num">113</div><div class="lab">Articole Regulament</div></div>
-  <div class="stat"><div class="num">10</div><div class="lab">Module Conformitate</div></div>
-  <div class="stat"><div class="num">5</div><div class="lab">Surse Corpus Unificate</div></div>
-  <div class="stat"><div class="num">0€</div><div class="lab">Cost Acces Întrebări</div></div>
-  <div class="stat"><div class="num">24/7</div><div class="lab">Asistent AI</div></div>
-</div>
-
-<div class="section">
-  <div class="eyebrow" style="text-align:center;">CUM FUNCȚIONEAZĂ</div>
-  <h2>De la întrebare, la dovadă de pregătire</h2>
-  <div class="pipeline">
-    <div class="pstep"><div class="n">01</div><div class="t">Întrebi</div><div class="d">Orice, în română, ca la un avocat</div></div>
-    <div class="arrow">→</div>
-    <div class="pstep"><div class="n">02</div><div class="t">Primești răspuns</div><div class="d">Din textul oficial + 70 doc.</div></div>
-    <div class="arrow">→</div>
-    <div class="pstep"><div class="n">03</div><div class="t">Descoperi expunerea</div><div class="d">Ce din ce folosești e AI</div></div>
-    <div class="arrow">→</div>
-    <div class="pstep"><div class="n">04</div><div class="t">Te abonezi (opțional)</div><div class="d">Alertă la modificări legale</div></div>
-    <div class="arrow">→</div>
-    <div class="pstep"><div class="n">05</div><div class="t">Generezi dosarul</div><div class="d">Pe eu-ai-act.ro, Governance</div></div>
+  <div id="loginPanel" class="login-panel">
+    <form id="loginForm">
+      <div class="form-field" style="margin-bottom:14px;">
+        <label>Email</label>
+        <input type="email" required placeholder="nume@firma.ro">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Trimite link de acces</button>
+            <p class="privacy-note">Îți folosim adresa de email doar ca să îți trimitem linkul de acces și să îți menținem contul. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
+      <p class="login-alt">Nu ai cont? Nu e nevoie — scrii emailul, primești un link, iar primul login îți creează automat contul.</p>
+    </form>
   </div>
+
 </div>
 
-<div class="section">
-  <div class="eyebrow" style="text-align:center;">PENTRU CINE E</div>
-  <h2>Oricine atinge un sistem AI la muncă</h2>
-  <div class="personas">
-    <div class="persona"><div class="role">Salariat</div><h3>Folosești ChatGPT la raport</h3><p>Vrei să știi dacă asta te expune sau expune firma.</p></div>
-    <div class="persona"><div class="role">Patron IMM</div><h3>Nu faci reclame pe AI</h3><p>Dar CRM-ul, facturarea, HR-ul — poate au deja AI.</p></div>
-    <div class="persona"><div class="role">Responsabil AI</div><h3>Numit intern, fără pregătire</h3><p>Vrei răspunsuri rapide, nu un curs de 3 zile.</p></div>
-    <div class="persona"><div class="role">Consultant</div><h3>Clienți care întreabă</h3><p>Ai nevoie de răspunsuri corecte, citate din lege.</p></div>
-  </div>
-</div>
-
-<div class="section" id="ask">
-  <div id="ask-panel">
-    <h2>Întreabă orice despre EU AI Act</h2>
-    <div class="sub">Răspuns din Regulamentul (UE) 2024/1689 + cele 70 de documente + FAQ. Gratuit, fără cont.</div>
-    <div id="ask-input-row">
-      <input id="ask-q" type="text" placeholder="Ex: Folosim ChatGPT în firmă — se aplică AI Act?">
-      <button id="ask-send">Întreabă</button>
-    </div>
-    <div id="ask-answer"></div>
-    <div class="ask-examples">
-      <div class="ask-ex"><div class="q">CRM cu scoring automat al clienților?</div><div class="a">Sistem AI — trebuie inventariat, chiar dacă nu l-ai cumpărat ca "AI".</div></div>
-      <div class="ask-ex"><div class="q">Chatbot pe site-ul firmei?</div><div class="a">Obligație directă de transparență (Art. 50) — trebuie declarat.</div></div>
-      <div class="ask-ex"><div class="q">ChatGPT ocazional, de pe telefon?</div><div class="a">Zonă gri, tehnic da — exact ce numim "shadow AI".</div></div>
-      <div class="ask-ex"><div class="q">Nu fac reclame pe AI, deci nu mă privește?</div><div class="a">Marketingul e un caz particular, nu definiția. Verifică restul.</div></div>
-    </div>
-  </div>
-</div>
-
-<div class="section" id="module-uri">
-  <div class="eyebrow" style="text-align:center;">GOVERNANCE LAYER</div>
-  <h2>10 module, 70 de documente — pas următor, gratuit</h2>
-  <div class="modules">
-    <div class="module"><span class="num">01</span> Inventar sisteme AI</div>
-    <div class="module"><span class="num">02</span> Clasificare risc</div>
-    <div class="module"><span class="num">03</span> Alfabetizare AI</div>
-    <div class="module"><span class="num">04</span> Practici interzise</div>
-    <div class="module"><span class="num">05</span> Evaluare risc ridicat</div>
-    <div class="module"><span class="num">06</span> Documentație tehnică</div>
-    <div class="module"><span class="num">07</span> Supraveghere umană</div>
-    <div class="module"><span class="num">08</span> Guvernanță date</div>
-    <div class="module"><span class="num">09</span> Logging & monitorizare</div>
-    <div class="module"><span class="num">10</span> Raportare incidente</div>
-  </div>
-</div>
-
-<div class="section" id="preturi">
-  <div class="eyebrow" style="text-align:center;">CE COSTĂ</div>
-  <h2>Întrebarea e mereu gratuită</h2>
-  <div class="pricing">
-    <div class="price-card gold">
-      <div class="tier">Pull — gratuit</div>
-      <h3>Întrebi când vrei</h3>
-      <div class="price">0 €</div>
-      <ul><li>✓ Acces nelimitat la Ask</li><li>✓ Corpus complet EU AI Act</li><li>✓ Fără cont necesar</li></ul>
-    </div>
-    <div class="price-card">
-      <div class="tier">Push — abonament</div>
-      <h3>Te anunță când se schimbă legea</h3>
-      <div class="price">preț TBD</div>
-      <ul><li>✓ Alertă la modificări (ex. Omnibus)</li><li>✓ Termene relevante pentru profilul tău</li><li>✓ Ca un avocat pe retainer</li></ul>
-    </div>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-wrap">
-    <div class="footer-col">
-      <div class="footer-brand"><span class="footer-dial">112</span> EU-112</div>
-      <p class="footer-tagline">Linia de întrebări gratuite despre EU AI Act.</p>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Linkuri rapide</div>
-      <a href="/">Acasă</a>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="#top" class="brand">
+      <span class="mark">e</span>
+      <span>
+        <span class="name">EU AI ACT<em style="font-style:italic;color:var(--gold)"> READY</em>™</span>
+        <span class="sub">GUVERNANȚĂ · TRANSPARENȚĂ · DOVEZI</span>
+      </span>
+    </a>
+    <nav class="main-links">
+      <a href="#top">acasă</a>
+      <a href="#how">cum funcționează</a>
+      <a href="#ask">Întreabă</a>
+      <a href="#free-pack">firma ta</a>
+      <a href="/demo.html">demo</a>
+      <a href="#oferta">ofertă</a>
+      <a href="#roles">parteneri</a>
+      <a href="#construit-cu-ai">Construit cu AI</a>
+      <a href="#evidence">Pentru inspectori</a>
+      <a href="#ai-ready">AI Ready</a>
+      <a href="/intentii.html">Întrebări pe rol</a>
       <a href="/faq-hub.html">FAQ Hub</a>
-      <a href="/faq.html">Toate întrebările</a>
-      <a href="/cazuri-de-utilizare.html">Cazuri de utilizare</a>
+      <a href="/demo.html">Demo complet</a>
+      <a href="/why-us.html">De ce noi?</a>
+      <a href="#faq">Resurse</a>
+      <a href="/transparency.html">Transparență Art. 50</a>
+      <a href="https://eu-112.ro?utm_source=eu-ai-act-ro&utm_medium=nav" style="color:var(--gold);font-weight:600;">Întreabă rapid → EU-112</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#free-pack" class="nav-cta">Firma Ta →</a>
+    <button class="burger" aria-label="Meniu">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero pad no-border">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>EU AI ACT READY™ · ART. 50 ÎN VIGOARE · HIGH-RISK 2 DEC 2027</span>
+      <nav aria-label="breadcrumb" style="font-size:12px;color:#8a8578;margin-bottom:12px;">
+        <a href="/" style="color:#8a8578;text-decoration:none;">Home</a> &gt; EU AI Act Ready
+      </nav>
+      <h1>Primul pas <em>gratuit</em><br>către pregătirea firmei pentru EU AI Act</h1>
+      <p class="hero-subtitle">Pentru IMM-uri · Cabinete de avocatură de afaceri · Firme IT · Agenții de marketing.</p>
+      <p class="lede"><strong class="journey"><a href="#ask">Vorbește</a> <span class="arrow">→</span> <a href="#free-pack">Guvernează</a> <span class="arrow">→</span> <a href="#ai-ready">Fii de încredere</a> <span class="arrow">→</span> <a href="#rrvi">Verifică</a></strong>. O singură platformă pentru a înțelege, implementa conform EU AI Act.</p>
+      <div class="free-kicker">✓ ÎNCEPI GRATUIT · fără card — Demo fără cont, restul cu cont gratuit în 1 minut</div>
+      <div class="hero-actions">
+        <a href="#free-pack" class="btn btn-primary btn-hero">
+          <span class="new-sticker">NOU</span>
+          <span class="btn-main">Generează pentru firma ta</span>
+          <span class="btn-sub">gratuit — creează cont în 1 min</span>
+        </a>
+        <a href="/demo.html" class="btn btn-secondary btn-hero">
+          <span class="btn-main">Vezi Demo</span>
+          <span class="btn-sub">70 documente, fără cont</span>
+        </a>
+        <a href="#ask" class="btn btn-dark btn-hero">
+          <span class="btn-main">Întreabă AI</span>
+          <span class="btn-sub">gratuit — necesită cont</span>
+        </a>
+      </div>
     </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Contact</div>
-      <a href="https://eu-ai-act.ro?utm_source=eu-112-ro&utm_medium=footer">eu-ai-act.ro</a>
-      <a href="mailto:contact@5thelement.ai">contact@5thelement.ai</a>
-      <a href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+  </section>
+
+  <!-- COMPLIANCE JOURNEY — Governance is step 1, not the whole path -->
+  <section class="pad-sm">
+    <div class="wrap">
+      <div class="journey-head">
+        <span class="tag"><span class="dot">//</span>PARCURSUL TĂU</span>
+        <h2 class="h2-title" style="font-size:22px;">De la <em>guvernanță</em> la <em>conformitate completă</em>.</h2>
+      </div>
+      <div class="journey-track">
+        <a href="#governance" class="journey-step journey-active" style="--jc:#f0c14b;">
+          <div class="journey-here">EȘTI AICI</div>
+          <div class="journey-chevron"><span class="journey-icon">📋</span></div>
+          <div class="journey-label">GUVERNANȚĂ</div>
+          <div class="journey-sub">70 documente generate</div>
+        </a>
+        <a href="#evidence" class="journey-step" style="--jc:#4fb0e8;">
+          <div class="journey-chevron"><span class="journey-icon">🔐</span></div>
+          <div class="journey-label">DOVEZI</div>
+          <div class="journey-sub">dovezi digitale criptografice</div>
+        </a>
+        <a href="#transparency" class="journey-step" style="--jc:#6fce8f;">
+          <div class="journey-chevron"><span class="journey-icon">👁️</span></div>
+          <div class="journey-label">TRANSPARENȚĂ</div>
+          <div class="journey-sub">Articolul 50 · din 2 aug 2026</div>
+        </a>
+        <a href="#rrvi" class="journey-step" style="--jc:#c98fe8;">
+          <div class="journey-chevron"><span class="journey-icon">🔍</span></div>
+          <div class="journey-label">VERIFICARE</div>
+          <div class="journey-sub">RRVI — verificare la distanță</div>
+        </a>
+        <a href="#free-pack" class="journey-step" style="--jc:#e8734f;">
+          <div class="journey-chevron"><span class="journey-icon">✅</span></div>
+          <div class="journey-label">CONFORMITATE COMPLETĂ</div>
+          <div class="journey-sub">conformitate completă</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEI 4 PILONI — poziționare: Talk. Govern. Trust. Verify. -->
+  <section class="pad-sm">
+    <div class="wrap">
+      <div class="pillar-grid">
+        <a href="#ask" class="pillar-card">
+          <div class="pillar-num">1</div>
+          <h4>Vorbește</h4>
+          <p>Întreabă EU AI Act în limbaj natural, primești răspuns imediat.</p>
+        </a>
+        <a href="#free-pack" class="pillar-card">
+          <div class="pillar-num">2</div>
+          <h4>Guvernează</h4>
+          <p>Generezi guvernanța operațională a firmei — 70 documente, 10 module.</p>
+        </a>
+        <a href="#ai-ready" class="pillar-card">
+          <div class="pillar-num">3</div>
+          <h4>Fii de încredere</h4>
+          <p>Firma ta devine descoperibilă și de încredere pentru sistemele AI, nu doar pentru oameni.</p>
+        </a>
+        <a href="#rrvi" class="pillar-card">
+          <div class="pillar-num">4</div>
+          <h4>Verifică</h4>
+          <p>Menții dovezi verificabile continuu, gata pentru inspectori și audit.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENTRU CINE ESTE (right after hero — answers "is this for me" before the journey) -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>PENTRU CINE ESTE</span>
+      <h2 class="h2-title">Șapte profiluri, <em>un singur</em> punct de plecare.</h2>
+      <div class="persona-grid">
+        <a href="/imm.html" class="persona"><div class="icon">🏢</div><div class="persona-label">IMM</div><p>„Vreau să știu dacă firma mea este pregătită.”</p></a>
+        <a href="/avocati.html" class="persona"><div class="icon">⚖️</div><div class="persona-label">AVOCAT</div><p>„Vreau să ajut clienții cu EU AI Act.”</p></a>
+        <a href="/consultanti.html" class="persona"><div class="icon">📊</div><div class="persona-label">CONSULTANT</div><p>„Vreau să creez un serviciu nou.”</p></a>
+        <a href="/freelanceri.html" class="persona"><div class="icon">👤</div><div class="persona-label">FREELANCER</div><p>„Vreau să folosesc AI responsabil.”</p></a>
+        <a href="#evidence" class="persona"><div class="icon">🔍</div><div class="persona-label">AUDITOR</div><p>„Vreau dovezi verificabile.”</p></a>
+        <a href="/marketing-digital.html" class="persona"><div class="icon">📢</div><div class="persona-label">MARKETING DIGITAL</div><p>„Vreau să știu ce declar despre conținutul AI.”</p></a>
+        <a href="/it-software.html" class="persona"><div class="icon">💻</div><div class="persona-label">IT &amp; SOFTWARE</div><p>„Vreau să știu dacă sunt Provider sau Deployer.”</p></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS (proof, not hook — placed after the offer, not in hero) -->
+  <section class="pad-sm">
+    <div class="wrap">
+      <div class="term-card">
+        <div class="term-head">
+          <span>~ /firma/situatia-curenta.md</span>
+          <span>4 indicatori</span>
+        </div>
+        <div class="term-grid">
+          <div class="term-cell"><div class="big">113</div><div class="lbl">articole indexate</div><div class="lbl-sub">din regulamentul EU AI Act, pentru asistentul ASK</div></div>
+          <div class="term-cell"><div class="big">70</div><div class="lbl">documente de guvernanță</div><div class="lbl-sub">generate automat pentru firma ta</div></div>
+          <div class="term-cell"><div class="big">10</div><div class="lbl">module operaționale</div><div class="lbl-sub">arii de conformitate acoperite (vezi lista mai jos)</div></div>
+          <div class="term-cell"><div class="big">15 min</div><div class="lbl">de la zero la pachet</div><div class="lbl-sub">timp estimat ca să generezi pachetul complet</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE READINESS PACK -->
+  <section id="free-pack" class="pad">
+    <div class="wrap">
+      <div class="banner">FREE EU AI ACT READINESS PACK™</div>
+      <h2 class="h2-title">Primul rezultat <em>real</em> pentru firma ta.</h2>
+      <p class="sub-lede">Nu oferim un model gol. Nu oferim un PDF generic. Oferim prima imagine operațională a firmei tale.</p>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h4>113 articole EU AI Act indexate</h4>
+          <p>Regulamentul devine accesibil prin conversație.</p>
+        </div>
+        <div class="feature-item">
+          <h4>ASK EU AI Act™ Assistant</h4>
+          <p>Acces permanent pentru întrebări despre obligații, roluri, responsabilități și implementare.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Mostră Governance Pack</h4>
+          <p>Arhitectura completă: 10 module operaționale, 70 documente — deja completate cu datele tale, nu de completat.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Mostră personalizată gratuit — până la 40%</h4>
+          <p>Politici, proceduri, registre, responsabilități și structura documentelor, generate pe baza datelor introduse.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Mostră Pregătire pentru Inspector</h4>
+          <p>Cum poate fi organizată informația pentru audit, verificare și demonstrarea implementării.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Mostră Dovezi Pregătite</h4>
+          <p>Modelul de versiuni, timestamp, integritate și trasabilitate.</p>
+        </div>
+      </div>
+
+      <div id="freePackGate">
+        <div class="form-card">
+          <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;">Autentifică-te ca să generezi pachetul</h3>
+          <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Nu ai cont? Nu e nevoie — scrii emailul, primești un link, iar primul login îți creează automat contul. Demo și ASK rămân libere, fără cont.</p>
+          <form id="gateForm">
+            <div class="form-field" style="margin-bottom:16px;">
+              <label>Email profesional</label>
+              <input id="gateEmail" type="email" required placeholder="nume@firma.ro">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">trimite link de acces →</button>
+            <p class="privacy-note">Îți folosim adresa de email ca să îți trimitem linkul de acces și informații despre pachetul solicitat. Poți cere ștergerea oricând. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
+            <div id="gateStatus" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+
+      <div id="freePackLoggedIn" style="display:none;">
+      <div class="form-card">
+        <h3 style="font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:4px;">Generează pachetul firmei tale</h3>
+        <p style="color:var(--text-dim);font-size:13.5px;margin-bottom:20px;">Completează firma și persoana responsabilă AI — primești cele 70 de documente, gratuit (2 generări gratuite / email).</p>
+        <form id="genForm">
+          <div class="form-field" style="margin-bottom:16px;">
+            <label>Firmă (denumire legală)</label>
+            <input id="genFirmName" type="text" required placeholder="ex: Firma Mea S.R.L.">
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label>Prenume responsabil AI</label>
+              <input id="genFirstName" type="text" required placeholder="Prenume">
+            </div>
+            <div class="form-field">
+              <label>Nume responsabil AI</label>
+              <input id="genLastName" type="text" required placeholder="Nume">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label>Limba documentelor</label>
+              <select id="genLang">
+                <option value="ro" selected>Română</option>
+                <option value="en">Engleză</option>
+                <option value="fr">Franceză</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label>Format fișier</label>
+              <select id="genFormat">
+                <option value="md" selected>Markdown (.md)</option>
+                <option value="docx">Word (.docx)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="genSubmit">⚡ Generează toate cele 70 de documente</button>
+            <p class="privacy-note">Denumirea firmei și numele persoanei responsabile AI sunt inserate în documentele generate pentru tine. Nu le folosim în alt scop. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
+          <div id="genStatus" class="form-status" aria-live="polite"></div>
+        </form>
+
+        <div id="genDocGroups" class="gen-doc-groups"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Document viewer overlay (single document preview) -->
+  <div id="genViewerOverlay" class="gen-viewer-overlay">
+    <div class="gen-viewer-panel">
+      <div class="gen-viewer-head">
+        <span id="genViewerTitle"></span>
+        <button type="button" id="genViewerClose" aria-label="Închide">✕</button>
+      </div>
+      <pre id="genViewerBody" class="gen-viewer-body"></pre>
     </div>
   </div>
-  <div class="footer-legal">
-    EU-112 este un serviciu <strong style="color:var(--gold);">AiVenture S.R.L.</strong> · CUI 51415878 · București, România · Nu constituie consultanță juridică
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>CUM FUNCȚIONEAZĂ</span>
+      <h2 class="h2-title">Primește răspunsul. Pregătește firma. <em>Demonstrează dovezile.</em></h2>
+      <p class="sub-lede">EU AI ACT READY™ este infrastructura operațională care transformă întrebările despre AI în acțiuni, documente și dovezi verificabile.</p>
+
+      <p style="margin-top:28px;color:var(--text-dim);font-size:15px;">Dacă firma ta:</p>
+      <ul class="checklist" style="columns:2;max-width:520px;">
+        <li>folosește ChatGPT</li>
+        <li>folosește Microsoft Copilot</li>
+        <li>folosește Google Gemini</li>
+        <li>folosește Claude</li>
+        <li>folosește AI în marketing</li>
+        <li>folosește automatizări</li>
+        <li>folosește software cu funcții AI</li>
+      </ul>
+      <p style="margin-top:18px;font-family:var(--serif);font-size:20px;">atunci primul pas este să înțelegi <em style="color:var(--gold);font-style:italic;">situația ta reală</em>.</p>
+
+      <div class="contrast" style="margin-top:52px;">
+        <div class="box weak">
+          <div class="kicker">Modelul vechi</div>
+          <p style="font-size:16px;">Regulament → Consultanță → Document PDF → Dosar.</p>
+        </div>
+        <div class="box strong">
+          <div class="kicker">Modelul nou</div>
+          <p style="font-size:16px;">Întrebare → Inteligență AI → Evaluare firmă → Documente personalizate → Dovezi digitale → Verificare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASK -->
+  <section id="ask" class="pad ask-section">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>ASK · CONVERSAȚIONAL</span>
+      <h2 class="h2-title">Ai o întrebare despre <em>EU AI Act</em>?</h2>
+      <p class="sub-lede">Inteligența artificială a intrat deja în firme — prin aplicații, software, furnizori, automatizări și instrumente utilizate de angajați. Poate firma ta folosește deja ChatGPT, Microsoft Copilot, Google Gemini, Claude, Midjourney sau alte instrumente AI de marketing și customer service.</p>
+      <p class="sub-lede" style="margin-top:8px;">Întrebarea nu mai este doar <em style="font-style:italic;color:var(--text)">„Folosim AI?”</em> — este <strong style="color:var(--text)">„Știm unde este AI în firma noastră și putem demonstra că îl gestionăm responsabil?”</strong></p>
+
+      <div class="ask-grid">
+        <div class="ask-panel">
+          <h3 style="font-family:var(--serif);font-size:20px;font-weight:600;">Întreabă EU AI Act™</h3>
+          <form id="askForm" class="ask-input-row">
+            <input id="askInput" type="text" placeholder="Întreabă orice despre EU AI Act...">
+            <button type="submit" class="btn btn-primary" id="askSubmit">Întreabă</button>
+          </form>
+          <p class="privacy-note">Întrebarea ta este transmisă către furnizorul de model lingvistic (Groq, SUA — model Llama 3.3 70B) pentru generarea răspunsului, după o etapă de căutare semantică realizată de Cloudflare Workers AI. Te rugăm să nu introduci date personale sau informații confidențiale. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
+          <p style="font-family:var(--mono);font-size:11px;color:#5a5648;text-transform:uppercase;margin-top:20px;">Căutări populare</p>
+          <div class="ask-examples">
+            <button type="button" class="ask-example">Folosim ChatGPT în firmă. Ce trebuie să facem?</button>
+            <button type="button" class="ask-example">EU AI Act se aplică IMM-ului meu?</button>
+            <button type="button" class="ask-example">Ce documente trebuie să pregătesc?</button>
+            <button type="button" class="ask-example">Ce este Articolul 50?</button>
+          </div>
+        </div>
+
+        <div class="ask-highlight">
+          <div id="askAnswer" class="ask-answer"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRAT DE GUVERNANȚĂ -->
+  <section id="governance" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>STRAT DE GUVERNANȚĂ</span>
+      <h2 class="h2-title">De la informație la <em>implementare</em>.</h2>
+      <p class="sub-lede">Răspunde la întrebarea: „Ce trebuie să facă firma mea?” — EU AI ACT READY PACK™, peste 70 de documente operaționale personalizate. Nu șabloane goale — documente generate pentru firma ta.</p>
+      <p class="sub-lede" style="margin-top:10px;color:var(--gold);"><strong>Documentele nu sunt de completat de tine — ajung deja completate</strong>, generate automat cu datele firmei tale, gata de folosit și de arătat unui inspector.</p>
+      <p class="sub-lede" style="margin-top:10px;"><strong style="color:var(--text)">De ce contează enorm:</strong> când ți se cer dovezi — de un client, de un partener sau de o autoritate — arăți instant actele complete și numele persoanei responsabile AI desemnate — zile sau săptămâni de muncă de avocați, evitate.</p>
+
+      <div class="module-grid">
+        <a class="module-row" href="/modul-01-inventar-sisteme-ai.html"><div class="module-num">01</div><div><h4>Inventarul Sistemelor AI</h4><p>Identificarea sistemelor AI utilizate.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-02-clasificare-risc.html"><div class="module-num">02</div><div><h4>Clasificarea Riscului</h4><p>Evaluarea nivelului de risc.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-03-competente-ai.html"><div class="module-num">03</div><div><h4>Competențe AI</h4><p>Demonstrarea competențelor AI.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-04-practici-interzise.html"><div class="module-num">04</div><div><h4>Practici Interzise</h4><p>Evaluarea practicilor interzise.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-05-evaluare-risc-ridicat.html"><div class="module-num">05</div><div><h4>Evaluarea Riscului Înalt</h4><p>Evaluarea sistemelor relevante. <span style="opacity:.6;font-size:12px;">— high-risk Anexa III: 2 dec 2027</span></p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-06-documentatie-tehnica.html"><div class="module-num">06</div><div><h4>Documentație Tehnică</h4><p>Structurarea documentației necesare. <span style="opacity:.6;font-size:12px;">— high-risk Anexa III: 2 dec 2027</span></p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-07-supraveghere-umana.html"><div class="module-num">07</div><div><h4>Supraveghere Umană</h4><p>Responsabilitate și control uman.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-08-guvernanta-datelor.html"><div class="module-num">08</div><div><h4>Guvernanța Datelor</h4><p>Gestionarea datelor.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-09-logging-monitorizare.html"><div class="module-num">09</div><div><h4>Înregistrare și Monitorizare</h4><p>Urmărirea utilizării.</p><span class="module-more">vezi modulul →</span></div></a>
+        <a class="module-row" href="/modul-10-raportare-incidente.html"><div class="module-num">10</div><div><h4>Raportarea Incidentelor</h4><p>Gestionarea incidentelor.</p><span class="module-more">vezi modulul →</span></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLE JOURNEYS -->
+  <!-- OFERTA -->
+  <section id="oferta" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>OFERTĂ · PREȚURI</span>
+      <h2 class="h2-title">Începi gratuit. <em>Plătești doar când vezi rezultatul</em>.</h2>
+      <p class="sub-lede">Trei niveluri, un singur produs. Testezi tot ce contează fără card.</p>
+      <div class="of-home-grid">
+        <div class="of-home-card">
+          <span class="of-home-eyebrow">Nivelul 1 · start</span>
+          <div class="of-home-name">Governance</div>
+          <div class="of-home-price">0 <small>EUR</small></div>
+          <p class="of-home-desc">Free Readiness Pack (previzualizare până la 40%), Demo complet cu toate cele 70 de documente și ASK — asistentul pe documentația EU AI Act.</p>
+          <a href="#free-pack" class="btn btn-secondary">Începe gratuit →</a>
+        </div>
+        <div class="of-home-card featured">
+          <span class="of-home-eyebrow">Nivelul 2 · pachetul complet</span>
+          <div class="of-home-name">Transparency</div>
+          <div class="of-home-price">690 <small>EUR</small></div>
+          <p class="of-home-desc">70 de documente completate cu datele firmei, 10 module, dovezi digitale și RRVI™ inclus. Plată unică, fără abonament, fără preț pe utilizator.</p>
+          <a href="/oferta.html" class="btn btn-primary">Vezi ce conține →</a>
+        </div>
+        <div class="of-home-card">
+          <span class="of-home-eyebrow">Nivelul 3 · opțional</span>
+          <div class="of-home-name">Conformitate activă</div>
+          <div class="of-home-price">390 <small>EUR / an</small></div>
+          <p class="of-home-desc">RRVI activ permanent, documentele actualizate la fiecare termen legal (2 dec 2026 → 2 aug 2028) și alertă la modificări. Serviciu separat, opțional.</p>
+          <a href="/oferta.html" class="btn btn-dark">Detalii →</a>
+        </div>
+      </div>
+      <p class="sub-lede" style="margin-top:24px;">Comparație cu alternativele din piață, calendarul complet al termenelor și limitele ofertei — pe <a href="/oferta.html" style="color:var(--gold);">pagina de ofertă</a>.</p>
+    </div>
+  </section>
+
+  <section id="roles" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>TRASEE DUPĂ ROL</span>
+      <h2 class="h2-title">Fiecare rol, <em>un traseu diferit</em>.</h2>
+      <div class="role-grid">
+        <a href="/imm.html" class="role-card">
+          <div class="role-q">„Ce trebuie să fac?”</div>
+          <h4>Proprietar IMM</h4>
+          <div class="role-path">FREE CHECK → DEMO → FIRMA TA → IMPLEMENTARE</div>
+        </a>
+        <a href="/avocati.html" class="role-card">
+          <div class="role-q">„Cum ajut clienții?”</div>
+          <h4>Avocat</h4>
+          <div class="role-path">PARTENER → DEMO → SERVICIU NOU</div>
+        </a>
+        <a href="/consultanti.html" class="role-card">
+          <div class="role-q">„Cum creez ofertă nouă?”</div>
+          <h4>Consultant</h4>
+          <div class="role-path">PARTENER → IMPLEMENTARE</div>
+        </a>
+        <a href="/freelanceri.html" class="role-card">
+          <div class="role-q">„Sunt responsabil dacă folosesc AI?”</div>
+          <h4>Freelancer</h4>
+          <div class="role-path">ASK → CHECK</div>
+        </a>
+        <a href="#evidence" class="role-card">
+          <div class="role-q">„Cum verific?”</div>
+          <h4>Auditor</h4>
+          <div class="role-path">INSPECTOR VIEW → RRVI</div>
+        </a>
+        <a href="/marketing-digital.html" class="role-card">
+          <div class="role-q">„Ce declar despre conținutul AI?”</div>
+          <h4>Marketing Digital</h4>
+          <div class="role-path">ARTICOL 50 → TRANSPARENȚĂ</div>
+        </a>
+        <a href="/it-software.html" class="role-card">
+          <div class="role-q">„Sunt Provider sau Deployer?”</div>
+          <h4>Firme IT &amp; Software</h4>
+          <div class="role-path">CLASIFICARE RISC → DOCUMENTAȚIE TEHNICĂ</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DE CE AIVENTURE (compania, nu produsul) — teaser, detalii pe why-us.html -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>DE CE AIVENTURE</span>
+      <h2 class="h2-title">Nu un produs izolat. <em>O infrastructură</em>.</h2>
+      <p class="sub-lede">EU AI ACT READY™ e un singur produs dintr-un ecosistem mai larg de infrastructură AI, construit de AIVENTURE S.R.L. — nu un instrument izolat, cârpit peste un no-code tool. Fondator cu background enterprise real (IBM, Capgemini, Société Générale, Crédit Agricole), arhitectură proprie pe Cloudflare, un singur om responsabil direct.</p>
+      <p style="margin-top:20px;"><a href="/why-us.html" class="btn btn-secondary">Vezi comparația completă cu piața →</a></p>
+    </div>
+  </section>
+
+
+  <!-- CONSTRUIT CU AI — transparență aplicată nouă înșine -->
+  <section id="construit-cu-ai" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>TRANSPARENȚĂ APLICATĂ NOUĂ ÎNȘINE</span>
+      <h2 class="h2-title">Construit cu AI. <em>Declarat</em> ca atare.</h2>
+      <p class="sub-lede">Acest ecosistem — site, arhitectură, cele 70 de documente, motorul de generare, stratul de dovezi — a fost construit de o singură persoană, în ultimele șase luni, folosind sisteme AI. Nu ascundem asta. Este prima intrare din propriul nostru inventar de sisteme AI.</p>
+
+      <div class="term-card" style="margin-top:30px;">
+        <div class="term-head">
+          <span>~ /aiventure/REG-001_AI_System_Inventory_Register.md</span>
+          <span>intrarea 01</span>
+        </div>
+        <div style="padding:24px;">
+          <table class="demo-doc-table" style="width:100%;">
+            <tbody>
+              <tr><td style="width:34%;color:#8a8578;">Sistem AI</td><td><strong>Claude (Anthropic)</strong></td></tr>
+              <tr><td style="color:#8a8578;">Departament</td><td>Dezvoltare</td></tr>
+              <tr><td style="color:#8a8578;">Scop</td><td>Generare cod, arhitectură site, documentație, conținut</td></tr>
+              <tr><td style="color:#8a8578;">Perioadă de utilizare</td><td>ultimele 6 luni, continuu</td></tr>
+              <tr><td style="color:#8a8578;">Nivel de risc</td><td>Minimal</td></tr>
+              <tr><td style="color:#8a8578;">Persoană responsabilă AI</td><td>Dan Ionescu (Eli), fondator</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="feature-grid" style="margin-top:32px;">
+        <div class="feature-item">
+          <h4>De ce o spunem</h4>
+          <p>Articolul 4 cere competențe AI adecvate. Articolul 50 cere transparența interacțiunilor AI. O firmă care vinde guvernanță AI, dar nu își declară propriile sisteme AI, nu merită crezută pe cuvânt.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Ce înseamnă practic</h4>
+          <p>Fiecare sistem AI folosit intern are scop declarat, nivel de risc evaluat și persoană responsabilă desemnată — în exact același format pe care îl primești tu când generezi pachetul.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Ce NU înseamnă</h4>
+          <p>Că documentele sunt scrise de un chatbot și trimise mai departe. Structura, verificarea juridică și deciziile de conținut rămân umane. AI-ul accelerează execuția, nu înlocuiește răspunderea.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Dovada, nu declarația</h4>
+          <p>Inventarul complet, cu toate sistemele AI folosite de AIVENTURE, e vizibil public în demo — nu într-un PDF pe care ni-l cereți.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:26px;"><a href="/demo.html" class="btn btn-secondary">Vezi inventarul nostru complet →</a> <a href="/modul-01-inventar-sisteme-ai.html" class="btn btn-dark">Cum se face un inventar AI →</a></p>
+    </div>
+  </section>
+
+  <!-- PARTENER DE ÎNCREDERE (real partnership, not fabricated testimonials) -->
+  <section id="partener" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>PARTENER DE ÎNCREDERE</span>
+      <h2 class="h2-title">Distribuit prin <em>parteneri verificați</em>.</h2>
+      <p class="sub-lede">EU AI ACT READY™ nu vinde doar direct — se distribuie și prin firme de încredere care au deja o relație stabilă cu clienții lor.</p>
+      <div class="feature-grid" style="margin-top:36px;">
+        <div class="feature-item">
+          <img src="/assets/images/roxana-profile.webp" alt="Roxana Deak, fondator ECBTax Accounting & HR" width="72" height="72" style="border-radius:50%;margin-bottom:12px;object-fit:cover;object-position:center top;display:block;">
+          <h4>ECBTax Accounting &amp; HR</h4>
+          <p>Partener confirmat. Fondator: Roxana Deak — FCCA, CPA, CCF. Clienții ECBTax primesc, pe lângă contabilitate, și un prim nivel de pregătire EU AI Act prin acest parteneriat.</p>
+          <p style="margin-top:8px;"><a href="https://www.linkedin.com/in/roxana-deak-ecbtax/" target="_blank" rel="noopener noreferrer" style="font-size:13px;color:var(--gold,#f0c14b);">LinkedIn Roxana Deak →</a></p>
+        </div>
+        <div class="feature-item">
+          <h4>De ce contează</h4>
+          <p>Un contabil sau avocat care are deja încrederea unui client poate adăuga guvernanța AI ca serviciu nou, fără să construiască nimic de la zero.</p>
+        </div>
+      </div>
+      <div id="trust-badge-slot" class="trust-badge-wrap"></div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE LAYER -->
+  <section id="evidence" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>DIFERENȚA FUNDAMENTALĂ</span>
+      <h2 class="h2-title">Nu producem hârtie. Producem <em>dovezi digitale</em> criptografice.</h2>
+
+      <div class="contrast">
+        <div class="box weak">
+          <div class="kicker">Document</div>
+          <p>„Aceasta este politica noastră.”</p>
+        </div>
+        <div class="box strong">
+          <div class="kicker">Dovadă digitală</div>
+          <p>Demonstrează ce document exista, când exista, cine era responsabil, ce versiune era activă, ce modificări au avut loc și ce sistem AI acoperea.</p>
+        </div>
+      </div>
+
+      <p class="sub-lede" style="margin-top:36px;"><strong style="color:var(--text)">Evidence Layer</strong> — de la document la dovadă verificabilă. Include: identificator unic, versiune, timestamp, hash criptografic, audit trail, istoric.</p>
+      <p style="margin-top:18px;"><a href="#demo" class="btn btn-secondary demo-trigger">Vezi un extras din propriul nostru Governance Pack →</a> <a href="/demo.html" class="btn btn-dark">Toate cele 70 de documente →</a></p>
+    </div>
+  </section>
+
+  <!-- AI READY™ DIGITAL PRESENCE — pilonul nou: descoperibilitate și încredere pentru sisteme AI -->
+  <section id="ai-ready" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>FII DE ÎNCREDERE</span>
+      <h2 class="h2-title">AI READY™ — <em>prezență digitală</em> pentru sisteme AI, nu doar pentru oameni.</h2>
+      <p class="sub-lede">Nu schimbăm site-ul tău existent. Îi adăugăm un strat de semnale pe care ChatGPT, Gemini, Perplexity sau alți agenți AI îl pot citi, înțelege și cita — exact infrastructura pe care o vezi implementată chiar aici, pe eu-ai-act.ro.</p>
+
+      <div class="feature-grid" style="margin-top:28px;">
+        <div class="feature-item">
+          <h4>Date structurate (Schema.org)</h4>
+          <p>Organization, Service, FAQPage, BreadcrumbList — informații pe care agenții AI le citesc direct, nu doar textul vizibil.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Fișiere dedicate agenților AI</h4>
+          <p><code>llms.txt</code>, <code>robots.txt</code>, <code>intents.json</code>, <code>sitemap.xml</code> — semnale machine-readable, verificabile public.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Entitate clară, nu ambiguă</h4>
+          <p>Cine ești, ce oferi, pentru cine — declarat explicit, nu dedus din context de un crawler.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Dovadă live, nu promisiune</h4>
+          <p>Poți verifica chiar acum: <a href="/organization.json" style="color:var(--gold,#f0c14b);">organization.json</a>, <a href="/llms.txt" style="color:var(--gold,#f0c14b);">llms.txt</a>, <a href="/robots.txt" style="color:var(--gold,#f0c14b);">robots.txt</a>.</p>
+        </div>
+      </div>
+
+      <p class="sub-lede" style="margin-top:28px;"><strong style="color:var(--text)">De ce contează:</strong> tot mai mulți oameni întreabă un AI înainte să caute pe Google. Dacă firma ta nu e „vizibilă” și pentru sisteme AI, nu apari în răspunsurile pe care le primesc.</p>
+    </div>
+  </section>
+
+  <!-- ARTICLE 50 -->
+  <section id="transparency" class="pad">
+    <div class="wrap">
+      <div class="banner">Evidence Layer: inclus în abonamentul opțional Conformitate activă (390 EUR/an)</div>
+      <span class="tag" style="display:block;"><span class="dot">//</span>NIVELUL URMĂTOR</span>
+      <h2 class="h2-title">Articolul 50 <em>— Stratul de Transparență</em>.</h2>
+      <p class="sub-lede">EU AI Act nu înseamnă doar documente. Firmele trebuie să poată demonstra transparența interacțiunilor AI — evenimente de transparență Om ↔ AI ↔ Om.</p>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h4>Transparența Interacțiunii AI</h4>
+          <p>Conținut generat AI, conținut sintetic și deepfake transparency, pregătite pentru demonstrare.</p>
+        </div>
+        <div class="feature-item">
+          <h4>Automatizarea Dovezilor Digitale</h4>
+          <p>Evidențe generate automat: create, versionate, timestamp-ate, verificabile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RRVI (standalone — separated from Article 50) -->
+  <section id="rrvi" class="pad">
+    <div class="wrap">
+      <div class="term-card">
+        <div class="term-head"><span>RRVI™ — Remote Regulatory Verification Infrastructure™</span><span>inspector-ready</span></div>
+        <div style="padding:26px;">
+          <p style="color:var(--text-dim);font-size:15px;">Conformitatea nu trebuie doar declarată. Trebuie demonstrată. Inspectorul sau auditorul poate verifica documente, versiuni, dovezi, istoric și integritate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DE CE EU AI ACT READY™ — 5 diferențiatori de produs, ordine ascendentă 1→5 -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>DE CE EU AI ACT READY™</span>
+      <h2 class="h2-title">Cinci motive, <em>un singur</em> pachet.</h2>
+      <div class="module-grid">
+        <a href="#governance" class="module-row">
+          <div class="module-num">1</div>
+          <div><h4>70 documente complete, în sub 15 min <span class="module-more">vezi ce conțin →</span></h4><p>Când ți se cer dovezi — client, partener sau autoritate — arăți instant actele complete și persoana responsabilă AI desemnată. Zile de muncă de avocați, evitate.</p></div>
+        </a>
+        <a href="#rrvi" class="module-row">
+          <div class="module-num">2</div>
+          <div><h4>Dovezile tale sunt verificabile la distanță (RRVI) <span class="module-more">cum funcționează →</span></h4><p>Oricine cere dovada — auditor, client sau partener — verifică hash, versiune și timestamp fără acces la sistemele tale interne.</p></div>
+        </a>
+        <a href="#ask" class="module-row">
+          <div class="module-num">3</div>
+          <div><h4>Conversație live cu regulamentul (ASK) <span class="module-more">încearcă acum →</span></h4><p>Sinteze, comparații, cazuri de utilizare, șabloane — toate imediat vizibile.</p></div>
+        </a>
+        <a href="#partener" class="module-row">
+          <div class="module-num">4</div>
+          <div><h4>Distribuit prin parteneri de încredere <span class="module-more">detalii parteneriat →</span></h4><p>Parteneriat real confirmat cu ECBTax — nu vindem doar direct, ci prin firme care au deja încrederea clienților lor.</p></div>
+        </a>
+        <a href="#free-pack" class="module-row">
+          <div class="module-num">5</div>
+          <div><h4>100% gratuit să începi <span class="module-more">generează acum →</span></h4><p>Demo fără cont, restul cu cont gratuit creat în 1 minut — fără card, fără risc.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>COMPARĂ ABORDĂRILE</span>
+      <h2 class="h2-title">De ce <em>EU AI ACT READY™</em>.</h2>
+      <table class="cmp-table">
+        <thead>
+          <tr><th></th><th>Template-uri</th><th>Consultanță</th><th>Chatbot</th><th>EU AI ACT READY™</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Explicații</td><td>❌</td><td>✅</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Întrebări</td><td>❌</td><td>⚠️</td><td>✅</td><td>✅</td></tr>
+          <tr><td>Documente personalizate</td><td>❌</td><td>✅</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Dovezi digitale</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Articol 50</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+          <tr><td>Verificare</td><td>❌</td><td>⚠️</td><td>❌</td><td>✅</td></tr>
+        </tbody>
+      </table>
+      <p class="sub-lede" style="margin-top:18px;"><strong style="color:var(--gold)">Governance: Free Readiness Pack, Demo cu toate cele 70 de documente și ASK — gratuite, permanent.</strong> Transparency — 70 de documente completate cu datele firmei tale, RRVI™ inclus — <strong style="color:var(--text)">690 EUR</strong>, plată unică. Fără abonament, fără card la înscriere.<br><span style="opacity:.85">Opțional, separat: <strong style="color:var(--gold)">Conformitate activă — 390 EUR/an</strong> — verificarea RRVI rămâne activă, documentele se actualizează la fiecare termen legal, primești alertă la modificările regulamentului.</span></p>
+      <p class="sub-lede" style="margin-top:28px;">Începe gratuit. Nu trebuie să cumperi înainte să înțelegi. Primul pas: descoperă situația firmei tale. Apoi: vezi rezultatul. Apoi: implementează.</p>
+    </div>
+  </section>
+
+  <!-- CTA FINAL (4 exits) -->
+  <section id="demo" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>CE FACI ACUM</span>
+      <h2 class="h2-title">Patru drumuri, <em>o singură</em> platformă.</h2>
+      <div class="next-grid">
+        <div class="next-item"><span>Vreau să generez pachetul pentru firma mea</span><a href="#free-pack" class="btn btn-primary">firma mea →</a></div>
+        <div class="next-item"><span>Vreau să văd înainte</span><a href="/demo.html" class="btn btn-secondary">demo →</a></div>
+        <div class="next-item"><span>Vreau să întreb</span><a href="#ask" class="btn btn-dark">ask →</a></div>
+        <div class="next-item"><span>Vreau să ofer serviciul clienților</span><a href="#contact" class="btn btn-secondary">partener →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing no-border">
+    <div class="wrap">
+      <h2>De la <em>întrebare</em>.<br>La <em>pregătire</em>.<br>La <em>dovadă</em>.<br>La <em>verificare</em>.</h2>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>RESURSE · ÎNTREBĂRI FRECVENTE</span>
+      <h2 class="h2-title">Răspunsuri <em>scrise</em> — nu vagi.</h2>
+
+      <div style="margin-top:32px;">
+        <div class="faq-item">
+          <div class="faq-q">S-a amânat EU AI Act? <span class="plus">+</span></div>
+          <div class="faq-a">Parțial — și nu partea care te privește acum. Prin pachetul Digital Omnibus, obligațiile pentru sistemele high-risk din Anexa III s-au mutat la 2 decembrie 2027, iar cele din Anexa I la 2 august 2028. Articolul 50 — transparența interacțiunilor AI și a conținutului generat — se aplică deja, de la 2 august 2026. Marcarea automată a conținutului generat (Art. 50 alin. 2) pentru sistemele deja pe piață se aplică din 2 decembrie 2026. Pe scurt: transparența e deja obligatorie, iar pentru high-risk ai timp să construiești corect.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Folosim ChatGPT în firmă. Ce trebuie să facem? <span class="plus">+</span></div>
+          <div class="faq-a">Primul pas este un inventar al sistemelor AI folosite — inclusiv cele introduse informal de angajați (Shadow AI). Pornește de la ASK sau de la Free Readiness Pack pentru o imagine inițială.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">EU AI Act se aplică IMM-ului meu? <span class="plus">+</span></div>
+          <div class="faq-a">Obligațiile depind de modul în care este folosit AI-ul, nu doar de mărimea firmei. Multe obligații de transparență (Articolul 50) se aplică oricărei firme care folosește AI în interacțiunea cu publicul.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Ce documente trebuie să pregătesc? <span class="plus">+</span></div>
+          <div class="faq-a">Structura completă acoperă 10 module operaționale și până la 70 de documente — de la inventarul sistemelor AI până la proceduri de raportare a incidentelor. Nu trebuie să le completezi tu: ajung deja generate și completate cu datele firmei tale, gata de folosit.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Cum demonstrez conformitatea? <span class="plus">+</span></div>
+          <div class="faq-a">Prin dovezi digitale verificabile — identificator unic, versiune, timestamp, hash criptografic și audit trail — nu doar prin documente declarative.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Ce este Articolul 50? <span class="plus">+</span></div>
+          <div class="faq-a">Articolul 50 reglementează obligațiile de transparență privind interacțiunea AI cu oamenii — conținut generat AI, conținut sintetic și dezvăluirea deepfake — aplicabile de la 2 august 2026.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="pad">
+    <div class="wrap">
+      <span class="tag"><span class="dot">//</span>CONTACT</span>
+      <h2 class="h2-title">Scrie-ne. <em>Citim atent</em>.</h2>
+      <p class="sub-lede">Cel mai rapid răspuns vine pe canalele directe. Formularul de mai jos e pentru cazurile în care preferi să scrii structurat.</p>
+
+      <div class="contact-channels">
+        <a class="contact-channel" href="https://api.whatsapp.com/send/?phone=40737123540">
+          <span class="cc-label">WhatsApp</span>
+          <span class="cc-value">40737123540</span>
+          <span class="cc-note">cel mai rapid — inclusiv pentru programul de partener</span>
+        </a>
+        <a class="contact-channel" href="mailto:contact@5thelement.ai">
+          <span class="cc-label">Email</span>
+          <span class="cc-value">contact@5thelement.ai</span>
+          <span class="cc-note">pentru oferte, facturare și documente</span>
+        </a>
+        <a class="contact-channel" href="https://eu-112.ro?utm_source=eu-ai-act-ro&utm_medium=contact-channel">
+          <span class="cc-label">EU-112</span>
+          <span class="cc-value">eu-112.ro</span>
+          <span class="cc-note">întrebare rapidă, gratuită, fără cont — 1000+ răspunsuri</span>
+        </a>
+      </div>
+
+      <form id="contactForm" class="form-card" style="max-width:640px;">
+        <div class="form-field" style="margin-bottom:16px;">
+          <label>Ce te interesează</label>
+          <select id="contactSubject" name="subject">
+            <option>Transparency — 690 EUR</option>
+            <option>Conformitate activă — 390 EUR/an</option>
+            <option>Program de partener (contabil, avocat, consultant)</option>
+            <option>Altceva</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-field"><label>Nume</label><input type="text" required></div>
+          <div class="form-field"><label>Email</label><input type="email" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field"><label>Firmă</label><input type="text"></div>
+          <div class="form-field"><label>Tip entitate</label>
+            <select><option>SRL</option><option>PFA</option><option>ONG</option><option>Cabinet de avocatură</option></select>
+          </div>
+        </div>
+        <div class="form-field" style="margin-bottom:16px;">
+          <label>Mesaj (opțional)</label>
+          <input type="text" placeholder="Spune-ne pe scurt situația ta">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">trimite →</button>
+            <p class="privacy-note">Folosim datele din formular doar ca să îți răspundem. Detalii: <a href="/confidentialitate.html">Politica de confidențialitate</a>.</p>
+        <div id="contactStatus" class="form-status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- DEMO MODAL -->
+<div id="demoModal" class="demo-modal" aria-hidden="true">
+  <div class="demo-modal-backdrop" data-demo-close></div>
+  <div class="demo-modal-panel" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+    <button type="button" class="demo-modal-close" data-demo-close aria-label="Închide">✕</button>
+    <div class="demo-modal-head">
+      <span class="tag"><span class="dot">//</span>DEMO · EXEMPLU REAL, NU FICTIV</span>
+      <h3 id="demoModalTitle">Așa arată Governance Pack-ul chiar al nostru</h3>
+      <p>Fără cont, fără card. Exemplele de mai jos folosesc datele reale ale AIVENTURE S.R.L. — firma din spatele acestui produs — generate cu propriul Governance Pack. Datele firmei tale înlocuiesc automat cele de mai jos când generezi pachetul tău.</p>
+    </div>
+    <div class="demo-tabs" role="tablist">
+      <button type="button" class="demo-tab active" data-demo-tab="inventory" role="tab">01 · Inventar AI</button>
+      <button type="button" class="demo-tab" data-demo-tab="policy" role="tab">03 · Politică</button>
+      <button type="button" class="demo-tab" data-demo-tab="evidence" role="tab">Evidence · Dovadă</button>
+    </div>
+    <div class="demo-panels">
+      <div class="demo-panel active" data-demo-panel="inventory">
+        <div class="demo-doc-head">
+          <span>REG-001_AI_System_Inventory_Register.md</span>
+          <span class="demo-doc-status">v1.0 · generat automat</span>
+        </div>
+        <table class="demo-doc-table">
+          <thead><tr><th>Sistem AI</th><th>Departament</th><th>Scop</th><th>Nivel de risc</th><th>Responsabil</th></tr></thead>
+          <tbody>
+            <tr><td>Claude (Anthropic)</td><td>Dezvoltare</td><td>Generare cod, arhitectură site, documentație</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>Groq — Llama 3.3 70B</td><td>Produs</td><td>Motor conversațional din spatele ASK EU AI Act™ — generarea răspunsurilor</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>Cloudflare Workers AI — bge-m3</td><td>Produs</td><td>Căutare semantică în ASK EU AI Act™ — embeddings și potrivire vectorială</td><td>Minimal</td><td>Dan Ionescu</td></tr>
+            <tr><td>ASK EU AI Act™ (chatbot public)</td><td>Interacțiune publică</td><td>Interacțiune directă cu vizitatorii site-ului</td><td>Transparență (Art. 50)</td><td>Dan Ionescu</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="demo-panel" data-demo-panel="policy">
+        <div class="demo-doc-head">
+          <span>DOD-003_AI_Literacy_Policy.md</span>
+          <span class="demo-doc-status">v1.0 · generat automat</span>
+        </div>
+        <p class="demo-doc-text">AIVENTURE S.R.L. asigură că persoana responsabilă de guvernanța AI deține competențe adecvate de utilizare responsabilă a sistemelor AI ("AI literacy"), proporțional cu rolul de fondator și arhitect al întregului ecosistem de produse. Persoana responsabilă AI desemnată: <strong>Dan Ionescu (Eli), Fondator</strong>. Instruirea inițială și revizuirea politicii se realizează la introducerea fiecărui sistem AI nou în activitatea firmei.</p>
+      </div>
+      <div class="demo-panel" data-demo-panel="evidence">
+        <div class="demo-doc-head">
+          <span>ai-proof.json</span>
+          <span class="demo-doc-status">dovadă digitală, live</span>
+        </div>
+        <pre class="demo-doc-code">{
+  "document_id": "REG-001-AIVENTURE-SRL",
+  "version": "1.0",
+  "generated_at": "2026-07-30T10:12:22Z",
+  "responsible": "Dan Ionescu (Eli)",
+  "hash": "9dcc079be08ae0cc7b161079a259c4bd3493aa51488033d5ebd81d8d351d3475",
+  "status": "active",
+  "verifiable_at": "https://eu-ai-act.ro/verificare.html?doc=REG-001-AIVENTURE-SRL"
+}</pre>
+        <p class="demo-doc-text">Fiecare document generat primește identificator unic, versiune, timestamp și hash criptografic — verificabile independent de un inspector sau auditor, fără acces la sistemele interne ale firmei. Hash-ul de mai sus e real, verificabil chiar acum la <a href="/ai-proof.json" style="color:var(--gold,#f0c14b);">/ai-proof.json</a>.</p>
+      </div>
+    </div>
+    <div class="demo-modal-foot">
+      <a href="#free-pack" class="btn btn-primary" data-demo-close>Generează pachetul firmei tale →</a>
+      <a href="#ask" class="btn btn-dark" data-demo-close>Am o întrebare →</a>
+      <a href="/demo.html" class="btn btn-primary">Vezi toate cele 70 de documente →</a>
+      <a href="/verificare.html" class="btn btn-dark">Verifică un document →</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-top">
+    <div class="foot-brand">
+      <div class="name">EU AI ACT READY™</div>
+      <p>Powered by AIVENTURE S.R.L. — de la întrebare, la pregătire, la dovadă, la verificare.</p>
+      <div class="founder-line">
+        <img src="/dan-founder.jpg" alt="Dan Ionescu (Eli), fondator AiVenture S.R.L." width="48" height="48" class="founder-photo">
+        <div class="founder-text">
+          <strong>Dan Ionescu</strong> (Eli) — fondator AiVenture S.R.L., firmă de arhitectură de sisteme AI, București.
+        </div>
+      </div>
+      <p style="margin-top:14px;font-size:12px;color:#777;font-style:italic;">Susținem pregătirea pentru EU AI Act — nu certificăm conformitatea. Certificarea/verificarea oficială rămâne în sarcina autorității competente.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Ecosistem digital</h5>
+      <a href="https://eu-ai-act-ready.eu" target="_blank" rel="noopener noreferrer">eu-ai-act-ready.eu</a>
+      <a href="https://eu-ai-act.ro" target="_blank" rel="noopener noreferrer">eu-ai-act.ro</a>
+      <a href="https://5thelement.ai" target="_blank" rel="noopener noreferrer">5thElement.ai</a>
+      <a href="https://aiventure.ro" target="_blank" rel="noopener noreferrer">AiVenture.ro</a>
+    </div>
+    <div class="foot-col">
+      <h5>Social &amp; Profile</h5>
+      <a href="https://www.linkedin.com/in/dan-ionesco-a856082a0" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn Fondator</a>
+      <a href="https://www.linkedin.com/company/107338970" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn Companie</a>
+      <a href="https://www.linkedin.com/showcase/5thelement-ai/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn 5thElement.ai</a>
+      <a href="https://www.crunchbase.com/organization/aiventure-s-r-l" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 12.7h-2.1v-3.1c0-1.05-.5-1.6-1.35-1.6-.9 0-1.5.6-1.5 1.65v3.05H9.4V8.9h2.1v1h.03c.35-.6 1.1-1.15 2.15-1.15 1.85 0 3.3 1.2 3.3 3.35v3.6z"/></svg>Crunchbase</a>
+      <a href="https://x.com/aipath512" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-6.9l-5.4-7-6.2 7H1.7l8.1-9.3L1 2h7.1l4.9 6.4L18.9 2zm-1.2 18h1.9L7.4 4H5.3l12.4 16z"/></svg>X</a>
+      <a href="https://www.facebook.com/people/Aiventure/61573220584246/" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg>Facebook</a>
+      <a href="https://www.youtube.com/@AIVenture-q8u" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8.001s-.2-1.4-.8-2.02c-.76-.8-1.62-.8-2.01-.85C16.2 5 12 5 12 5h-.01s-4.2 0-6.98.13c-.4.05-1.25.05-2.01.85-.6.62-.8 2.02-.8 2.02S2 9.63 2 11.26v1.48c0 1.63.2 3.26.2 3.26s.2 1.4.8 2.02c.76.8 1.76.77 2.2.86 1.6.15 6.8.19 6.8.19s4.2-.01 7-.14c.4-.05 1.25-.05 2.01-.85.6-.62.8-2.02.8-2.02s.2-1.63.2-3.26v-1.48c0-1.63-.2-3.26-.2-3.26zM9.98 14.98v-5.5l5.28 2.76-5.28 2.74z"/></svg>YouTube</a>
+      <a href="https://medium.com/@aipath512" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;gap:8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.72 6.72 0 0 1-6.72 6.72A6.72 6.72 0 0 1 .1 12a6.72 6.72 0 0 1 6.72-6.72A6.72 6.72 0 0 1 13.54 12zm7.42 0c0 3.54-1.5 6.42-3.36 6.42-1.85 0-3.35-2.88-3.35-6.42s1.5-6.42 3.35-6.42c1.86 0 3.36 2.87 3.36 6.42zM24 12c0 3.17-.53 5.75-1.18 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>Medium</a>
+    </div>
+  </div>
+
+  <div class="wrap legal-grid">
+    <div><div class="lbl">CUI</div><div class="val">51415878</div></div>
+    <div><div class="lbl">Nr. Registrul Comerțului</div><div class="val">J2025016406000</div></div>
+    <div><div class="lbl">EUID</div><div class="val">ROONRC.J2025016406000</div></div>
+    <div><div class="lbl">CAEN principal</div><div class="val">6210 — Software la comandă</div></div>
+  </div>
+  <div class="wrap" style="padding-bottom:24px;">
+    <div class="lbl" style="font-family:var(--mono);font-size:10.5px;color:var(--text-faint);text-transform:uppercase;">Sediu social</div>
+    <div class="address-val">București, Sector 1, Drumul Pădurea Pustnicu nr. 141C, Corp A</div>
+  </div>
+
+  <div class="wrap ai-agents-strip">
+    <span class="lbl">// pentru AI agents</span>
+    <span><a href="/organization.json">Schema.org</a> · <a href="/llms.txt">llms.txt</a> · <a href="/robots.txt">robots.txt</a> · <a href="/intents.json">intents.json</a> · <a href="/ai.json">ai.json</a> · <a href="/authority.json">authority.json</a> · <a href="/policy.json">policy.json</a> · <a href="/governance.json">governance.json</a> · <a href="/entities.json">entities.json</a> · <a href="/ai-proof.json">ai-proof.json</a> · <a href="/trust-state.json">trust-state.json</a> · <a href="#ask">API endpoints</a></span>
+  </div>
+
+  <div class="wrap legal-strip">
+    <span>© 2026 AIVENTURE S.R.L. · toate drepturile rezervate</span>
+    <span><a href="/termeni.html">Termeni &amp; Condiții</a> · <a href="/confidentialitate.html">Confidențialitate</a> · <a href="/cookies.html">Cookies</a> · <a href="/disclaimer.html">Declinare de răspundere</a></span>
   </div>
 </footer>
 
-<script>
-  function tick(){
-    const now = new Date();
-    document.getElementById('clock').textContent =
-      now.toLocaleTimeString('ro-RO',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
-  }
-  tick(); setInterval(tick, 1000);
+<div class="float-btns">
+  <a class="fb-whatsapp" href="https://api.whatsapp.com/send/?phone=40737123540">WhatsApp</a>
+</div>
 
-  const API = "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=";
-  const qEl = document.getElementById('ask-q');
-  const ansEl = document.getElementById('ask-answer');
-  async function askQuestion(){
-    const text = qEl.value.trim();
-    if(!text) return;
-    ansEl.style.display = 'block';
-    ansEl.textContent = '...';
-    try{
-      const resp = await fetch(API + encodeURIComponent(text) + "&lang=ro");
-      const data = await resp.json();
-      ansEl.textContent = data.generated_answer || data.answer || "Nu am găsit un răspuns clar — reformulează întrebarea.";
-    }catch(e){
-      ansEl.textContent = "Eroare de conexiune. Încearcă din nou.";
-    }
-  }
-  document.getElementById('ask-send').addEventListener('click', askQuestion);
-  qEl.addEventListener('keydown', e => { if(e.key === 'Enter'){ askQuestion(); } });
-
-  document.getElementById('ask-scroll-btn').addEventListener('click', function(e){
-    e.preventDefault();
-    document.getElementById('ask').scrollIntoView({behavior:'smooth', block:'start'});
-    setTimeout(() => document.getElementById('ask-q').focus(), 500);
-  });
-</script>
-
-<script>
-  window.AI_WIDGET_CONFIG = {
-    accent: "#f0c14b",
-    accent2: "#a8863a",
-    bg: "#141410",
-    fontBody: "Inter, Arial, sans-serif",
-    apiBase: "https://eu-ai-act-conversation-worker-test.aipath512.workers.dev/search?q=",
-    lang: "ro",
-    assistantPage: "/assistant.html",
-    siteName: "EU-112 Assistant",
-    greeting: "Cu ce te pot ajuta legat de EU AI Act?"
-  };
-</script>
-<script src="/assets/js/ai-widget.js" defer></script>
+<script src="/assets/js/script.js?v=5"></script>
+<script src="/assets/js/ask-demo-lead.js?v=5"></script>
+<script src="/assets/js/generator.js?v=1"></script>
+<script src="/assets/js/auth.js?v=2"></script>
 <script>
   (function(){
     var params = new URLSearchParams(window.location.search);
     var source = params.get('utm_source');
-    if(source === 'eu-ai-act-ro'){
+    if(source === 'eu-112-ro'){
       var medium = params.get('utm_medium') || 'unknown';
-      fetch('https://api.countapi.xyz/hit/eu-112-ro/from-eu-ai-act-ro-' + medium).catch(function(){});
-      fetch('https://api.countapi.xyz/hit/eu-112-ro/from-eu-ai-act-ro-total').catch(function(){});
+      fetch('https://api.countapi.xyz/hit/eu-ai-act-ro/from-eu-112-ro-' + medium).catch(function(){});
+      fetch('https://api.countapi.xyz/hit/eu-ai-act-ro/from-eu-112-ro-total').catch(function(){});
     }
   })();
 </script>
