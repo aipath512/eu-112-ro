@@ -3,7 +3,7 @@
   "site": "https://eu-112.ro/",
   "entities": [
     {
-      "@id": "https://eu-112.ro/#organization",
+      "@id": "https://5thelement.ai/#organization",
       "type": "Organization",
       "name": "AIVENTURE S.R.L.",
       "identifiers": {
@@ -34,7 +34,7 @@
       "type": "Person",
       "name": "Dan Ionescu",
       "role": "Fondator & CEO",
-      "affiliation": "https://eu-112.ro/#organization"
+      "affiliation": "https://5thelement.ai/#organization"
     },
     {
       "@id": "https://eu-112.ro/#website",
@@ -70,17 +70,17 @@
     {
       "from": "https://eu-112.ro/#author",
       "rel": "founderOf",
-      "to": "https://eu-112.ro/#organization"
+      "to": "https://5thelement.ai/#organization"
     },
     {
-      "from": "https://eu-112.ro/#organization",
+      "from": "https://5thelement.ai/#organization",
       "rel": "provider",
       "to": "https://eu-112.ro/#service"
     },
     {
       "from": "https://eu-112.ro/#website",
       "rel": "publisher",
-      "to": "https://eu-112.ro/#organization"
+      "to": "https://5thelement.ai/#organization"
     }
   ],
   "external_references": [
